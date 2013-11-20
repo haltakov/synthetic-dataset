@@ -1,0 +1,14 @@
+settings/log.txt
+
+*.exe
+*.sdf
+*.opensdf
+*.user
+*.suo
+*.dll
+
+ipch
+obj
+
+!lib/*.dll
+
