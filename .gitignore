@@ -6,6 +6,9 @@ settings/log.txt
 *.user
 *.suo
 *.dll
+*.idb
+*.ilk
+*.pdb
 
 ipch
 obj
