@@ -1,0 +1,63 @@
+name = Replays
+widgets = 4
+background = box.png
+dialog = false
+
+[ widget-00 ]
+type = label
+name = ReplaysLabel
+text = Replays
+center = 0.5, 0.1
+width = auto
+height = auto
+fontsize = 0.06
+enabled = 0
+selected = 0
+default = 0
+cancel = 0
+
+[ widget-01 ]
+type = stringwheel
+name = SelectReplayWheel
+setting = game.selected_replay
+values = options
+center = 0.5, 0.29
+width = auto
+height = auto
+fontsize = 0.03
+enabled = 1
+selected = 1
+default = 0
+cancel = 0
+
+[ widget-02 ]
+type = button
+name = StartReplayButton
+text = Start Replay
+tip = Begin playing the last recorded replay.
+action = StartReplay
+center = 0.5, 0.4
+color = 0.0, 0.0, 0.8
+width = auto
+height = auto
+fontsize = 0.04
+enabled = 1
+selected = 0
+default = 1
+cancel = 0
+
+[ widget-03 ]
+type = button
+name = ReplaysMainBackButton
+text = Back to Main
+tip = Return to the Main menu.
+action = Main
+center = 0.5, 0.5
+color = 0.8, 0.0, 0.0
+width = auto
+height = auto
+fontsize = 0.04
+enabled = 1
+selected = 0
+default = 0
+cancel = 1

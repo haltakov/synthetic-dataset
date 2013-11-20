@@ -1,0 +1,497 @@
+# gui
+->
+1
+1st
+2
+2nd
+3
+3rd
+4
+4th
+5th
+6th
+99:99.999
+ABS Toggle
+Add
+Add an opponent to race against (max 3).
+Advanced
+Advanced Display Options
+Analog Clutch
+Are you sure you want to end this network game?
+Are you sure you want to leave this game?
+Are you sure you want to quit?
+Are you sure you want to restart?
+Are you sure you want to stop the race?
+Assign Camera Movement Controls
+Assign Camera View Controls
+Assign Car Controls
+Assign Controls
+Assign Game Controls
+Assign Gear Controls
+Assign inputs to actions related to replays.
+Assign inputs to actions related to the transmission.
+Assign inputs to actions that affect the car.
+Assign inputs to actions that affect the game.
+Assign inputs to camera movement controls.
+Assign inputs to camera view selection controls.
+Assign inputs to each of the gear actions.
+Assign inputs to miscellaneous helpful actions.
+Assign Replay Controls
+Assign Tool Controls
+Assign Transmission Controls
+Back
+Back to Main
+Back to Pause Menu
+Before starting the race, click "Add" to add opponents.
+Begin playing the last recorded replay.
+Best Lap
+Brake
+Calibrate
+Calibrate the joystick device.
+Camera Movement
+Camera Views
+Cancel
+Car
+Car Controls
+Car1
+Car2
+Car3
+Car4
+Change detail levels and other advanced display options.
+Change input and control settings.
+Change some of the options while the game is running.
+Change sound settings.
+Change video, display and detail settings.
+Chase (Loose)
+Chase (Rigid)
+Configure your display, sound and controls.
+Control
+Controls
+Controls Options
+Deadzone
+Delete
+Delete this control and return to the previous menu.
+Delete this control.
+Display
+Display Options
+Edit Analog Control
+Edit Button Control
+Edit Joystick Axis Control
+Edit Joystick Button Control
+Edit Keyboard Control
+Edit Mouse Button Control
+Edit Mouse Motion Control
+End Race
+End race and return to the Main menu.
+Engage Clutch
+Exponent
+External Fixed
+External Follow
+Extra options for gamepad, joystick and steering wheel controls.
+Focus Next
+Focus Previous
+Focus the camera on next car.
+Focus the camera on previous car.
+Forget changes and return to Assign Controls menu.
+Forget changes and return to Car Controls menu.
+Forget changes and return to Controls Options menu.
+Forget changes and return to Display Options menu.
+Forget changes and return to Game Controls menu.
+Forget changes and return to in-game Assign Controls menu.
+Forget changes and return to in-game Game Controls menu.
+Forget changes and return to Options menu.
+Forget changes and return to the previous menu.
+Forget changes and return to Transmission Controls menu.
+Free
+Gain
+Game Controls
+Gas
+Gears
+Go back to the Network Game menu.
+Go back to the race menu.
+Go back to the Replays menu.
+Handbrake
+Held/Once
+Hood
+In-Car
+Joy Axis
+Joy Btn
+Joy Motion
+Joystick Info
+Joystick Options
+Key
+Leave Game
+Leave game and return to the Main menu.
+Leave the menu and unpause the game.
+Looks behind you during driving.
+Main Menu
+Map keys, buttons and axes to actions in the game.
+Mouse Btn
+Neutral
+Next Camera
+No
+Note: Some options will not take effect until the game is restarted
+OK
+Opponents:
+Options
+Orbit
+Pan Down
+Pan Left
+Pan Right
+Pan Up
+Pause
+Pause Menu
+Play back recorded games.
+Practice Game
+Press a key, press a joystick button, move a joystick axis, move the mouse, or click a mouse button.
+Press the ESCAPE key to abort.
+Previous Camera
+Quit
+Quit Now
+Quit the game now.
+Quit VDrift.
+Race Results
+Rear View
+Reload Shaders
+Reload the vertex and fragment shader source files.
+Replays
+Restart Game
+Restart this game using the same car and track settings.
+Retry
+Return
+Return to Controls Options menu.
+Return to Game
+Return to In Game Controls Options menu.
+Return to the Main menu.
+Return to the Options menu.
+Return to the Pause menu.
+Reverse
+Rollover Recover
+Rotate car back onto its wheels after rollover.
+Save changes and return to Assign Controls menu.
+Save changes and return to Car Controls menu.
+Save changes and return to Controls Options menu.
+Save changes and return to Display Options menu.
+Save changes and return to Game Controls menu.
+Save changes and return to in-game Assign Controls menu.
+Save changes and return to in-game Game Controls menu.
+Save changes and return to Options menu.
+Save changes and return to the previous menu.
+Save changes and return to Transmission Controls menu.
+Screen Shot
+Set the deadzone for the axis between 0.0 and 1.0.
+Set the deadzone for the input between 0.0 and 0.5.
+Set the deadzone for the Motion between 0.0 and 1.0.
+Set the exponent for the axis between 0.0 and 3.0.
+Set the exponent for the input between 1.0 and 5.0.
+Set the exponent for the Motion between 0.0 and 3.0.
+Set the gain for the axis between 0.0 and 3.0.
+Set the gain for the input between 0.5 and 3.0.
+Set the gain for the Motion between 0.0 and 3.0.
+Shift Down
+Shift Up
+Simulation Engine Error
+Single Race
+Skip Backward
+Skip Forward
+Sound
+Sound Options
+Start a practice game using the selected car and track.
+Start a practice game.
+Start a race using the selected car and track.
+Start a race.
+Start Engine
+Start Practice
+Start Race
+Start Replay
+Steer Left
+Steer Right
+TCS Toggle
+The ABS Toggle turns anti-lock braking on or off while playing.
+The analog clutch control can allow you to use an external clutch pedal.
+The brake control causes the car to slow down.
+The engage clutch control lets out the clutch. This must be done after every shift.
+The external follow camera flies between each of the external cameras.
+The fifth gear control shifts the car into fifth gear.
+The first gear control shifts the car into first gear.
+The fixed external camera follows the car from a set of fixed locations.
+The fourth gear control shifts the car into fourth gear.
+The free camera control can be moved anywhere using the arrow keys.
+The gas control causes the car to speed up.
+The handbrake brakes only on the back wheels.
+The hood camera control moves the camera to the car's hood.
+The in-car camera control moves the camera to driver's view.
+The joystick info control shows debugging info for available joysticks.
+The loose chase camera control moves the camera to follow the car like a helicopter.
+The neutral control shifts the car into neutral.
+The orbit camera control swings around the car as the mouse moves.
+The pause control freezes the game (except in multiplayer).
+The reverse control puts the car into reverse gear.
+The rigid chase camera control moves the camera to a fixed distance behind the car.
+The screen shot control saves a snapshot of the game while playing.
+The second gear control shifts the car into second gear.
+The shift down control changes the car's gear to the previous one.
+The shift up control changes the car's gear to the next one.
+The sixth gear control shifts the car into sixth gear.
+The skip backward control goes back ten seconds during a replay.
+The skip forward control skips ahead ten seconds during a replay.
+The start engine control will restart the engine if it stalls.
+The steer left control causes the car to turn left.
+The steer right control causes the car to turn right.
+The TCS Toggle turns traction control on or off while playing.
+The third gear control shifts the car into third gear.
+There was an error connecting to the server.
+There was an error when trying to play this replay.
+This moves to the next camera in the set (hood, in-car, chase rigid, chase loose).
+This moves to the previous camera in the set (hood, in-car, chase rigid, chase loose).
+Time
+Tools
+Transmission
+Trigger the control when the button is pressed down or let up?
+Trigger the control when the key is pressed down or let up?
+Trigger the control when the key is pressed down or released?
+Try to connect to the server again.
+Turn the camera view downwards.
+Turn the camera view to the left.
+Turn the camera view to the right.
+Turn the camera view upwards.
+Up/Down
+Usually this is caused by a bug in the game. Please report this on http://vdrift.net/. Thanks!
+Will this button be held (analog controls) or pressed once?
+Will this input be activated once per press or whenever it's held down?
+Will this key be held (analog controls) or pressed once?
+Yes
+You must quit the game, and start VDrift again for changes to take effect.
+Zoom camera in.
+Zoom camera out.
+Zoom In
+Zoom Out
+
+# hud
+Best lap:
+Last lap:
+Lap time:
+Lap
+Place
+Score:
+Ready
+GO
+You won!
+You lost
+MPH
+KPH
+ABS
+TCS
+N
+R
+
+# assign controls
+Add a new input
+Edit
+key
+joy
+mouse
+button
+hat
+axis
+motion
+press
+release
+once
+held
+negative
+both
+up
+down
+left
+right
+
+# options
+Choose to act as the server or client.
+Address of the server to connect to.
+Bloom
+Force Feedback Device
+Force Feedback Gain
+Game Mode
+Set the game mode.
+Touchiness Compensation
+Turning off shaders will speed up rendering at the cost of visual quality.
+Total Replays
+AutoShift
+AI Difficulty
+Opponent
+Set how good the reflections look during gameplay.
+Change the type of joystick device.
+Choose the car to drive.
+Adjust the steering dynamics.
+Set anisotropic filtering level for textures.
+Traction Control (TCS)
+Enable/disable the heads up display.
+Ambient Occlusion
+Port on the server to connect to.
+Slow down application of button inputs on analog controls.
+Music Volume
+Change the units that speed is displayed in between MPH and KPH
+Number of Laps
+Display a ghost car of your last lap while you drive.
+Display a track map.
+Input Graph
+Change the contrast of the display.
+Motion Blur
+Contrast
+Antialiasing
+The AI opponents to race against.
+Field of view in the vertical direction.
+Set how good the SSAO looks during gameplay.
+OpponentColor
+Display the racing line.
+Reflection Quality
+Opponents
+Change the volume of the music in the game.
+Anisotropic Filtering
+Joystick Type
+Menu Skin
+Selected Joystick Index
+Resolution
+How many screen shots you've taken.
+Shadow Quality
+Enable/disable automatic transmission shifting.
+The higher the value on this setting, the more steering is limited as car speed increases.
+Higher values result in more precise shadowing.
+Camera Bounce
+Set color for the player car.
+Higher values result in an AI that will drive faster.
+Choose the paint job for the car.
+True if the joystick calibration routine's been run.
+Device file for force feedback events.
+Set the quality of shadow rendering
+Screen Shots Taken
+Paint
+Change the strength of the camera bounce effect.
+Shadow Distance
+Speed Effect on Steering
+Toggle fullscreen mode on or off.
+Reverse the force feedback, if necessary for your wheel.
+Track
+Use normal maps.
+Set the distance at which shadows become visible
+Joystick Calibrated
+Fullscreen
+Server IP
+Button Control Delay
+Racing Line
+Change the graphics and layout of the VDrift menus.
+Enable/disable automatic clutching (prevents car from stalling).
+Shaders
+Ghost Car
+Change the current joystick.
+Reverse Track
+Total number of replays recorded.
+Sound Effects Volume
+Change the maximum view distance.
+H-Gate Shifter
+200 Degree Wheel
+The AI opponent to race against.
+PlayerColor
+Track Map
+Texture Size
+Port
+View Distance
+Select Replay
+Multiplier to adjust strength of force feedback.
+Run as
+Help reduce wheel lockup on heavy braking (driving aid).
+Visualize the steering and acceleration/braking on screen.
+Antilock Brakes (ABS)
+Draw dynamic shadows.
+Framerate Counter
+Set the number of laps for a single race.
+Field of View
+Record Session
+Invert Force
+Race on this track backwards.
+Choose the track to drive on.
+Record this game for a replay later.
+Z-buffer bit depth
+Automatically shift to neutral when no gear button is active, as with "H gate" shifters.
+Prevent wheels from spinning during acceleration.
+Shadows
+The paint color of the AI opponent to race against.
+Use MPH Speed Units
+Fast moving objects blur slightly.
+Player
+Adjust the amount of colors available.
+Change the volume of the sound effects in the game.
+Set color for the opponent car.
+Change the size of your screen.
+Each number represents a replay a player has recorded.
+Normal Maps
+Enable/disable the framerate counter.
+AutoClutch
+Color Depth
+Heads Up Display
+Limit steering range to 200 degrees, gives a realistic feel to limited range wheels. 
+Draw highlights.
+Set the full scene antialiasing level.
+Change the size of the textures displayed.
+
+# option values
+1
+16-bit
+16bpp
+2
+200 degree mode
+24-bit
+3
+32bpp
+4
+Extra-wide
+Far
+Free Drive
+High
+High (2.5 km)
+Joystick/Gamepad
+Large
+long
+Low
+Low (0.5 km)
+Medium
+medium
+Medium (1 km)
+Near
+Networked
+Normal
+Off
+short
+Small
+Speed sensitive Hi
+Speed sensitive Lo
+Steering Wheel
+Time Trial
+Very High (10 km)
+Very Low (0.25 km)
+Wide
+
+# new strings
+Cars and Tracks
+Keep your cars and tracks up to date
+Check for updates
+Check for updates to your existing cars and tracks
+Previous
+Next
+Back to Cars and Tracks
+Return to the Cars and Tracks menu.
+Update Successful
+Go back to the Cars and Tracks page.
+Apply Update
+Manage Cars
+Car Manager
+Updates
+Update this car to the latest version
+Browse cars and apply updates
+Return to the Cars and Tracks page.
+Go back to the last car
+Advance to the next car
+Menu Language
+Change the language of the VDrift menus.
+Reload GUI

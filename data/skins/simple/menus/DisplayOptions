@@ -1,0 +1,816 @@
+name = DisplayOptions
+oncancel = gui.options.load Options
+
+
+[ bg-top ]
+image = white.png
+color = 0.172, 0.161, 0.169
+alpha = 0.5
+left = 0
+right = 0
+top = 0
+height = 0.16
+layer = -1
+
+
+[ bg-bottom ]
+image = white.png
+color = 0.172, 0.161, 0.169
+alpha = 0.5
+left = 0
+right = 0
+bottom = 0
+height = 0.08
+layer = -1
+
+
+[ tooltip ]
+text = gui.tooltip
+fontsize = 0.03
+left = 0
+right = 0
+bottom = 0.04
+height = 0.04
+
+
+[ bg-labels ]
+image = white.png
+color = 0.172, 0.161, 0.169
+alpha = 0.5
+left = 0.008
+width = 0.25
+top = 0.181
+height = 0.478
+layer = -1
+
+
+[ bg-options ]
+image = white.png
+color = 0.172, 0.161, 0.169
+alpha = 0.5
+left = 0.26
+width = 0.26
+top = 0.181
+height = 0.478
+layer = -1
+
+
+[ title ]
+text = Options / Display
+fontsize = 0.06
+align = left
+left = 0.25
+width = 0.20
+top = 0.07
+height = 0.06
+
+
+[ disclaimer ]
+text = Some options will not take effect until the game is restarted
+fontsize = 0.03
+align = left
+left = 0.25
+width = 0.20
+top = 0.12
+height = 0.04
+
+
+[ widget-01a ]
+text = Resolution
+fontsize = 0.03
+align = right
+left = 0.01
+width = 0.24
+top = 0.18
+height = 0.04
+
+[ widget-01b ]
+text = <
+fontsize = 0.03
+align = left
+tip = Change the game resolution.
+onselect = display.resolution.prev
+onmoveleft = display.resolution.prev
+onmoveright = display.resolution.next
+onmoveup = widget-14b
+onmovedown = widget-02b
+onfocus = widget-01b.alpha:1 widget-01c.alpha:1 widget-01d.sat:0.56
+onblur = widget-01b.alpha:0 widget-01c.alpha:0 widget-01d.sat:0.0
+focus = true
+color = 0.439, 0.796, 1.00
+alpha = 0
+left = 0.27
+width = 0.12
+top = 0.18
+height = 0.04
+selected = 1
+
+[ widget-01c ]
+text = >
+fontsize = 0.03
+align = right
+tip = Change the game resolution.
+onselect = display.resolution.next
+onmoveleft = display.resolution.prev
+onmoveright = display.resolution.next
+onmoveup = widget-14b
+onmovedown = widget-02b
+onfocus = widget-01b.alpha:1 widget-01c.alpha:1 widget-01d.sat:0.56
+onblur = widget-01b.alpha:0 widget-01c.alpha:0 widget-01d.sat:0.0
+focus = false
+color = 0.439, 0.796, 1.00
+alpha = 0
+left = 0.39
+width = 0.12
+top = 0.18
+height = 0.04
+
+[ widget-01d ]
+text = display.resolution.str
+fontsize = 0.03
+hue = 0.56
+left = 0.27
+width = 0.24
+top = 0.18
+height = 0.04
+
+
+[ widget-02a ]
+text = Fullscreen
+fontsize = 0.03
+align = right
+left = 0.01
+width = 0.24
+top = 0.22
+height = 0.04
+
+[ widget-02b ]
+text = <
+fontsize = 0.03
+align = left
+tip = Toggle fullscreen mode on and off.
+onselect = display.fullscreen.prev
+onmoveleft = display.fullscreen.prev
+onmoveright = display.fullscreen.next
+onmoveup = widget-01b
+onmovedown = widget-03b
+onfocus = widget-02b.alpha:1 widget-02c.alpha:1 widget-02d.sat:0.56
+onblur = widget-02b.alpha:0 widget-02c.alpha:0 widget-02d.sat:0.0
+focus = false
+color = 0.439, 0.796, 1.00
+alpha = 0
+left = 0.27
+width = 0.12
+top = 0.22
+height = 0.04
+
+[ widget-02c ]
+text = >
+fontsize = 0.03
+align = right
+tip = Toggle fullscreen mode on and off.
+onselect = display.fullscreen.next
+onmoveleft = display.fullscreen.prev
+onmoveright = display.fullscreen.next
+onmoveup = widget-01b
+onmovedown = widget-03b
+onfocus = widget-02b.alpha:1 widget-02c.alpha:1 widget-02d.sat:0.56
+onblur = widget-02b.alpha:0 widget-02c.alpha:0 widget-02d.sat:0.0
+focus = false
+color = 0.439, 0.796, 1.00
+alpha = 0
+left = 0.39
+width = 0.12
+top = 0.22
+height = 0.04
+
+[ widget-02d ]
+text = display.fullscreen.str
+fontsize = 0.03
+hue = 0.56
+left = 0.27
+width = 0.24
+top = 0.22
+height = 0.04
+
+
+[ widget-03a ]
+text = Speed Units
+fontsize = 0.03
+align = right
+left = 0.01
+width = 0.24
+top = 0.26
+height = 0.04
+
+[ widget-03b ]
+text = <
+fontsize = 0.03
+align = left
+tip = Change the units that speed is displayed in between MPH and KPH.
+onselect = display.mph.prev
+onmoveleft = display.mph.prev
+onmoveright = display.mph.next
+onmoveup = widget-02b
+onmovedown = widget-04b
+onfocus = widget-03b.alpha:1 widget-03c.alpha:1 widget-03d.sat:0.56
+onblur = widget-03b.alpha:0 widget-03c.alpha:0 widget-03d.sat:0.0
+focus = false
+color = 0.439, 0.796, 1.00
+alpha = 0
+left = 0.27
+width = 0.12
+top = 0.26
+height = 0.04
+
+[ widget-03c ]
+text = >
+fontsize = 0.03
+align = right
+tip = Change the units that speed is displayed in between MPH and KPH.
+onselect = display.mph.next
+onmoveleft = display.mph.prev
+onmoveright = display.mph.next
+onmoveup = widget-02b
+onmovedown = widget-04b
+onfocus = widget-03b.alpha:1 widget-03c.alpha:1 widget-03d.sat:0.56
+onblur = widget-03b.alpha:0 widget-03c.alpha:0 widget-03d.sat:0.0
+focus = false
+color = 0.439, 0.796, 1.00
+alpha = 0
+left = 0.39
+width = 0.12
+top = 0.26
+height = 0.04
+
+[ widget-03d ]
+text = display.mph.str
+fontsize = 0.03
+hue = 0.56
+left = 0.27
+width = 0.24
+top = 0.26
+height = 0.04
+
+
+[ widget-04a ]
+text = Framerate Counter
+fontsize = 0.03
+align = right
+left = 0.01
+width = 0.24
+top = 0.30
+height = 0.04
+
+[ widget-04b ]
+text = <
+fontsize = 0.03
+align = left
+tip = Enable/disable the framerate counter.
+onselect = display.show_fps.prev
+onmoveleft = display.show_fps.prev
+onmoveright = display.show_fps.next
+onmoveup = widget-03b
+onmovedown = widget-05b
+onfocus = widget-04b.alpha:1 widget-04c.alpha:1 widget-04d.sat:0.56
+onblur = widget-04b.alpha:0 widget-04c.alpha:0 widget-04d.sat:0.0
+focus = false
+color = 0.439, 0.796, 1.00
+alpha = 0
+left = 0.27
+width = 0.12
+top = 0.30
+height = 0.04
+
+[ widget-04c ]
+text = >
+fontsize = 0.03
+align = right
+tip = Enable/disable the framerate counter.
+onselect = display.show_fps.next
+onmoveleft = display.show_fps.prev
+onmoveright = display.show_fps.next
+onmoveup = widget-03b
+onmovedown = widget-05b
+onfocus = widget-04b.alpha:1 widget-04c.alpha:1 widget-04d.sat:0.56
+onblur = widget-04b.alpha:0 widget-04c.alpha:0 widget-04d.sat:0.0
+focus = false
+color = 0.439, 0.796, 1.00
+alpha = 0
+left = 0.39
+width = 0.12
+top = 0.30
+height = 0.04
+
+[ widget-04d ]
+text = display.show_fps.str
+fontsize = 0.03
+hue = 0.56
+left = 0.27
+width = 0.24
+top = 0.30
+height = 0.04
+
+
+[ widget-05a ]
+text = Heads Up Display
+fontsize = 0.03
+align = right
+left = 0.01
+width = 0.24
+top = 0.34
+height = 0.04
+
+[ widget-05b ]
+text = <
+fontsize = 0.03
+align = left
+tip = Enable/disable the heads up display.
+onselect = display.show_hud.prev
+onmoveleft = display.show_hud.prev
+onmoveright = display.show_hud.next
+onmoveup = widget-04b
+onmovedown = widget-06b
+onfocus = widget-05b.alpha:1 widget-05c.alpha:1 widget-05d.sat:0.56
+onblur = widget-05b.alpha:0 widget-05c.alpha:0 widget-05d.sat:0.0
+focus = false
+color = 0.439, 0.796, 1.00
+alpha = 0
+left = 0.27
+width = 0.12
+top = 0.34
+height = 0.04
+
+[ widget-05c ]
+text = >
+fontsize = 0.03
+align = right
+tip = Enable/disable the heads up display.
+onselect = display.show_hud.next
+onmoveleft = display.show_hud.prev
+onmoveright = display.show_hud.next
+onmoveup = widget-04b
+onmovedown = widget-06b
+onfocus = widget-05b.alpha:1 widget-05c.alpha:1 widget-05d.sat:0.56
+onblur = widget-05b.alpha:0 widget-05c.alpha:0 widget-05d.sat:0.0
+focus = false
+color = 0.439, 0.796, 1.00
+alpha = 0
+left = 0.39
+width = 0.12
+top = 0.34
+height = 0.04
+
+[ widget-05d ]
+text = display.show_hud.str
+fontsize = 0.03
+hue = 0.56
+left = 0.27
+width = 0.24
+top = 0.34
+height = 0.04
+
+
+[ widget-06a ]
+text = Menu Skin
+fontsize = 0.03
+align = right
+left = 0.01
+width = 0.24
+top = 0.38
+height = 0.04
+
+[ widget-06b ]
+text = <
+fontsize = 0.03
+align = left
+tip = Change the graphics and layout of the VDrift menus.
+onselect = display.skin.prev
+onmoveleft = display.skin.prev
+onmoveright = display.skin.next
+onmoveup = widget-05b
+onmovedown = widget-07b
+onfocus = widget-06b.alpha:1 widget-06c.alpha:1 widget-06d.sat:0.56
+onblur = widget-06b.alpha:0 widget-06c.alpha:0 widget-06d.sat:0.0
+focus = false
+color = 0.439, 0.796, 1.00
+alpha = 0
+left = 0.27
+width = 0.12
+top = 0.38
+height = 0.04
+
+[ widget-06c ]
+text = >
+fontsize = 0.03
+align = right
+tip = Change the graphics and layout of the VDrift menus.
+onselect = display.skin.next
+onmoveleft = display.skin.prev
+onmoveright = display.skin.next
+onmoveup = widget-05b
+onmovedown = widget-07b
+onfocus = widget-06b.alpha:1 widget-06c.alpha:1 widget-06d.sat:0.56
+onblur = widget-06b.alpha:0 widget-06c.alpha:0 widget-06d.sat:0.0
+focus = false
+color = 0.439, 0.796, 1.00
+alpha = 0
+left = 0.39
+width = 0.12
+top = 0.38
+height = 0.04
+
+[ widget-06d]
+text = display.skin.str
+fontsize = 0.03
+hue = 0.56
+left = 0.27
+width = 0.24
+top = 0.38
+height = 0.04
+
+
+[ widget-07a ]
+text = Menu Language
+fontsize = 0.03
+align = right
+left = 0.01
+width = 0.24
+top = 0.42
+height = 0.04
+
+[ widget-07b ]
+text = <
+fontsize = 0.03
+align = left
+tip = Change the language of the VDrift menus.
+onselect = display.language.prev
+onmoveleft = display.language.prev
+onmoveright = display.language.next
+onmoveup = widget-06b
+onmovedown = widget-08b
+onfocus = widget-07b.alpha:1 widget-07c.alpha:1 widget-07d.sat:0.56
+onblur = widget-07b.alpha:0 widget-07c.alpha:0 widget-07d.sat:0.0
+focus = false
+color = 0.439, 0.796, 1.00
+alpha = 0
+left = 0.27
+width = 0.12
+top = 0.42
+height = 0.04
+
+[ widget-07c ]
+text = >
+fontsize = 0.03
+align = right
+tip = Change the language of the VDrift menus.
+onselect = display.language.next
+onmoveleft = display.language.prev
+onmoveright = display.language.next
+onmoveup = widget-06b
+onmovedown = widget-08b
+onfocus = widget-07b.alpha:1 widget-07c.alpha:1 widget-07d.sat:0.56
+onblur = widget-07b.alpha:0 widget-07c.alpha:0 widget-07d.sat:0.0
+focus = false
+color = 0.439, 0.796, 1.00
+alpha = 0
+left = 0.39
+width = 0.12
+top = 0.42
+height = 0.04
+
+[ widget-07d ]
+text = display.language.str
+fontsize = 0.03
+hue = 0.56
+left = 0.27
+width = 0.24
+top = 0.42
+height = 0.04
+
+
+[ widget-08a ]
+text = Input Graph
+fontsize = 0.03
+align = right
+left = 0.01
+width = 0.24
+top = 0.46
+height = 0.04
+
+[ widget-08b ]
+text = <
+fontsize = 0.03
+align = left
+tip = Visualise the steering and acceleration/braking on screen.
+onselect = display.input_graph.prev
+onmoveleft = display.input_graph.prev
+onmoveright = display.input_graph.next
+onmoveup = widget-07b
+onmovedown = widget-09b
+onfocus = widget-08b.alpha:1 widget-08c.alpha:1 widget-08d.sat:0.56
+onblur = widget-08b.alpha:0 widget-08c.alpha:0 widget-08d.sat:0.0
+focus = false
+color = 0.439, 0.796, 1.00
+alpha = 0
+left = 0.27
+width = 0.12
+top = 0.46
+height = 0.04
+
+[ widget-08c ]
+text = >
+fontsize = 0.03
+align = right
+tip = Visualise the steering and acceleration/braking on screen.
+onselect = display.input_graph.next
+onmoveleft = display.input_graph.prev
+onmoveright = display.input_graph.next
+onmoveup = widget-07b
+onmovedown = widget-09b
+onfocus = widget-08b.alpha:1 widget-08c.alpha:1 widget-08d.sat:0.56
+onblur = widget-08b.alpha:0 widget-08c.alpha:0 widget-08d.sat:0.0
+focus = false
+color = 0.439, 0.796, 1.00
+alpha = 0
+left = 0.39
+width = 0.12
+top = 0.46
+height = 0.04
+
+[ widget-08d ]
+text = display.input_graph.str
+fontsize = 0.03
+hue = 0.56
+left = 0.27
+width = 0.24
+top = 0.46
+height = 0.04
+
+
+[ widget-09a ]
+text = Track Map
+fontsize = 0.03
+align = right
+left = 0.01
+width = 0.24
+top = 0.50
+height = 0.04
+
+[ widget-09b ]
+text = <
+fontsize = 0.03
+align = left
+tip = Display a track map.
+onselect = display.trackmap.prev
+onmoveleft = display.trackmap.prev
+onmoveright = display.trackmap.next
+onmoveup = widget-08b
+onmovedown = widget-10b
+onfocus = widget-09b.alpha:1 widget-09c.alpha:1 widget-09d.sat:0.56
+onblur = widget-09b.alpha:0 widget-09c.alpha:0 widget-09d.sat:0.0
+focus = false
+color = 0.439, 0.796, 1.00
+alpha = 0
+left = 0.27
+width = 0.12
+top = 0.50
+height = 0.04
+
+[ widget-09c ]
+text = >
+fontsize = 0.03
+align = right
+tip = Display a track map.
+onselect = display.trackmap.next
+onmoveleft = display.trackmap.prev
+onmoveright = display.trackmap.next
+onmoveup = widget-08b
+onmovedown = widget-10b
+onfocus = widget-09b.alpha:1 widget-09c.alpha:1 widget-09d.sat:0.56
+onblur = widget-09b.alpha:0 widget-09c.alpha:0 widget-09d.sat:0.0
+focus = false
+color = 0.439, 0.796, 1.00
+alpha = 0
+left = 0.39
+width = 0.12
+top = 0.50
+height = 0.04
+
+[ widget-09d ]
+text = display.trackmap.str
+fontsize = 0.03
+hue = 0.56
+left = 0.27
+width = 0.24
+top = 0.50
+height = 0.04
+
+
+[ widget-10a ]
+text = Racing Line
+fontsize = 0.03
+align = right
+left = 0.01
+width = 0.24
+top = 0.54
+height = 0.04
+
+[ widget-10b ]
+text = <
+fontsize = 0.03
+align = left
+tip = Display the racing line.
+onselect = display.racingline.prev
+onmoveleft = display.racingline.prev
+onmoveright = display.racingline.next
+onmoveup = widget-09b
+onmovedown = widget-11b
+onfocus = widget-10b.alpha:1 widget-10c.alpha:1 widget-10d.sat:0.56
+onblur = widget-10b.alpha:0 widget-10c.alpha:0 widget-10d.sat:0.0
+focus = false
+color = 0.439, 0.796, 1.00
+alpha = 0
+left = 0.27
+width = 0.12
+top = 0.54
+height = 0.04
+
+[ widget-10c ]
+text = >
+fontsize = 0.03
+align = right
+tip = Display the racing line.
+onselect = display.racingline.next
+onmoveleft = display.racingline.prev
+onmoveright = display.racingline.next
+onmoveup = widget-09b
+onmovedown = widget-11b
+onfocus = widget-10b.alpha:1 widget-10c.alpha:1 widget-10d.sat:0.56
+onblur = widget-10b.alpha:0 widget-10c.alpha:0 widget-10d.sat:0.0
+focus = false
+color = 0.439, 0.796, 1.00
+alpha = 0
+left = 0.39
+width = 0.12
+top = 0.54
+height = 0.04
+
+[ widget-10d ]
+text = display.racingline.str
+fontsize = 0.03
+hue = 0.56
+left = 0.27
+width = 0.24
+top = 0.54
+height = 0.04
+
+
+[ widget-11a ]
+text = Camera Bounce
+fontsize = 0.03
+align = right
+left = 0.01
+width = 0.24
+top = 0.58
+height = 0.04
+
+[ widget-11b ]
+text = display.camerabounce.str
+fontsize = 0.03
+tip = Change the strength of the camera bounce effect.
+onselectx = display.camerabounce.norm
+onmoveleft = display.camerabounce.prev
+onmoveright = display.camerabounce.next
+onmoveup = widget-10b
+onmovedown = widget-12b
+onfocus = widget-11c.alpha:1 widget-11d.alpha:1 widget-11b.sat:0.56
+onblur = widget-11c.alpha:0 widget-11d.alpha:0 widget-11b.sat:0.0
+focus = false
+hue = 0.56
+left = 0.27
+width = 0.24
+top = 0.585
+height = 0.03
+
+[ widget-11c ]
+slider = display.camerabounce.norm
+fill = true
+alpha = 0
+left = 0.27
+width = 0.24
+top = 0.586
+height = 0.028
+layer = 1
+
+[ widget-11d ]
+image = white.png
+color = 0.3, 0.3, 0.3
+alpha = 0
+left = 0.27
+width = 0.24
+top = 0.586
+height = 0.028
+
+
+[ widget-12a ]
+text = Contrast
+fontsize = 0.03
+align = right
+left = 0.01
+width = 0.24
+top = 0.62
+height = 0.04
+
+[ widget-12b ]
+text = display.contrast.str
+fontsize = 0.03
+tip = Change the contrast of the display.
+onselectx = display.contrast.norm
+onmoveleft = display.contrast.prev
+onmoveright = display.contrast.next
+onmoveup = widget-11b
+onmovedown = widget-13b
+onfocus = widget-12c.alpha:1 widget-12d.alpha:1 widget-12b.sat:0.56
+onblur = widget-12c.alpha:0 widget-12d.alpha:0 widget-12b.sat:0.0
+focus = false
+hue = 0.56
+left = 0.27
+width = 0.24
+top = 0.625
+height = 0.03
+
+[ widget-12c ]
+slider = display.contrast.norm
+fill = true
+alpha = 0
+left = 0.27
+width = 0.24
+top = 0.626
+height = 0.028
+layer = 1
+
+[ widget-12d ]
+image = white.png
+color = 0.3, 0.3, 0.3
+alpha = 0
+left = 0.27
+width = 0.24
+top = 0.626
+height = 0.028
+
+
+[ widget-13b ]
+text = Cancel
+fontsize = 0.03
+#align = left
+tip = Forget changes and return to Options menu.
+onselect = gui.options.load Options
+onmoveup = widget-12b
+onmovedown = widget-14b
+onfocus = widget-13b.sat:0.56
+onblur = widget-13b.sat:0.0
+focus = false
+hue = 0.56
+left = 0.27
+width = 0.25
+top = 0.66
+height = 0.04
+
+[ widget-13e ]
+image = white.png
+color = 0.172, 0.161, 0.169
+alpha = 0.5
+left = 0.26
+width = 0.26
+top = 0.661
+height = 0.038
+layer = -1
+
+
+[ widget-14b ]
+text = OK
+fontsize = 0.03
+#align = left
+tip = Save changes and return to Options menu.
+onselect = gui.options.save Options
+onmoveup = widget-13b
+onmovedown = widget-01b
+onfocus = widget-14b.sat:0.56
+onblur = widget-14b.sat:0.0
+focus = false
+hue = 0.56
+left = 0.27
+width = 0.25
+top = 0.70
+height = 0.04
+
+[ widget-14e ]
+image = white.png
+color = 0.172, 0.161, 0.169
+alpha = 0.5
+left = 0.26
+width = 0.26
+top = 0.701
+height = 0.038
+layer = -1

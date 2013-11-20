@@ -1,0 +1,1017 @@
+name = DisplayOptionsAdvanced
+oncancel = gui.options.load Options
+
+
+[ bg-top ]
+image = white.png
+color = 0.172, 0.161, 0.169
+alpha = 0.5
+left = 0
+right = 0
+top = 0
+height = 0.16
+layer = -1
+
+
+[ bg-bottom ]
+image = white.png
+color = 0.172, 0.161, 0.169
+alpha = 0.5
+left = 0
+right = 0
+bottom = 0
+height = 0.08
+layer = -1
+
+
+[ tooltip ]
+text = gui.tooltip
+fontsize = 0.03
+left = 0
+right = 0
+bottom = 0.04
+height = 0.04
+
+
+[ bg-labels ]
+image = white.png
+color = 0.172, 0.161, 0.169
+alpha = 0.5
+left = 0.008
+width = 0.25
+top = 0.181
+height = 0.598
+layer = -1
+
+
+[ bg-options ]
+image = white.png
+color = 0.172, 0.161, 0.169
+alpha = 0.5
+left = 0.26
+width = 0.26
+top = 0.181
+height = 0.598
+layer = -1
+
+
+[ title ]
+text = Options / Graphics
+fontsize = 0.06
+align = left
+left = 0.25
+width = 0.20
+top = 0.07
+height = 0.06
+
+
+[ disclaimer ]
+text = Some options will not take effect until the game is restarted
+fontsize = 0.03
+align = left
+left = 0.25
+width = 0.20
+top = 0.12
+height = 0.04
+
+
+[ widget-01a ]
+text = Color Depth
+fontsize = 0.03
+align = right
+left = 0.01
+width = 0.24
+top = 0.18
+height = 0.04
+
+[ widget-01b ]
+text = <
+fontsize = 0.03
+align = left
+tip = Adjust the amount of colours available.
+onselect = display.depth.prev
+onmoveleft = display.depth.prev
+onmoveright = display.depth.next
+onmoveup = widget-17b
+onmovedown = widget-02b
+onfocus = widget-01b.alpha:1 widget-01c.alpha:1 widget-01d.sat:0.56
+onblur = widget-01b.alpha:0 widget-01c.alpha:0 widget-01d.sat:0.0
+focus = true
+color = 0.439, 0.796, 1.00
+alpha = 0
+left = 0.27
+width = 0.12
+top = 0.18
+height = 0.04
+
+[ widget-01c ]
+text = >
+fontsize = 0.03
+align = right
+tip = Adjust the amount of colours available.
+onselect = display.depth.next
+onmoveleft = display.depth.prev
+onmoveright = display.depth.next
+onmoveup = widget-17b
+onmovedown = widget-02b
+onfocus = widget-01b.alpha:1 widget-01c.alpha:1 widget-01d.sat:0.56
+onblur = widget-01b.alpha:0 widget-01c.alpha:0 widget-01d.sat:0.0
+focus = false
+color = 0.439, 0.796, 1.00
+alpha = 0
+left = 0.39
+width = 0.12
+top = 0.18
+height = 0.04
+
+[ widget-01d ]
+text = display.depth.str
+fontsize = 0.03
+hue = 0.56
+left = 0.27
+width = 0.24
+top = 0.18
+height = 0.04
+
+
+[ widget-02a ]
+text = Texture Size
+fontsize = 0.03
+align = right
+left = 0.01
+width = 0.24
+top = 0.22
+height = 0.04
+
+[ widget-02b ]
+text = <
+fontsize = 0.03
+align = left
+tip = Change the size of the textures displayed.
+onselect = display.texture_size.prev
+onmoveleft = display.texture_size.prev
+onmoveright = display.texture_size.next
+onmoveup = widget-01b
+onmovedown = widget-03b
+onfocus = widget-02b.alpha:1 widget-02c.alpha:1 widget-02d.sat:0.56
+onblur = widget-02b.alpha:0 widget-02c.alpha:0 widget-02d.sat:0.0
+focus = false
+color = 0.439, 0.796, 1.00
+alpha = 0
+left = 0.27
+width = 0.12
+top = 0.22
+height = 0.04
+
+[ widget-02c ]
+text = >
+fontsize = 0.03
+align = right
+tip = Change the size of the textures displayed.
+onselect = display.texture_size.next
+onmoveleft = display.texture_size.prev
+onmoveright = display.texture_size.next
+onmoveup = widget-01b
+onmovedown = widget-03b
+onfocus = widget-02b.alpha:1 widget-02c.alpha:1 widget-02d.sat:0.56
+onblur = widget-02b.alpha:0 widget-02c.alpha:0 widget-02d.sat:0.0
+focus = false
+color = 0.439, 0.796, 1.00
+alpha = 0
+left = 0.39
+width = 0.12
+top = 0.22
+height = 0.04
+
+[ widget-02d ]
+text = display.texture_size.str
+fontsize = 0.03
+hue = 0.56
+left = 0.27
+width = 0.24
+top = 0.22
+height = 0.04
+
+
+[ widget-03a ]
+text = View Distance
+fontsize = 0.03
+align = right
+left = 0.01
+width = 0.24
+top = 0.26
+height = 0.04
+
+[ widget-03b ]
+text = <
+fontsize = 0.03
+align = left
+tip = Change the maximum view distance.
+onselect = display.view_distance.prev
+onmoveleft = display.view_distance.prev
+onmoveright = display.view_distance.next
+onmoveup = widget-02b
+onmovedown = widget-04b
+onfocus = widget-03b.alpha:1 widget-03c.alpha:1 widget-03d.sat:0.56
+onblur = widget-03b.alpha:0 widget-03c.alpha:0 widget-03d.sat:0.0
+focus = false
+color = 0.439, 0.796, 1.00
+alpha = 0
+left = 0.27
+width = 0.12
+top = 0.26
+height = 0.04
+
+[ widget-03c ]
+text = >
+fontsize = 0.03
+align = right
+tip = Change the maximum view distance.
+onselect = display.view_distance.next
+onmoveleft = display.view_distance.prev
+onmoveright = display.view_distance.next
+onmoveup = widget-02b
+onmovedown = widget-04b
+onfocus = widget-03b.alpha:1 widget-03c.alpha:1 widget-03d.sat:0.56
+onblur = widget-03b.alpha:0 widget-03c.alpha:0 widget-03d.sat:0.0
+focus = false
+color = 0.439, 0.796, 1.00
+alpha = 0
+left = 0.39
+width = 0.12
+top = 0.26
+height = 0.04
+
+[ widget-03d ]
+text = display.view_distance.str
+fontsize = 0.03
+hue = 0.56
+left = 0.27
+width = 0.24
+top = 0.26
+height = 0.04
+
+
+[ widget-04a ]
+text = Anisotropic Filtering
+fontsize = 0.03
+align = right
+left = 0.01
+width = 0.24
+top = 0.30
+height = 0.04
+
+[ widget-04b ]
+text = <
+fontsize = 0.03
+align = left
+tip = Set the anisotropic filtering level for textures.
+onselect = display.anisotropic.prev
+onmoveleft = display.anisotropic.prev
+onmoveright = display.anisotropic.next
+onmoveup = widget-03b
+onmovedown = widget-05b
+onfocus = widget-04b.alpha:1 widget-04c.alpha:1 widget-04d.sat:0.56
+onblur = widget-04b.alpha:0 widget-04c.alpha:0 widget-04d.sat:0.0
+focus = false
+color = 0.439, 0.796, 1.00
+alpha = 0
+left = 0.27
+width = 0.12
+top = 0.30
+height = 0.04
+
+[ widget-04c ]
+text = >
+fontsize = 0.03
+align = right
+tip = Set the anisotropic filtering level for textures.
+onselect = display.anisotropic.next
+onmoveleft = display.anisotropic.prev
+onmoveright = display.anisotropic.next
+onmoveup = widget-03b
+onmovedown = widget-05b
+onfocus = widget-04b.alpha:1 widget-04c.alpha:1 widget-04d.sat:0.56
+onblur = widget-04b.alpha:0 widget-04c.alpha:0 widget-04d.sat:0.0
+focus = false
+color = 0.439, 0.796, 1.00
+alpha = 0
+left = 0.39
+width = 0.12
+top = 0.30
+height = 0.04
+
+[ widget-04d ]
+text = display.anisotropic.str
+fontsize = 0.03
+hue = 0.56
+left = 0.27
+width = 0.24
+top = 0.30
+height = 0.04
+
+
+[ widget-05a ]
+text = Antialiasing
+fontsize = 0.03
+align = right
+left = 0.01
+width = 0.24
+top = 0.34
+height = 0.04
+
+[ widget-05b ]
+text = <
+fontsize = 0.03
+align = left
+tip = Set the full scene antialiasing level.
+onselect = display.antialiasing.prev
+onmoveleft = display.antialiasing.prev
+onmoveright = display.antialiasing.next
+onmoveup = widget-04b
+onmovedown = widget-06b
+onfocus = widget-05b.alpha:1 widget-05c.alpha:1 widget-05d.sat:0.56
+onblur = widget-05b.alpha:0 widget-05c.alpha:0 widget-05d.sat:0.0
+focus = false
+color = 0.439, 0.796, 1.00
+alpha = 0
+left = 0.27
+width = 0.12
+top = 0.34
+height = 0.04
+
+[ widget-05c ]
+text = >
+fontsize = 0.03
+align = right
+tip = Set the full scene antialiasing level.
+onselect = display.antialiasing.next
+onmoveleft = display.antialiasing.prev
+onmoveright = display.antialiasing.next
+onmoveup = widget-04b
+onmovedown = widget-06b
+onfocus = widget-05b.alpha:1 widget-05c.alpha:1 widget-05d.sat:0.56
+onblur = widget-05b.alpha:0 widget-05c.alpha:0 widget-05d.sat:0.0
+focus = false
+color = 0.439, 0.796, 1.00
+alpha = 0
+left = 0.39
+width = 0.12
+top = 0.34
+height = 0.04
+
+[ widget-05d]
+text = display.antialiasing.str
+fontsize = 0.03
+hue = 0.56
+left = 0.27
+width = 0.24
+top = 0.34
+height = 0.04
+
+
+[ widget-06a ]
+text = Shadows
+fontsize = 0.03
+align = right
+left = 0.01
+width = 0.24
+top = 0.38
+height = 0.04
+
+[ widget-06b ]
+text = <
+fontsize = 0.03
+align = left
+tip = Draw dynamic shadows.
+onselect = display.shadows.prev
+onmoveleft = display.shadows.prev
+onmoveright = display.shadows.next
+onmoveup = widget-05b
+onmovedown = widget-07b
+onfocus = widget-06b.alpha:1 widget-06c.alpha:1 widget-06d.sat:0.56
+onblur = widget-06b.alpha:0 widget-06c.alpha:0 widget-06d.sat:0.0
+focus = false
+color = 0.439, 0.796, 1.00
+alpha = 0
+left = 0.27
+width = 0.12
+top = 0.38
+height = 0.04
+
+[ widget-06c ]
+text = >
+fontsize = 0.03
+align = right
+tip = Draw dynamic shadows.
+onselect = display.shadows.next
+onmoveleft = display.shadows.prev
+onmoveright = display.shadows.next
+onmoveup = widget-05b
+onmovedown = widget-07b
+onfocus = widget-06b.alpha:1 widget-06c.alpha:1 widget-06d.sat:0.56
+onblur = widget-06b.alpha:0 widget-06c.alpha:0 widget-06d.sat:0.0
+focus = false
+color = 0.439, 0.796, 1.00
+alpha = 0
+left = 0.39
+width = 0.12
+top = 0.38
+height = 0.04
+
+[ widget-06d ]
+text = display.shadows.str
+fontsize = 0.03
+hue = 0.56
+left = 0.27
+width = 0.24
+top = 0.38
+height = 0.04
+
+
+[ widget-07a ]
+text = Shaders
+fontsize = 0.03
+align = right
+left = 0.01
+width = 0.24
+top = 0.42
+height = 0.04
+
+[ widget-07b ]
+text = <
+fontsize = 0.03
+align = left
+tip = Turning off shaders will speed up rendering at the cost of visual quality.
+onselect = display.shaders.prev
+onmoveleft = display.shaders.prev
+onmoveright = display.shaders.next
+onmoveup = widget-06b
+onmovedown = widget-08b
+onfocus = widget-07b.alpha:1 widget-07c.alpha:1 widget-07d.sat:0.56
+onblur = widget-07b.alpha:0 widget-07c.alpha:0 widget-07d.sat:0.0
+focus = false
+color = 0.439, 0.796, 1.00
+alpha = 0
+left = 0.27
+width = 0.12
+top = 0.42
+height = 0.04
+
+[ widget-07c ]
+text = >
+fontsize = 0.03
+align = right
+tip = Turning off shaders will speed up rendering at the cost of visual quality.
+onselect = display.shaders.next
+onmoveleft = display.shaders.prev
+onmoveright = display.shaders.next
+onmoveup = widget-06b
+onmovedown = widget-08b
+onfocus = widget-07b.alpha:1 widget-07c.alpha:1 widget-07d.sat:0.56
+onblur = widget-07b.alpha:0 widget-07c.alpha:0 widget-07d.sat:0.0
+focus = false
+color = 0.439, 0.796, 1.00
+alpha = 0
+left = 0.39
+width = 0.12
+top = 0.42
+height = 0.04
+
+[ widget-07d ]
+text = display.shaders.str
+fontsize = 0.03
+hue = 0.56
+left = 0.27
+width = 0.24
+top = 0.42
+height = 0.04
+
+
+[ widget-08a ]
+text = Bloom
+fontsize = 0.03
+align = right
+left = 0.01
+width = 0.24
+top = 0.46
+height = 0.04
+
+[ widget-08b ]
+text = <
+fontsize = 0.03
+align = left
+tip = Draw highlights.
+onselect = display.bloom.prev
+onmoveleft = display.bloom.prev
+onmoveright = display.bloom.next
+onmoveup = widget-07b
+onmovedown = widget-09b
+onfocus = widget-08b.alpha:1 widget-08c.alpha:1 widget-08d.sat:0.56
+onblur = widget-08b.alpha:0 widget-08c.alpha:0 widget-08d.sat:0.0
+focus = false
+color = 0.439, 0.796, 1.00
+alpha = 0
+left = 0.27
+width = 0.12
+top = 0.46
+height = 0.04
+
+[ widget-08c ]
+text = >
+fontsize = 0.03
+align = right
+tip = Draw highlights.
+onselect = display.bloom.next
+onmoveleft = display.bloom.prev
+onmoveright = display.bloom.next
+onmoveup = widget-07b
+onmovedown = widget-09b
+onfocus = widget-08b.alpha:1 widget-08c.alpha:1 widget-08d.sat:0.56
+onblur = widget-08b.alpha:0 widget-08c.alpha:0 widget-08d.sat:0.0
+focus = false
+color = 0.439, 0.796, 1.00
+alpha = 0
+left = 0.39
+width = 0.12
+top = 0.46
+height = 0.04
+
+[ widget-08d ]
+text = display.bloom.str
+fontsize = 0.03
+hue = 0.56
+left = 0.27
+width = 0.24
+top = 0.46
+height = 0.04
+
+
+[ widget-09a ]
+text = Normal Maps
+fontsize = 0.03
+align = right
+left = 0.01
+width = 0.24
+top = 0.50
+height = 0.04
+
+[ widget-09b ]
+text = <
+fontsize = 0.03
+align = left
+tip = Use normal maps.
+onselect = display.normalmaps.prev
+onmoveleft = display.normalmaps.prev
+onmoveright = display.normalmaps.next
+onmoveup = widget-08b
+onmovedown = widget-10b
+onfocus = widget-09b.alpha:1 widget-09c.alpha:1 widget-09d.sat:0.56
+onblur = widget-09b.alpha:0 widget-09c.alpha:0 widget-09d.sat:0.0
+focus = false
+color = 0.439, 0.796, 1.00
+alpha = 0
+left = 0.27
+width = 0.12
+top = 0.50
+height = 0.04
+
+[ widget-09c ]
+text = >
+fontsize = 0.03
+align = right
+tip = Use normal maps.
+onselect = display.normalmaps.next
+onmoveleft = display.normalmaps.prev
+onmoveright = display.normalmaps.next
+onmoveup = widget-08b
+onmovedown = widget-10b
+onfocus = widget-09b.alpha:1 widget-09c.alpha:1 widget-09d.sat:0.56
+onblur = widget-09b.alpha:0 widget-09c.alpha:0 widget-09d.sat:0.0
+focus = false
+color = 0.439, 0.796, 1.00
+alpha = 0
+left = 0.39
+width = 0.12
+top = 0.50
+height = 0.04
+
+[ widget-09d ]
+text = display.normalmaps.str
+fontsize = 0.03
+hue = 0.56
+left = 0.27
+width = 0.24
+top = 0.50
+height = 0.04
+
+
+[ widget-10a ]
+text = Motion Blur
+fontsize = 0.03
+align = right
+left = 0.01
+width = 0.24
+top = 0.54
+height = 0.04
+
+[ widget-10b ]
+text = <
+fontsize = 0.03
+align = left
+tip = Fast moving objects blur slightly.
+onselect = display.motionblur.prev
+onmoveleft = display.motionblur.prev
+onmoveright = display.motionblur.next
+onmoveup = widget-09b
+onmovedown = widget-11b
+onfocus = widget-10b.alpha:1 widget-10c.alpha:1 widget-10d.sat:0.56
+onblur = widget-10b.alpha:0 widget-10c.alpha:0 widget-10d.sat:0.0
+focus = false
+color = 0.439, 0.796, 1.00
+alpha = 0
+left = 0.27
+width = 0.12
+top = 0.54
+height = 0.04
+
+[ widget-10c ]
+text = >
+fontsize = 0.03
+align = right
+tip = Fast moving objects blur slightly.
+onselect = display.motionblur.next
+onmoveleft = display.motionblur.prev
+onmoveright = display.motionblur.next
+onmoveup = widget-09b
+onmovedown = widget-11b
+onfocus = widget-10b.alpha:1 widget-10c.alpha:1 widget-10d.sat:0.56
+onblur = widget-10b.alpha:0 widget-10c.alpha:0 widget-10d.sat:0.0
+focus = false
+color = 0.439, 0.796, 1.00
+alpha = 0
+left = 0.39
+width = 0.12
+top = 0.54
+height = 0.04
+
+[ widget-10d ]
+text = display.motionblur.str
+fontsize = 0.03
+hue = 0.56
+left = 0.27
+width = 0.24
+top = 0.54
+height = 0.04
+
+
+[ widget-11a ]
+text = Field of View
+fontsize = 0.03
+align = right
+left = 0.01
+width = 0.24
+top = 0.58
+height = 0.04
+
+[ widget-11b ]
+text = <
+fontsize = 0.03
+align = left
+tip = Field of view in the vertical direction.
+onselect = display.FOV.prev
+onmoveleft = display.FOV.prev
+onmoveright = display.FOV.next
+onmoveup = widget-10b
+onmovedown = widget-12b
+onfocus = widget-11b.alpha:1 widget-11c.alpha:1 widget-11d.sat:0.56
+onblur = widget-11b.alpha:0 widget-11c.alpha:0 widget-11d.sat:0.0
+focus = false
+color = 0.439, 0.796, 1.00
+alpha = 0
+left = 0.27
+width = 0.12
+top = 0.58
+height = 0.04
+
+[ widget-11c ]
+text = >
+fontsize = 0.03
+align = right
+tip = Field of view in the vertical direction.
+onselect = display.FOV.next
+onmoveleft = display.FOV.prev
+onmoveright = display.FOV.next
+onmoveup = widget-10b
+onmovedown = widget-12b
+onfocus = widget-11b.alpha:1 widget-11c.alpha:1 widget-11d.sat:0.56
+onblur = widget-11b.alpha:0 widget-11c.alpha:0 widget-11d.sat:0.0
+focus = false
+color = 0.439, 0.796, 1.00
+alpha = 0
+left = 0.39
+width = 0.12
+top = 0.58
+height = 0.04
+
+
+[ widget-11d ]
+text = display.FOV.str
+fontsize = 0.03
+hue = 0.56
+left = 0.27
+width = 0.24
+top = 0.58
+height = 0.04
+
+
+[ widget-12a ]
+text = Ambient Occlusion
+fontsize = 0.03
+align = right
+left = 0.01
+width = 0.24
+top = 0.62
+height = 0.04
+
+[ widget-12b]
+text = <
+fontsize = 0.03
+align = left
+tip = Set how good the SSAO looks during gameplay.
+onselect = display.lighting.prev
+onmoveleft = display.lighting.prev
+onmoveright = display.lighting.next
+onmoveup = widget-11b
+onmovedown = widget-13b
+onfocus = widget-12b.alpha:1 widget-12c.alpha:1 widget-12d.sat:0.56
+onblur = widget-12b.alpha:0 widget-12c.alpha:0 widget-12d.sat:0.0
+focus = false
+color = 0.439, 0.796, 1.00
+alpha = 0
+left = 0.27
+width = 0.12
+top = 0.62
+height = 0.04
+
+[ widget-12c ]
+text = >
+fontsize = 0.03
+align = right
+tip = Set how good the SSAO looks during gameplay.
+onselect = display.lighting.next
+onmoveleft = display.lighting.prev
+onmoveright = display.lighting.next
+onmoveup = widget-11b
+onmovedown = widget-13b
+onfocus = widget-12b.alpha:1 widget-12c.alpha:1 widget-12d.sat:0.56
+onblur = widget-12b.alpha:0 widget-12c.alpha:0 widget-12d.sat:0.0
+focus = false
+color = 0.439, 0.796, 1.00
+alpha = 0
+left = 0.39
+width = 0.12
+top = 0.62
+height = 0.04
+
+[ widget-12d ]
+text = display.lighting.str
+fontsize = 0.03
+hue = 0.56
+left = 0.27
+width = 0.24
+top = 0.62
+height = 0.04
+
+
+[ widget-13a ]
+text = Reflection Quality
+fontsize = 0.03
+align = right
+left = 0.01
+width = 0.24
+top = 0.66
+height = 0.04
+
+[ widget-13b ]
+text = <
+fontsize = 0.03
+align = left
+tip = Set how good the reflections looks during gameplay.
+onselect = display.reflections.prev
+onmoveleft = display.reflections.prev
+onmoveright = display.reflections.next
+onmoveup = widget-12b
+onmovedown = widget-14b
+onfocus = widget-13b.alpha:1 widget-13c.alpha:1 widget-13d.sat:0.56
+onblur = widget-13b.alpha:0 widget-13c.alpha:0 widget-13d.sat:0.0
+focus = false
+color = 0.439, 0.796, 1.00
+alpha = 0
+left = 0.27
+width = 0.12
+top = 0.66
+height = 0.04
+
+[ widget-13c ]
+text = >
+fontsize = 0.03
+align = right
+tip = Set how good the reflections looks during gameplay.
+onselect = display.reflections.next
+onmoveleft = display.reflections.prev
+onmoveright = display.reflections.next
+onmoveup = widget-12b
+onmovedown = widget-14b
+onfocus = widget-13b.alpha:1 widget-13c.alpha:1 widget-13d.sat:0.56
+onblur = widget-13b.alpha:0 widget-13c.alpha:0 widget-13d.sat:0.0
+focus = false
+color = 0.439, 0.796, 1.00
+alpha = 0
+left = 0.39
+width = 0.12
+top = 0.66
+height = 0.04
+
+[ widget-13d ]
+text = display.reflections.str
+fontsize = 0.03
+hue = 0.56
+left = 0.27
+width = 0.24
+top = 0.66
+height = 0.04
+
+
+[ widget-14a ]
+text = Shadow Distance
+fontsize = 0.03
+align = right
+left = 0.01
+width = 0.24
+top = 0.70
+height = 0.04
+
+[ widget-14b ]
+text = <
+fontsize = 0.03
+align = left
+tip = Set the distance at which shadows become visible.
+onselect = display.shadow_distance.prev
+onmoveleft = display.shadow_distance.prev
+onmoveright = display.shadow_distance.next
+onmoveup = widget-13b
+onmovedown = widget-15b
+onfocus = widget-14b.alpha:1 widget-14c.alpha:1 widget-14d.sat:0.56
+onblur = widget-14b.alpha:0 widget-14c.alpha:0 widget-14d.sat:0.0
+focus = false
+color = 0.439, 0.796, 1.00
+alpha = 0
+left = 0.27
+width = 0.12
+top = 0.70
+height = 0.04
+
+[ widget-14c ]
+text = >
+fontsize = 0.03
+align = right
+tip = Set the distance at which shadows become visible.
+onselect = display.shadow_distance.next
+onmoveleft = display.shadow_distance.prev
+onmoveright = display.shadow_distance.next
+onmoveup = widget-13b
+onmovedown = widget-15b
+onfocus = widget-14b.alpha:1 widget-14c.alpha:1 widget-14d.sat:0.56
+onblur = widget-14b.alpha:0 widget-14c.alpha:0 widget-14d.sat:0.0
+focus = false
+color = 0.439, 0.796, 1.00
+alpha = 0
+left = 0.39
+width = 0.12
+top = 0.70
+height = 0.04
+
+[ widget-14d ]
+text = display.shadow_distance.str
+fontsize = 0.03
+hue = 0.56
+left = 0.27
+width = 0.24
+top = 0.70
+height = 0.04
+
+
+[ widget-15a ]
+text = Shadow Quality
+fontsize = 0.03
+align = right
+left = 0.01
+width = 0.24
+top = 0.74
+height = 0.04
+
+[ widget-15b ]
+text = <
+fontsize = 0.03
+align = left
+tip = Set the quality of shadow rendering.
+onselect = display.shadow_quality.prev
+onmoveleft = display.shadow_quality.prev
+onmoveright = display.shadow_quality.next
+onmoveup = widget-14b
+onmovedown = widget-16b
+onfocus = widget-15b.alpha:1 widget-15c.alpha:1 widget-15d.sat:0.56
+onblur = widget-15b.alpha:0 widget-15c.alpha:0 widget-15d.sat:0.0
+focus = false
+color = 0.439, 0.796, 1.00
+alpha = 0
+left = 0.27
+width = 0.12
+top = 0.74
+height = 0.04
+
+[ widget-15c ]
+text = >
+fontsize = 0.03
+align = right
+tip = Set the quality of shadow rendering.
+onselect = display.shadow_quality.next
+onmoveleft = display.shadow_quality.prev
+onmoveright = display.shadow_quality.next
+onmoveup = widget-14b
+onmovedown = widget-16b
+onfocus = widget-15b.alpha:1 widget-15c.alpha:1 widget-15d.sat:0.56
+onblur = widget-15b.alpha:0 widget-15c.alpha:0 widget-15d.sat:0.0
+focus = false
+color = 0.439, 0.796, 1.00
+alpha = 0
+left = 0.39
+width = 0.12
+top = 0.74
+height = 0.04
+
+[ widget-15d ]
+text = display.shadow_quality.str
+fontsize = 0.03
+hue = 0.56
+left = 0.27
+width = 0.24
+top = 0.74
+height = 0.04
+
+
+[ widget-16b ]
+text = Cancel
+fontsize = 0.03
+#align = left
+tip = Forget changes and return to Options menu.
+onselect = gui.options.load Options
+onmoveup = widget-15b
+onmovedown = widget-17b
+onfocus = widget-16b.sat:0.56
+onblur = widget-16b.sat:0.0
+focus = false
+hue = 0.56
+left = 0.27
+width = 0.25
+top = 0.78
+height = 0.04
+
+[ widget-16e ]
+image = white.png
+color = 0.172, 0.161, 0.169
+alpha = 0.5
+left = 0.26
+width = 0.26
+top = 0.781
+height = 0.038
+layer = -1
+
+
+[ widget-17b ]
+text = OK
+fontsize = 0.03
+#align = left
+tip = Save changes and return to Options menu.
+onselect = gui.options.save Options
+onmoveup = widget-16b
+onmovedown = widget-01b
+onfocus = widget-17b.sat:0.56
+onblur = widget-17b.sat:0.0
+focus = false
+hue = 0.56
+left = 0.27
+width = 0.25
+top = 0.82
+height = 0.04
+
+[ widget-17e ]
+image = white.png
+color = 0.172, 0.161, 0.169
+alpha = 0.5
+left = 0.26
+width = 0.26
+top = 0.821
+height = 0.038
+layer = -1

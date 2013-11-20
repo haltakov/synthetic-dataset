@@ -1,0 +1,273 @@
+name = DisplayOptionsAdvanced
+widgets = 15
+background = box.png
+dialog = false
+
+[ widget-00 ]
+type = label
+name = AdvancedDisplayOptionsLabel
+text = Advanced Display Options
+center = 0.5, 0.1
+width = auto
+height = auto
+fontsize = 0.06
+enabled = 0
+selected = 0
+default = 0
+cancel = 0
+
+[ widget-01 ]
+type = intwheel
+name = ColorDepthWheel
+setting = display.depth
+values = options
+center = 0.5, 0.21
+width = auto
+height = auto
+fontsize = 0.03
+enabled = 1
+selected = 1
+default = 0
+cancel = 0
+
+[ widget-02 ]
+type = stringwheel
+name = TextureSizeWheel
+setting = display.texture_size
+values = options
+center = 0.5, 0.25
+width = auto
+height = auto
+fontsize = 0.03
+enabled = 1
+selected = 0
+default = 0
+cancel = 0
+
+[ widget-03 ]
+type = floatwheel
+name = ViewDistanceWheel
+setting = display.view_distance
+values = options
+center = 0.5, 0.29
+width = auto
+height = auto
+fontsize = 0.03
+enabled = 1
+selected = 0
+default = 0
+cancel = 0
+
+[ widget-04 ]
+type = intwheel
+name = AnisotropicWheel
+setting = display.anisotropic
+values = options
+center = 0.5, 0.33
+width = auto
+height = auto
+fontsize = 0.03
+enabled = 1
+selected = 0
+default = 0
+cancel = 0
+
+[ widget-05 ]
+type = intwheel
+name = AntialiasingWheel
+setting = display.antialiasing
+values = options
+center = 0.5, 0.37
+width = auto
+height = auto
+fontsize = 0.03
+enabled = 1
+selected = 0
+default = 0
+cancel = 0
+
+[ widget-06 ]
+type = toggle
+name = ShadowsToggle
+setting = display.shadows
+values = options
+center = 0.5, 0.49
+width = auto
+height = auto
+fontsize = 0.03
+enabled = 1
+selected = 0
+default = 0
+cancel = 0
+
+[ widget-07 ]
+type = toggle
+name = ShadersToggle
+setting = display.shaders
+values = options
+center = 0.5, 0.45
+width = auto
+height = auto
+fontsize = 0.03
+enabled = 1
+selected = 0
+default = 0
+cancel = 0
+
+[ widget-07a ]
+type = toggle
+name = BloomToggle
+setting = display.bloom
+values = options
+center = 0.5, 0.53
+width = auto
+height = auto
+fontsize = 0.03
+enabled = 1
+selected = 0
+default = 0
+cancel = 0
+
+[ widget-07b ]
+type = toggle
+name = NormalMapsToggle
+setting = display.normalmaps
+values = options
+center = 0.5, 0.57
+width = auto
+height = auto
+fontsize = 0.03
+enabled = 1
+selected = 0
+default = 0
+cancel = 0
+
+[ widget-08 ]
+type = toggle
+name = MotionBlurToggle
+setting = display.motionblur
+values = options
+center = 0.5, 0.61
+width = auto
+height = auto
+fontsize = 0.03
+enabled = 1
+selected = 0
+default = 0
+cancel = 0
+
+[ widget-09 ]
+type = floatwheel
+name = FOVWheel
+setting = display.FOV
+values = options
+center = 0.5, 0.41
+width = auto
+height = auto
+fontsize = 0.03
+enabled = 1
+selected = 0
+default = 0
+cancel = 0
+
+[ widget-10 ]
+type = intwheel
+name = LightingWheel
+setting = display.lighting
+values = options
+center = 0.5, 0.65
+width = auto
+height = auto
+fontsize = 0.03
+enabled = 1
+selected = 0
+default = 0
+cancel = 0
+
+[ widget-11 ]
+type = intwheel
+name = ReflectionsWheel
+setting = display.reflections
+values = options
+center = 0.5, 0.69
+width = auto
+height = auto
+fontsize = 0.03
+enabled = 1
+selected = 0
+default = 0
+cancel = 0
+
+[ widget-11a ]
+type = intwheel
+name = ShadowDistanceWheel
+setting = display.shadow_distance
+values = options
+center = 0.5, 0.73
+width = auto
+height = auto
+fontsize = 0.03
+enabled = 1
+selected = 0
+default = 0
+cancel = 0
+
+[ widget-11b ]
+type = intwheel
+name = ShadowQualityWheel
+setting = display.shadow_quality
+values = options
+center = 0.5, 0.77
+width = auto
+height = auto
+fontsize = 0.03
+enabled = 1
+selected = 0
+default = 0
+cancel = 0
+
+[ widget-12 ]
+type = button
+name = DisplayOptionsAdvancedOKButton
+text = OK
+tip = Save changes and return to Display Options menu.
+action = DisplayOptions
+center = 0.4, 0.84
+color = 0.0, 0.8, 0.0
+width = auto
+height = auto
+fontsize = 0.04
+enabled = 1
+selected = 0
+default = 1
+cancel = 0
+
+[ widget-13 ]
+type = button
+name = DisplayOptionsAdvancedCancelButton
+text = Cancel
+tip = Forget changes and return to Display Options menu.
+action = DisplayOptions
+center = 0.6, 0.84
+color = 0.8, 0.0, 0.0
+width = auto
+height = auto
+fontsize = 0.04
+enabled = 1
+selected = 0
+default = 0
+cancel = 1
+
+[ widget-14 ]
+type = label
+name = DisclaimerLabel
+text = Note: Some options will not take effect until the game is restarted
+center = 0.5, 0.915
+color = .6,.6,.6
+width = auto
+height = auto
+fontsize = 0.03
+enabled = 0
+selected = 0
+default = 0
+cancel = 0

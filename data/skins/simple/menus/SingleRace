@@ -1,0 +1,1193 @@
+name = SingleRace
+onfocus = EditLastCar
+oncancel = gui.options.save Main
+
+
+[ bg-top ]
+image = white.png
+color = 0.172, 0.161, 0.169
+alpha = 0.5
+left = 0
+right = 0
+top = 0
+height = 0.14
+layer = -1
+
+
+[ bg-bottom ]
+image = white.png
+color = 0.172, 0.161, 0.169
+alpha = 0.5
+left = 0
+right = 0
+bottom = 0
+height = 0.08
+layer = -1
+
+
+[ tooltip ]
+text = gui.tooltip
+fontsize = 0.03
+left = 0
+right = 0
+bottom = 0.04
+height = 0.04
+
+
+[ bg-labels ]
+image = white.png
+color = 0.172, 0.161, 0.169
+alpha = 0.5
+left = 0.008
+width = 0.25
+top = 0.181
+height = 0.598
+layer = -1
+
+
+[ bg-options ]
+image = white.png
+color = 0.172, 0.161, 0.169
+alpha = 0.5
+left = 0.26
+width = 0.26
+top = 0.181
+height = 0.598
+layer = -1
+
+
+[ bg-startlst ]
+image = white.png
+color = 0.172, 0.161, 0.169
+alpha = 0.5
+right = 0.01
+width = 0.32
+top = 0.54
+height = 0.32
+layer = -1
+
+
+[ title ]
+text = Single Race
+fontsize = 0.06
+align = left
+left = 0.25
+width = 0.20
+top = 0.07
+height = 0.06
+
+
+[ widget-01 ]
+image = game.track.image
+path = tracks
+right = 0.01
+width = 0.32
+top = 0.18
+height = 0.32
+
+
+[ widget-02a ]
+text = Track
+fontsize = 0.03
+align = right
+left = 0.01
+width = 0.24
+top = 0.18
+height = 0.04
+
+[ widget-02b ]
+text = <
+fontsize = 0.03
+align = left
+tip = Choose the track to drive on.
+onselect = game.track.prev
+onmoveleft = game.track.prev
+onmoveright = game.track.next
+onmoveup = widget-17b
+onmovedown = widget-03b
+onfocus = widget-02b.alpha:1 widget-02c.alpha:1 widget-02d.sat:0.56
+onblur = widget-02b.alpha:0 widget-02c.alpha:0 widget-02d.sat:0.0
+focus = true
+color = 0.439, 0.796, 1.00
+alpha = 0
+left = 0.27
+width = 0.12
+top = 0.18
+height = 0.04
+
+[ widget-02c ]
+text = >
+fontsize = 0.03
+align = right
+tip = Choose the track to drive on.
+onselect = game.track.next
+onmoveleft = game.track.prev
+onmoveright = game.track.next
+onmoveup = widget-17b
+onmovedown = widget-03b
+onfocus = widget-02b.alpha:1 widget-02c.alpha:1 widget-02d.sat:0.56
+onblur = widget-02b.alpha:0 widget-02c.alpha:0 widget-02d.sat:0.0
+focus = false
+color = 0.439, 0.796, 1.00
+alpha = 0
+left = 0.39
+width = 0.12
+top = 0.18
+height = 0.04
+
+[ widget-02d]
+text = game.track.str
+fontsize = 0.03
+hue = 0.56
+left = 0.27
+width = 0.24
+top = 0.18
+height = 0.04
+
+
+[ widget-03a ]
+text = Laps
+fontsize = 0.03
+align = right
+left = 0.01
+width = 0.24
+top = 0.22
+height = 0.04
+
+[ widget-03b ]
+text = <
+fontsize = 0.03
+align = left
+tip = Set the number of laps for a single race.
+onselect = game.number_of_laps.prev
+onmoveleft = game.number_of_laps.prev
+onmoveright = game.number_of_laps.next
+onmoveup = widget-02b
+onmovedown = widget-04b
+onfocus = widget-03b.alpha:1 widget-03c.alpha:1 widget-03d.sat:0.56
+onblur = widget-03b.alpha:0 widget-03c.alpha:0 widget-03d.sat:0.0
+focus = false
+color = 0.439, 0.796, 1.00
+alpha = 0
+left = 0.27
+width = 0.12
+top = 0.22
+height = 0.04
+
+[ widget-03c ]
+text = >
+fontsize = 0.03
+align = right
+tip = Set the number of laps for a single race.
+onselect = game.number_of_laps.next
+onmoveleft = game.number_of_laps.prev
+onmoveright = game.number_of_laps.next
+onmoveup = widget-02b
+onmovedown = widget-04b
+onfocus = widget-03b.alpha:1 widget-03c.alpha:1 widget-03d.sat:0.56
+onblur = widget-03b.alpha:0 widget-03c.alpha:0 widget-03d.sat:0.0
+focus = false
+color = 0.439, 0.796, 1.00
+alpha = 0
+left = 0.39
+width = 0.12
+top = 0.22
+height = 0.04
+
+[ widget-03d ]
+text = game.number_of_laps.str
+fontsize = 0.03
+hue = 0.56
+left = 0.27
+width = 0.24
+top = 0.22
+height = 0.04
+
+
+[ widget-04a ]
+text = Reverse Track
+fontsize = 0.03
+align = right
+left = 0.01
+width = 0.24
+top = 0.26
+height = 0.04
+
+[ widget-04b ]
+text = <
+fontsize = 0.03
+align = left
+tip = Race on this track backwards.
+onselect = game.reverse.prev
+onmoveleft = game.reverse.prev
+onmoveright = game.reverse.next
+onmoveup = widget-03b
+onmovedown = widget-05b
+onfocus = widget-04b.alpha:1 widget-04c.alpha:1 widget-04d.sat:0.56
+onblur = widget-04b.alpha:0 widget-04c.alpha:0 widget-04d.sat:0.0
+focus = false
+color = 0.439, 0.796, 1.00
+alpha = 0
+left = 0.27
+width = 0.12
+top = 0.26
+height = 0.04
+
+[ widget-04c ]
+text = >
+fontsize = 0.03
+align = right
+tip = Race on this track backwards.
+onselect = game.reverse.next
+onmoveleft = game.reverse.prev
+onmoveright = game.reverse.next
+onmoveup = widget-03b
+onmovedown = widget-05b
+onfocus = widget-04b.alpha:1 widget-04c.alpha:1 widget-04d.sat:0.56
+onblur = widget-04b.alpha:0 widget-04c.alpha:0 widget-04d.sat:0.0
+focus = false
+color = 0.439, 0.796, 1.00
+alpha = 0
+left = 0.39
+width = 0.12
+top = 0.26
+height = 0.04
+
+[ widget-04d ]
+text = game.reverse.str
+fontsize = 0.03
+hue = 0.56
+left = 0.27
+width = 0.24
+top = 0.26
+height = 0.04
+
+
+[ widget-05a ]
+text = Dynamic Objects
+fontsize = 0.03
+align = right
+left = 0.01
+width = 0.24
+top = 0.30
+height = 0.04
+
+[ widget-05b ]
+text = <
+fontsize = 0.03
+align = left
+tip = Enable dynamic track objects.
+onselect = game.track_dynamic.prev
+onmoveleft = game.track_dynamic.prev
+onmoveright = game.track_dynamic.next
+onmoveup = widget-04b
+onmovedown = widget-06b
+onfocus = widget-05b.alpha:1 widget-05c.alpha:1 widget-05d.sat:0.56
+onblur = widget-05b.alpha:0 widget-05c.alpha:0 widget-05d.sat:0.0
+focus = false
+color = 0.439, 0.796, 1.00
+alpha = 0
+left = 0.27
+width = 0.12
+top = 0.30
+height = 0.04
+
+[ widget-05c ]
+text = >
+fontsize = 0.03
+align = right
+tip = Enable dynamic track objects.
+onselect = game.track_dynamic.next
+onmoveleft = game.track_dynamic.prev
+onmoveright = game.track_dynamic.next
+onmoveup = widget-04b
+onmovedown = widget-06b
+onfocus = widget-05b.alpha:1 widget-05c.alpha:1 widget-05d.sat:0.56
+onblur = widget-05b.alpha:0 widget-05c.alpha:0 widget-05d.sat:0.0
+focus = false
+color = 0.439, 0.796, 1.00
+alpha = 0
+left = 0.39
+width = 0.12
+top = 0.30
+height = 0.04
+
+[ widget-05d ]
+text = game.track_dynamic.str
+fontsize = 0.03
+hue = 0.56
+left = 0.27
+width = 0.24
+top = 0.30
+height = 0.04
+
+
+[ widget-06a ]
+text = Cars
+fontsize = 0.03
+align = right
+left = 0.01
+width = 0.24
+top = 0.34
+height = 0.04
+
+[ widget-06b ]
+text = <
+fontsize = 0.03
+align = left
+tip = Choose the car to edit.
+onselect = game.cars_num.prev
+onmoveleft = game.cars_num.prev
+onmoveright = game.cars_num.next
+onmoveup = widget-05b
+onmovedown =  ai-prev
+onfocus = widget-06b.alpha:1 widget-06c.alpha:1 widget-06d.sat:0.56
+onblur = widget-06b.alpha:0 widget-06c.alpha:0 widget-06d.sat:0.0
+focus = false
+color = 0.439, 0.796, 1.00
+alpha = 0
+left = 0.27
+width = 0.12
+top = 0.34
+height = 0.04
+
+[ widget-06c ]
+text = >
+fontsize = 0.03
+align = right
+tip = Choose the car to edit.
+onselect = game.cars_num.next
+onmoveleft = game.cars_num.prev
+onmoveright = game.cars_num.next
+onmoveup = widget-05b
+onmovedown = ai-prev
+onfocus = widget-06b.alpha:1 widget-06c.alpha:1 widget-06d.sat:0.56
+onblur = widget-06b.alpha:0 widget-06c.alpha:0 widget-06d.sat:0.0
+focus = false
+color = 0.439, 0.796, 1.00
+alpha = 0
+left = 0.39
+width = 0.12
+top = 0.34
+height = 0.04
+
+[ widget-06d ]
+text = game.cars_num.str
+fontsize = 0.03
+hue = 0.56
+left = 0.27
+width = 0.24
+top = 0.34
+height = 0.04
+
+
+[ ai-lbl ]
+text = AI type
+fontsize = 0.03
+align = right
+left = 0.01
+width = 0.24
+top = 0.38
+height = 0.04
+
+[ ai-prev ]
+text = <
+fontsize = 0.03
+align = left
+tip = Choose driver type.
+onselect = game.ai_type.prev
+onmoveleft = game.ai_type.prev
+onmoveright = game.ai_type.next
+onmoveup = widget-06b
+onmovedown = widget-07b
+onfocus = ai-prev.alpha:1 ai-next.alpha:1 ai-opt.sat:0.56
+onblur = ai-prev.alpha:0 ai-next.alpha:0 ai-opt.sat:0.0
+focus = false
+color = 0.439, 0.796, 1.00
+alpha = 0
+left = 0.27
+width = 0.12
+top = 0.38
+height = 0.04
+
+[ ai-next ]
+text = >
+fontsize = 0.03
+align = right
+tip = Choose driver type.
+onselect = game.ai_type.next
+onmoveleft = game.ai_type.prev
+onmoveright = game.ai_type.next
+onmoveup = widget-06b
+onmovedown = widget-07b
+onfocus = ai-prev.alpha:1 ai-next.alpha:1 ai-opt.sat:0.56
+onblur = ai-prev.alpha:0 ai-next.alpha:0 ai-opt.sat:0.0
+focus = false
+color = 0.439, 0.796, 1.00
+alpha = 0
+left = 0.39
+width = 0.12
+top = 0.38
+height = 0.04
+
+[ ai-opt ]
+text = game.ai_type.str
+fontsize = 0.03
+hue = 0.56
+left = 0.27
+width = 0.24
+top = 0.38
+height = 0.04
+
+
+[ widget-07a ]
+text = AI level
+fontsize = 0.03
+align = right
+left = 0.01
+width = 0.24
+top = 0.42
+height = 0.04
+
+[ widget-07b ]
+text = game.ai_level.str
+fontsize = 0.03
+tip = Higher values result in an AI that will drive faster.
+onselectx = game.ai_level.norm
+onmoveleft = game.ai_level.prev
+onmoveright = game.ai_level.next
+onmoveup = ai-prev
+onmovedown = widget-08b
+onfocus = widget-07c.alpha:1 widget-07d.alpha:1 widget-07b.sat:0.56
+onblur = widget-07c.alpha:0 widget-07d.alpha:0 widget-07b.sat:0.0
+focus = false
+hue = 0.56
+left = 0.27
+width = 0.24
+top = 0.425
+height = 0.03
+
+[ widget-07c ]
+slider = game.ai_level.norm
+fill = true
+alpha = 0
+left = 0.27
+width = 0.24
+top = 0.426
+height = 0.028
+layer = 1
+
+[ widget-07d ]
+image = white.png
+color = 0.3, 0.3, 0.3
+alpha = 0
+left = 0.27
+width = 0.24
+top = 0.426
+height = 0.028
+
+
+[ widget-08a ]
+text = Car
+fontsize = 0.03
+align = right
+left = 0.01
+width = 0.24
+top = 0.46
+height = 0.04
+
+[ widget-08b ]
+text = <
+fontsize = 0.03
+align = left
+tip = Choose the car to drive.
+onselect = game.car.prev
+onmoveleft = game.car.prev
+onmoveright = game.car.next
+onmoveup = widget-07b
+onmovedown = widget-09b
+onfocus = widget-08b.alpha:1 widget-08c.alpha:1 widget-08d.sat:0.56
+onblur = widget-08b.alpha:0 widget-08c.alpha:0 widget-08d.sat:0.0
+focus = false
+color = 0.439, 0.796, 1.00
+alpha = 0
+left = 0.27
+width = 0.12
+top = 0.46
+height = 0.04
+
+[ widget-08c ]
+text = >
+fontsize = 0.03
+align = right
+tip = Choose the car to drive.
+onselect = game.car.next
+onmoveleft = game.car.prev
+onmoveright = game.car.next
+onmoveup = widget-07b
+onmovedown = widget-09b
+onfocus = widget-08b.alpha:1 widget-08c.alpha:1 widget-08d.sat:0.56
+onblur = widget-08b.alpha:0 widget-08c.alpha:0 widget-08d.sat:0.0
+focus = false
+color = 0.439, 0.796, 1.00
+alpha = 0
+left = 0.39
+width = 0.12
+top = 0.46
+height = 0.04
+
+[ widget-08d ]
+text = game.car.str
+fontsize = 0.03
+hue = 0.56
+left = 0.27
+width = 0.24
+top = 0.46
+height = 0.04
+
+
+[ widget-09a ]
+text = Paint
+fontsize = 0.03
+align = right
+left = 0.01
+width = 0.24
+top = 0.50
+height = 0.04
+
+[ widget-09b ]
+text = <
+fontsize = 0.03
+align = left
+tip = Choose the paint job for the car.
+onselect = game.car_paint.prev
+onmoveleft = game.car_paint.prev
+onmoveright = game.car_paint.next
+onmoveup = widget-08b
+onmovedown = widget-10b
+onfocus = widget-09b.alpha:1 widget-09c.alpha:1 widget-09d.sat:0.56
+onblur = widget-09b.alpha:0 widget-09c.alpha:0 widget-09d.sat:0.0
+focus = false
+color = 0.439, 0.796, 1.00
+alpha = 0
+left = 0.27
+width = 0.12
+top = 0.50
+height = 0.04
+
+[ widget-09c ]
+text = >
+fontsize = 0.03
+align = right
+tip = Choose the paint job for the car.
+onselect = game.car_paint.next
+onmoveleft = game.car_paint.prev
+onmoveright = game.car_paint.next
+onmoveup = widget-08b
+onmovedown = widget-10b
+onfocus = widget-09b.alpha:1 widget-09c.alpha:1 widget-09d.sat:0.56
+onblur = widget-09b.alpha:0 widget-09c.alpha:0 widget-09d.sat:0.0
+focus = false
+color = 0.439, 0.796, 1.00
+alpha = 0
+left = 0.39
+width = 0.12
+top = 0.50
+height = 0.04
+
+[ widget-09d ]
+text = game.car_paint.str
+fontsize = 0.03
+hue = 0.56
+left = 0.27
+width = 0.24
+top = 0.50
+height = 0.04
+
+
+[ widget-10a ]
+text = Hue
+fontsize = 0.03
+align = right
+left = 0.01
+width = 0.24
+top = 0.54
+height = 0.04
+
+[ widget-10b ]
+slider = game.car_color_hue
+tip = Choose the hue for the car.
+onselectx = game.car_color_hue
+onmoveleft = game.car_color_hue.prev
+onmoveright = game.car_color_hue.next
+onmoveup = widget-09b
+onmovedown = widget-11b
+onfocus = widget-10b.sat:0.56
+onblur = widget-10b.sat:0.0
+focus = false
+hue = 0.56
+left = 0.27
+width = 0.24
+top = 0.545
+height = 0.03
+
+[ widget-10d ]
+image = color_hue.png
+left = 0.27
+width = 0.24
+top = 0.546
+height = 0.028
+
+
+[ widget-11a ]
+text = Saturation
+fontsize = 0.03
+align = right
+left = 0.01
+width = 0.24
+top = 0.58
+height = 0.04
+
+[ widget-11b ]
+slider = game.car_color_sat
+tip = Choose the saturation for the car.
+onselectx = game.car_color_sat
+onmoveleft = game.car_color_sat.prev
+onmoveright = game.car_color_sat.next
+onmoveup = widget-10b
+onmovedown = widget-12b
+onfocus = widget-11b.sat:0.56
+onblur = widget-11b.sat:0.0
+focus = false
+hue = 0.56
+left = 0.27
+width = 0.24
+top = 0.585
+height = 0.03
+
+[ widget-11c ]
+image = color_saturation.png
+hue = game.car_color_hue
+sat = 1.0
+val = game.car_color_val
+left = 0.27
+width = 0.24
+top = 0.586
+height = 0.028
+
+[ widget-11d ]
+image = white.png
+left = 0.27
+width = 0.24
+top = 0.586
+height = 0.028
+layer = -1
+
+
+[ widget-12a ]
+text = Brightness
+fontsize = 0.03
+align = right
+left = 0.01
+width = 0.24
+top = 0.62
+height = 0.04
+
+[ widget-12b ]
+slider = game.car_color_val
+tip = Choose the brightness for the car.
+onselectx = game.car_color_val
+onmoveleft = game.car_color_val.prev
+onmoveright = game.car_color_val.next
+onmoveup = widget-11b
+onmovedown = widget-13b
+onfocus = widget-12b.sat:0.56
+onblur = widget-12b.sat:0.0
+focus = false
+hue = 0.56
+left = 0.27
+width = 0.24
+top = 0.625
+height = 0.03
+
+[ widget-12c ]
+image = color_value.png
+hue = game.car_color_hue
+sat = game.car_color_sat
+val = 1.0
+left = 0.27
+width = 0.24
+top = 0.626
+height = 0.028
+
+
+[ widget-13a ]
+text = Antilock Brakes
+fontsize = 0.03
+align = right
+left = 0.01
+width = 0.24
+top = 0.66
+height = 0.04
+
+[ widget-13b ]
+text = <
+fontsize = 0.03
+align = left
+tip = Help reduce wheel lockup on heavy braking (driver aid).
+onselect = game.antilock.prev
+onmoveleft = game.antilock.prev
+onmoveright = game.antilock.next
+onmoveup = widget-12b
+onmovedown = widget-14b
+onfocus = widget-13b.alpha:1 widget-13c.alpha:1 widget-13d.sat:0.56
+onblur = widget-13b.alpha:0 widget-13c.alpha:0 widget-13d.sat:0.0
+focus = false
+color = 0.439, 0.796, 1.00
+alpha = 0
+left = 0.27
+width = 0.12
+top = 0.66
+height = 0.04
+
+[ widget-13c ]
+text = >
+fontsize = 0.03
+align = right
+tip = Help reduce wheel lockup on heavy braking (driver aid).
+onselect = game.antilock.next
+onmoveleft = game.antilock.prev
+onmoveright = game.antilock.next
+onmoveup = widget-12b
+onmovedown = widget-14b
+onfocus = widget-13b.alpha:1 widget-13c.alpha:1 widget-13d.sat:0.56
+onblur = widget-13b.alpha:0 widget-13c.alpha:0 widget-13d.sat:0.0
+focus = false
+color = 0.439, 0.796, 1.00
+alpha = 0
+left = 0.39
+width = 0.12
+top = 0.66
+height = 0.04
+
+[ widget-13d ]
+text = game.antilock.str
+fontsize = 0.03
+hue = 0.56
+left = 0.27
+width = 0.24
+top = 0.66
+height = 0.04
+
+
+[ widget-14a ]
+text = Traction Control
+fontsize = 0.03
+align = right
+left = 0.01
+width = 0.24
+top = 0.70
+height = 0.04
+
+[ widget-14b ]
+text = <
+fontsize = 0.03
+align = left
+tip = Prevents wheels from spinning during acceleration (driver aid).
+onselect = game.traction_control.prev
+onmoveleft = game.traction_control.prev
+onmoveright = game.traction_control.next
+onmoveup = widget-13b
+onmovedown = widget-15b
+onfocus = widget-14b.alpha:1 widget-14c.alpha:1 widget-14d.sat:0.56
+onblur = widget-14b.alpha:0 widget-14c.alpha:0 widget-14d.sat:0.0
+focus = false
+color = 0.439, 0.796, 1.00
+alpha = 0
+left = 0.27
+width = 0.12
+top = 0.70
+height = 0.04
+
+[ widget-14c ]
+text = >
+fontsize = 0.03
+align = right
+tip = Prevents wheels from spinning during acceleration (driver aid).
+onselect = game.traction_control.next
+onmoveleft = game.traction_control.prev
+onmoveright = game.traction_control.next
+onmoveup = widget-13b
+onmovedown = widget-15b
+onfocus = widget-14b.alpha:1 widget-14c.alpha:1 widget-14d.sat:0.56
+onblur = widget-14b.alpha:0 widget-14c.alpha:0 widget-14d.sat:0.0
+focus = false
+color = 0.439, 0.796, 1.00
+alpha = 0
+left = 0.39
+width = 0.12
+top = 0.70
+height = 0.04
+
+[ widget-14d ]
+text = game.traction_control.str
+fontsize = 0.03
+hue = 0.56
+left = 0.27
+width = 0.24
+top = 0.70
+height = 0.04
+
+
+[ widget-15a ]
+text = Car Damage
+fontsize = 0.03
+align = right
+left = 0.01
+width = 0.24
+top = 0.74
+height = 0.04
+
+[ widget-15b ]
+text = <
+fontsize = 0.03
+align = left
+tip = Enable car damage model.
+onselect = game.vehicle_damage.prev
+onmoveleft = game.vehicle_damage.prev
+onmoveright = game.vehicle_damage.next
+onmoveup = widget-14b
+onmovedown = widget-16
+onfocus = widget-15b.alpha:1 widget-15c.alpha:1 widget-15d.sat:0.56
+onblur = widget-15b.alpha:0 widget-15c.alpha:0 widget-15d.sat:0.0
+focus = false
+color = 0.439, 0.796, 1.00
+alpha = 0
+left = 0.27
+width = 0.12
+top = 0.74
+height = 0.04
+
+[ widget-15c ]
+text = >
+fontsize = 0.03
+align = right
+tip = Enable car damage model.
+onselect = game.vehicle_damage.next
+onmoveleft = game.vehicle_damage.prev
+onmoveright = game.vehicle_damage.next
+onmoveup = widget-14b
+onmovedown = widget-16b
+onfocus = widget-15b.alpha:1 widget-15c.alpha:1 widget-15d.sat:0.56
+onblur = widget-15b.alpha:0 widget-15c.alpha:0 widget-15d.sat:0.0
+focus = false
+color = 0.439, 0.796, 1.00
+alpha = 0
+left = 0.39
+width = 0.12
+top = 0.74
+height = 0.04
+
+[ widget-15d ]
+text = game.vehicle_damage.str
+fontsize = 0.03
+hue = 0.56
+left = 0.27
+width = 0.24
+top = 0.74
+height = 0.04
+
+
+[ widget-16b ]
+text = Start Race
+fontsize = 0.03
+#align = left
+tip = Start a race using the selected car and track.
+onselect = gui.options.save StartRace
+onmoveup = widget-15b
+onmovedown = widget-17b
+onfocus = widget-16b.sat:0.56
+onblur = widget-16b.sat:0.0
+focus = false
+hue = 0.56
+left = 0.27
+width = 0.25
+top = 0.78
+height = 0.04
+
+[ widget-16e ]
+image = white.png
+color = 0.172, 0.161, 0.169
+alpha = 0.5
+left = 0.26
+width = 0.26
+top = 0.781
+height = 0.038
+layer = -1
+
+
+[ widget-17b ]
+text = Back
+fontsize = 0.03
+#align = left
+tip = Return to the Main menu.
+onselect = gui.options.save Main
+onmoveup = widget-16b
+onmovedown = widget-02b
+onfocus = widget-17b.sat:0.56
+onblur = widget-17b.sat:0.0
+focus = false
+hue = 0.56
+left = 0.27
+width = 0.25
+top = 0.82
+height = 0.04
+
+[ widget-17e ]
+image = white.png
+color = 0.172, 0.161, 0.169
+alpha = 0.5
+left = 0.26
+width = 0.26
+top = 0.821
+height = 0.038
+layer = -1
+
+
+[ widget-18 ]
+text = Start List:
+fontsize = 0.03
+align = left
+right = 0.02
+width = 0.30
+top = 0.54
+height = 0.04
+
+[ widget-19a ]
+text = 1.
+fontsize = 0.03
+align = left
+top = 0.58
+right = 0.27
+width = 0.04
+height = 0.04
+
+[ widget-19b ]
+text = 2.
+fontsize = 0.03
+align = left
+top = 0.58
+right = 0.12
+width = 0.04
+height = 0.04
+
+[ widget-19c ]
+text = 3.
+fontsize = 0.03
+align = left
+top = 0.62
+right = 0.27
+width = 0.04
+height = 0.04
+
+[ widget-19d ]
+text = 4.
+fontsize = 0.03
+align = left
+top = 0.62
+right = 0.12
+width = 0.04
+height = 0.04
+
+[ widget-19e ]
+text = 5.
+fontsize = 0.03
+align = left
+top = 0.66
+right = 0.27
+width = 0.04
+height = 0.04
+
+[ widget-19f ]
+text = 6.
+fontsize = 0.03
+align = left
+top = 0.66
+right = 0.12
+width = 0.04
+height = 0.04
+
+[ widget-19g ]
+text = 7.
+fontsize = 0.03
+align = left
+top = 0.70
+right = 0.27
+width = 0.04
+height = 0.04
+
+[ widget-19h ]
+text = 8.
+fontsize = 0.03
+align = left
+top = 0.70
+right = 0.12
+width = 0.04
+height = 0.04
+
+[ widget-19i ]
+text = 9.
+fontsize = 0.03
+align = left
+top = 0.74
+right = 0.27
+width = 0.04
+height = 0.04
+
+[ widget-19j ]
+text = 10.
+fontsize = 0.03
+align = left
+top = 0.74
+right = 0.12
+width = 0.04
+height = 0.04
+
+[ widget-19k ]
+text = 11.
+fontsize = 0.03
+align = left
+top = 0.78
+right = 0.27
+width = 0.04
+height = 0.04
+
+[ widget-19l ]
+text = 12.
+fontsize = 0.03
+align = left
+top = 0.78
+right = 0.12
+width = 0.04
+height = 0.04
+
+
+[ widget-20a ]
+name = Racer0
+text = none
+fontsize = 0.03
+align = left
+top = 0.58
+right = 0.17
+width = 0.10
+height = 0.04
+
+[ widget-20b ]
+name = Racer1
+text = none
+fontsize = 0.03
+align = left
+top = 0.58
+right = 0.02
+width = 0.10
+height = 0.04
+
+[ widget-20c ]
+name = Racer2
+text = none
+fontsize = 0.03
+align = left
+top = 0.62
+right = 0.17
+width = 0.10
+height = 0.04
+
+[ widget-20d ]
+name = Racer3
+text = none
+fontsize = 0.03
+align = left
+top = 0.62
+right = 0.02
+width = 0.10
+height = 0.04
+
+[ widget-20e ]
+name = Racer4
+text = none
+fontsize = 0.03
+align = left
+top = 0.66
+right = 0.17
+width = 0.10
+height = 0.04
+
+[ widget-20f ]
+name = Racer5
+text = none
+fontsize = 0.03
+align = left
+top = 0.66
+right = 0.02
+width = 0.10
+height = 0.04
+
+[ widget-20g ]
+name = Racer6
+text = none
+fontsize = 0.03
+align = left
+top = 0.70
+right = 0.17
+width = 0.10
+height = 0.04
+
+[ widget-20h ]
+name = Racer7
+text = none
+fontsize = 0.03
+align = left
+top = 0.70
+right = 0.02
+width = 0.10
+height = 0.04
+
+[ widget-20i ]
+name = Racer8
+text = none
+fontsize = 0.03
+align = left
+top = 0.74
+right = 0.17
+width = 0.10
+height = 0.04
+
+[ widget-20j ]
+name = Racer9
+text = none
+fontsize = 0.03
+align = left
+top = 0.74
+right = 0.02
+width = 0.10
+height = 0.04
+
+[ widget-20k ]
+name = Racer10
+text = none
+fontsize = 0.03
+align = left
+top = 0.78
+right = 0.17
+width = 0.10
+height = 0.04
+
+[ widget-20l ]
+name = Racer11
+text = none
+fontsize = 0.03
+align = left
+top = 0.78
+right = 0.02
+width = 0.10
+height = 0.04

@@ -1,0 +1,127 @@
+name = EditAnalogControl
+widgets = 7
+background = box.png
+dialog = true
+
+[ widget-00 ]
+type = label
+name = EditAnalogControlLabel1
+text = Edit Analog Control
+center = 0.5, 0.1
+width = auto
+height = auto
+fontsize = 0.06
+enabled = 0
+selected = 0
+default = 0
+cancel = 0
+
+[ widget-01 ]
+type = slider
+name = DeadzoneSlider
+text = Deadzone
+tip = Set the deadzone for the input between 0.0 and 0.5.
+setting = controledit.analog.deadzone
+values = manual
+sliderval = 0.0
+min = 0.0
+max = 0.5
+center = 0.5, 0.25
+width = auto
+height = auto
+fontsize = 0.03
+enabled = 1
+selected = 1
+default = 0
+cancel = 0
+
+[ widget-02 ]
+type = slider
+name = GainSlider
+text = Gain
+tip = Set the gain for the input between 0.5 and 3.0.
+setting = controledit.analog.gain
+values = manual
+sliderval = 1.0
+min = 0.5
+max = 3.0
+center = 0.5, 0.31
+width = auto
+height = auto
+fontsize = 0.03
+enabled = 1
+selected = 0
+default = 0
+cancel = 0
+
+[ widget-03 ]
+type = slider
+name = ExponentSlider
+text = Exponent
+tip = Set the exponent for the input between 1.0 and 5.0.
+setting = controledit.analog.exponent
+values = manual
+sliderval = 1.0
+min = 1.0
+max = 5.0
+percent = false
+center = 0.5, 0.37
+width = auto
+height = auto
+fontsize = 0.03
+enabled = 1
+selected = 0
+default = 0
+cancel = 0
+
+[ widget-04 ]
+type = button
+name = AnalogControlDeleteButton
+text = Delete
+tip = Delete this control.
+action = AnalogControlDelete
+center = 0.5, 0.7
+color = 1.0, 0.8, 0.0
+width = auto
+height = auto
+fontsize = 0.04
+enabled = 1
+selected = 0
+default = 0
+cancel = 0
+
+[ widget-05 ]
+type = button
+name = EditAnalogControlOKButton
+text = OK
+tip = Save changes and return to Options menu.
+action = AnalogControlOK
+center = 0.4, 0.8
+color = 0.0, 0.8, 0.0
+width = auto
+height = auto
+fontsize = 0.04
+enabled = 1
+selected = 0
+default = 1
+cancel = 0
+
+[ widget-06 ]
+type = button
+name = EditAnalogControlCancelButton
+text = Cancel
+tip = Forget changes and return to Options menu.
+action = AnalogControlCancel
+center = 0.6, 0.8
+color = 0.8, 0.0, 0.0
+width = auto
+height = auto
+fontsize = 0.04
+enabled = 1
+selected = 0
+default = 0
+cancel = 1
+
+
+
+

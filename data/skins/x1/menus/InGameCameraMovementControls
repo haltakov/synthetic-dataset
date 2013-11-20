@@ -1,0 +1,151 @@
+name = InGameCameraMovementControls
+widgets = 9
+background = box.png
+dialog = false
+
+[ widget-00 ]
+type = label
+name = InGameCameraControls
+text = Assign Camera Movement Controls
+center = 0.5, 0.1
+width = auto
+height = auto
+fontsize = 0.06
+enabled = 0
+selected = 0
+default = 0
+cancel = 0
+
+[ widget-01 ]
+type = controlgrab
+name = InGamePanCameraLeft
+text = Pan Left
+tip = Turn the camera view to the left.
+setting = pan_left
+analog = 1
+center = 0.5, 0.25
+spacing = 0.2
+width = auto
+height = auto
+fontsize = 0.03
+enabled = 1
+selected = 1
+default = 0
+cancel = 0
+
+[ widget-02 ]
+type = controlgrab
+name = InGamePanCameraRight
+text = Pan Right
+tip = Turn the camera view to the right.
+setting = pan_right
+analog = 1
+center = 0.5, 0.29
+spacing = 0.2
+width = auto
+height = auto
+fontsize = 0.03
+enabled = 1
+selected = 0
+default = 0
+cancel = 0
+
+[ widget-03 ]
+type = controlgrab
+name = InGamePanCameraUp
+text = Pan Up
+tip = Turn the camera view upwards.
+setting = pan_up
+analog = 1
+center = 0.5, 0.33
+spacing = 0.2
+width = auto
+height = auto
+fontsize = 0.03
+enabled = 1
+selected = 0
+default = 0
+cancel = 0
+
+[ widget-04 ]
+type = controlgrab
+name = InGamePanCameraDown
+text = Pan Down
+tip = Turn the camera view downwards.
+setting = pan_down
+analog = 1
+center = 0.5, 0.37
+spacing = 0.2
+width = auto
+height = auto
+fontsize = 0.03
+enabled = 1
+selected = 0
+default = 0
+cancel = 0
+
+[ widget-05 ]
+type = controlgrab
+name = InGameZoomCameraIn
+text = Zoom In
+tip = Zoom camera in.
+setting = zoom_in
+analog = 1
+center = 0.5, 0.41
+spacing = 0.2
+width = auto
+height = auto
+fontsize = 0.03
+enabled = 1
+selected = 0
+default = 0
+cancel = 0
+
+[ widget-06 ]
+type = controlgrab
+name = InGameZoomCameraOut
+text = Zoom Out
+tip = Zoom camera out.
+setting = zoom_out
+analog = 1
+center = 0.5, 0.45
+spacing = 0.2
+width = auto
+height = auto
+fontsize = 0.03
+enabled = 1
+selected = 0
+default = 0
+cancel = 0
+
+[ widget-07 ]
+type = button
+name = InGameCameraMovementControlsOKButton
+text = OK
+tip = Save changes and return to in-game Game Controls menu.
+action = InGameGameControls
+center = 0.4, 0.85
+color = 0.0, 0.8, 0.0
+width = auto
+height = auto
+fontsize = 0.04
+enabled = 1
+selected = 0
+default = 1
+cancel = 0
+
+[ widget-08 ]
+type = button
+name = InGameCameraMovementControlsCancelButton
+text = Cancel
+tip = Forget changes and return to in-game Game Controls menu.
+action = InGameGameControls
+center = 0.6, 0.85
+color = 0.8, 0.0, 0.0
+width = auto
+height = auto
+fontsize = 0.04
+enabled = 1
+selected = 0
+default = 0
+cancel = 1

@@ -1,0 +1,90 @@
+; skyboxes
+
+[pass]
+camera = skybox
+draw = skybox_noblend
+output = framebuffer
+cull = false
+clear_color = true
+clear_depth = true
+blendmode = disabled
+
+[pass]
+camera = skybox
+draw = skybox_blend
+output = framebuffer
+cull = false
+clear_depth = true
+blendmode = alphablend
+
+
+; opaque geometry
+
+[pass]
+draw = normal_noblend normal_noblend_nolighting
+output = framebuffer
+clear_depth = true
+blendmode = alphatest
+
+[pass]
+draw = car_noblend debug_lines
+output = framebuffer
+clear_depth = false
+blendmode = disabled
+
+; additive effects
+
+[pass]
+draw = lights_emissive
+output = framebuffer
+write_depth = false
+blendmode = add
+
+
+; transparent geometry
+
+[pass]
+draw = normal_blend
+output = framebuffer
+write_depth = false
+blendmode = alphablend
+
+
+; 2D UI elements
+
+[pass]
+camera = 2d
+draw = twodim
+output = framebuffer
+cull = false
+blendmode = alphablend
+depthtest = disabled
+write_depth = false
+
+[pass]
+camera = 2d
+draw = text
+output = framebuffer
+cull = false
+blendmode = alphablend
+depthtest = disabled
+write_depth = false
+
+
+; 3D UI elements
+
+[pass]
+draw = nocamtrans_noblend
+output = framebuffer
+clear_depth = true
+camera = ui3d
+cull = false
+blendmode = disabled
+
+[pass]
+draw = nocamtrans_blend
+output = framebuffer
+clear_depth = true
+camera = ui3d
+cull = false
+blendmode = alphablend

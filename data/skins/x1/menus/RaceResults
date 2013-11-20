@@ -1,0 +1,281 @@
+name = RaceResults
+widgets = 21
+background = box.png
+dialog = true
+
+[ widget-00 ]
+type = label
+name = RaceResults
+text = Race Results
+center = 0.5, 0.1
+width = auto
+height = auto
+fontsize = 0.06
+enabled = 0
+selected = 0
+default = 0
+cancel = 0
+
+[ widget-01 ]
+type = button
+name = EndRaceButton
+text = End Race
+tip = End race and return to the Main menu.
+action = LeaveGame
+center = 0.5, 0.85
+color = 0.8, 0.0, 0.0
+width = auto
+height = auto
+fontsize = 0.04
+enabled = 1
+selected = 1
+default = 1
+cancel = 1
+
+[ widget-02 ]
+type = label
+name = ColumnLabel1
+text = Car
+center = 0.3, 0.2
+width = auto
+height = auto
+fontsize = 8
+enabled = 0
+selected = 0
+default = 0
+cancel = 0
+
+[ widget-03 ]
+type = label
+name = ColumnLabel2
+text = Time
+center = 0.5, 0.2
+width = auto
+height = auto
+fontsize = 8
+enabled = 0
+selected = 0
+default = 0
+cancel = 0
+
+[ widget-04 ]
+type = label
+name = ColumnLabel3
+text = Best Lap
+center = 0.7, 0.2
+width = auto
+height = auto
+fontsize = 8
+enabled = 0
+selected = 0
+default = 0
+cancel = 0
+
+[ widget-05 ]
+type = label
+name = RacePosition1
+text = 1
+center = 0.2, 0.25
+width = auto
+height = auto
+fontsize = 0.04
+enabled = 0
+selected = 0
+default = 0
+cancel = 0
+
+[ widget-06 ]
+type = label
+name = Car1
+text = Car1
+center = 0.3, 0.25
+width = auto
+height = auto
+fontsize = 0.04
+enabled = 0
+selected = 0
+default = 0
+cancel = 0
+
+[ widget-07 ]
+type = label
+name = Time1
+text = 99:99.999
+center = 0.5, 0.25
+width = auto
+height = auto
+fontsize = 0.04
+enabled = 0
+selected = 0
+default = 0
+cancel = 0
+
+[ widget-08 ]
+type = label
+name = BestLap1
+text = 99:99.999
+center = 0.7, 0.25
+width = auto
+height = auto
+fontsize = 0.04
+enabled = 0
+selected = 0
+default = 0
+cancel = 0
+
+[ widget-09 ]
+type = label
+name = RacePosition2
+text = 2
+center = 0.2, 0.3
+width = auto
+height = auto
+fontsize = 0.04
+enabled = 0
+selected = 0
+default = 0
+cancel = 0
+
+[ widget-10 ]
+type = label
+name = Car2
+text = Car2
+center = 0.3, 0.3
+width = auto
+height = auto
+fontsize = 0.04
+enabled = 0
+selected = 0
+default = 0
+cancel = 0
+
+[ widget-11 ]
+type = label
+name = Time2
+text = 99:99.999
+center = 0.5, 0.3
+width = auto
+height = auto
+fontsize = 0.04
+enabled = 0
+selected = 0
+default = 0
+cancel = 0
+
+[ widget-12 ]
+type = label
+name = BestLap2
+text = 99:99.999
+center = 0.7, 0.3
+width = auto
+height = auto
+fontsize = 0.04
+enabled = 0
+selected = 0
+default = 0
+cancel = 0
+
+[ widget-13 ]
+type = label
+name = RacePosition3
+text = 3
+center = 0.2, 0.35
+width = auto
+height = auto
+fontsize = 0.04
+enabled = 0
+selected = 0
+default = 0
+cancel = 0
+
+[ widget-14 ]
+type = label
+name = Car3
+text = Car3
+center = 0.3, 0.35
+width = auto
+height = auto
+fontsize = 0.04
+enabled = 0
+selected = 0
+default = 0
+cancel = 0
+
+[ widget-15 ]
+type = label
+name = Time3
+text = 99:99.999
+center = 0.5, 0.35
+width = auto
+height = auto
+fontsize = 0.04
+enabled = 0
+selected = 0
+default = 0
+cancel = 0
+
+[ widget-16 ]
+type = label
+name = BestLap3
+text = 99:99.999
+center = 0.7, 0.35
+width = auto
+height = auto
+fontsize = 0.04
+enabled = 0
+selected = 0
+default = 0
+cancel = 0
+
+[ widget-17 ]
+type = label
+name = RacePosition4
+text = 4
+center = 0.2, 0.4
+width = auto
+height = auto
+fontsize = 0.04
+enabled = 0
+selected = 0
+default = 0
+cancel = 0
+
+[ widget-18 ]
+type = label
+name = Car4
+text = Car4
+center = 0.3, 0.4
+width = auto
+height = auto
+fontsize = 0.04
+enabled = 0
+selected = 0
+default = 0
+cancel = 0
+
+[ widget-19 ]
+type = label
+name = Time4
+text = 99:99.999
+center = 0.5, 0.4
+width = auto
+height = auto
+fontsize = 0.04
+enabled = 0
+selected = 0
+default = 0
+cancel = 0
+
+[ widget-20 ]
+type = label
+name = BestLap4
+text = 99:99.999
+center = 0.7, 0.4
+width = auto
+height = auto
+fontsize = 0.04
+enabled = 0
+selected = 0
+default = 0
+cancel = 0
+

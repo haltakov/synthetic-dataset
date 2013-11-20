@@ -1,0 +1,57 @@
+INFO: Starting VDrift: development-full, Revision: latest, O/S: Windows
+INFO: Home directory: C:\Users\q281464
+INFO: Settings file: settings/VDrift.config.segmentation
+INFO: Data directory: data
+INFO: Temporary directory: settings/tmp
+INFO: Log file: settings/log.txt
+INFO: Disabling antialiasing
+INFO: Display change was successful: 640x480x32 24z fullscreen=0
+INFO: Video card information:
+      Vendor: ATI Technologies Inc.
+      Renderer: Radeon HD 6470M  
+      Version: 4.1.10531 Compatibility Profile Context
+      Maximum texture size: 16384
+      Maximum varying floats: 128
+      Using GLEW 1.7.0
+INFO: Maximum color attachments: 8
+INFO: Maximum draw buffers (1 required): 8
+INFO: Disabling shaders
+INFO: Maximum anisotropy: 16
+INFO: 0 joysticks found.
+INFO: Loading car controls from: settings/controls.config.segmentation
+INFO: Update status file settings/updates.config.segmentation will be created
+INFO: Update status file settings/updates.config.segmentation will be created
+INFO: Sound initialization information:
+INFO: Obtained audio device:
+      Frequency: 44100
+      Format: 32784
+      Bits per sample: 16
+      Channels: 2
+      Silence: 0
+      Samples: 2048
+      Size: 8192
+      Sound initialization successful
+INFO: Loaded fonts successfully
+INFO: Loaded GUI successfully
+INFO: Loading track from path: data/tracks/garage
+INFO: Loaded surfaces file, 7 surfaces.
+INFO: Track timing sectors: 2
+INFO: Car loading was successful: MCS
+INFO: Loading replay file: C:\Vladimir\08_Data\VDrift5_2\_SEQUENCES_\monaco\04-17-21-44-40-monaco.vdr
+INFO: Loading track from path: data/tracks/monaco
+INFO: Loaded surfaces file, 2 surfaces.
+INFO: Track timing sectors: 2
+INFO: Car loading was successful: XGS
+INFO: Car loading was successful: MCS
+INFO: Car loading was successful: XGSS
+INFO: Car loading was successful: MCS
+INFO: Car loading was successful: MCS
+INFO: Car loading was successful: XGS
+INFO: Car loading was successful: XGS
+INFO: Car loading was successful: XGS
+INFO: Textures: 369
+      Models: 2012
+      Sounds: 13
+INFO: Got quit message from GUI. Shutting down...
+INFO: Shutting down...
+INFO: Exiting

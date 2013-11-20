@@ -1,0 +1,65 @@
+name = InGameAssignControls
+widgets = 4
+background = box.png
+dialog = false
+
+[ widget-00 ]
+type = label
+name = InGameAssignControls
+text = Assign Controls
+center = 0.5, 0.1
+width = auto
+height = auto
+fontsize = 0.06
+enabled = 0
+selected = 0
+default = 0
+cancel = 0
+
+[ widget-01 ]
+type = button
+name = InGameCarControlsButton
+text = Car Controls
+tip = Assign inputs to actions that affect the car.
+action = InGameCarControls
+center = 0.5, 0.3
+color = 0.0, 0.0, 0.8
+width = auto
+height = auto
+fontsize = 0.04
+enabled = 1
+selected = 1
+default = 0
+cancel = 0
+
+[ widget-02 ]
+type = button
+name = InGameGameControlsButton
+text = Game Controls
+tip = Assign inputs to actions that affect the game.
+action = InGameGameControls
+center = 0.5, 0.4
+color = 0.0, 0.0, 0.8
+width = auto
+height = auto
+fontsize = 0.04
+enabled = 1
+selected = 0
+default = 0
+cancel = 0
+
+[ widget-03 ]
+type = button
+name = InGameAssignControlsBackButton
+text = Back
+tip = Return to In Game Controls Options menu.
+action = InGameControlsOptions
+center = 0.5, 0.5
+color = 0.8, 0.0, 0.0
+width = auto
+height = auto
+fontsize = 0.04
+enabled = 1
+selected = 0
+default = 0
+cancel = 1

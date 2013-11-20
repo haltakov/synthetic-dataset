@@ -1,0 +1,177 @@
+name = InGameGearsControls
+widgets = 11
+background = box.png
+dialog = false
+
+[ widget-00 ]
+type = label
+name = InGameGearsControls
+text = Assign Gear Controls
+center = 0.5, 0.1
+width = auto
+height = auto
+fontsize = 0.06
+enabled = 0
+selected = 0
+default = 0
+cancel = 0
+
+[ widget-01 ]
+type = controlgrab
+name = InGameNeutralControl
+text = Neutral
+tip = The neutral control shifts the car into neutral.
+setting = neutral
+center = 0.5, 0.30
+spacing = 0.2
+width = auto
+height = auto
+fontsize = 0.03
+enabled = 1
+selected = 1
+default = 0
+cancel = 0
+
+[ widget-02 ]
+type = controlgrab
+name = InGame1stControl
+text = 1st
+tip = The first gear control shifts the car into first gear.
+setting = first_gear
+center = 0.5, 0.34
+spacing = 0.2
+width = auto
+height = auto
+fontsize = 0.03
+enabled = 1
+selected = 0
+default = 0
+cancel = 0
+
+[ widget-03 ]
+type = controlgrab
+name = InGame2ndControl
+text = 2nd
+tip = The second gear control shifts the car into second gear.
+setting = second_gear
+center = 0.5, 0.38
+spacing = 0.2
+width = auto
+height = auto
+fontsize = 0.03
+enabled = 1
+selected = 0
+default = 0
+cancel = 0
+
+[ widget-04 ]
+type = controlgrab
+name = InGame3rdControl
+text = 3rd
+tip = The third gear control shifts the car into third gear.
+setting = third_gear
+center = 0.5, 0.42
+spacing = 0.2
+width = auto
+height = auto
+fontsize = 0.03
+enabled = 1
+selected = 0
+default = 0
+cancel = 0
+
+[ widget-05 ]
+type = controlgrab
+name = InGame4thControl
+text = 4th
+tip = The fourth gear control shifts the car into fourth gear.
+setting = fourth_gear
+center = 0.5, 0.46
+spacing = 0.2
+width = auto
+height = auto
+fontsize = 0.03
+enabled = 1
+selected = 0
+default = 0
+cancel = 0
+
+[ widget-06 ]
+type = controlgrab
+name = InGame5thControl
+text = 5th
+tip = The fifth gear control shifts the car into fifth gear.
+setting = fifth_gear
+center = 0.5, 0.50
+spacing = 0.2
+width = auto
+height = auto
+fontsize = 0.03
+enabled = 1
+selected = 0
+default = 0
+cancel = 0
+
+[ widget-07 ]
+type = controlgrab
+name = InGame6thControl
+text = 6th
+tip = The sixth gear control shifts the car into sixth gear.
+setting = sixth_gear
+center = 0.5, 0.54
+spacing = 0.2
+width = auto
+height = auto
+fontsize = 0.03
+enabled = 1
+selected = 0
+default = 0
+cancel = 0
+
+[ widget-08 ]
+type = controlgrab
+name = InGameReverseControl
+text = Reverse
+tip = The reverse control puts the car into reverse gear.
+setting = reverse
+center = 0.5, 0.58
+spacing = 0.2
+width = auto
+height = auto
+fontsize = 0.03
+enabled = 1
+selected = 0
+default = 0
+cancel = 0
+
+[ widget-09 ]
+type = button
+name = InGameGearsControlsOKButton
+text = OK
+tip = Save changes and return to Transmission Controls menu.
+action = InGameTransmissionControls
+center = 0.4, 0.68
+color = 0.0, 0.8, 0.0
+width = auto
+height = auto
+fontsize = 0.04
+enabled = 1
+selected = 0
+default = 1
+cancel = 0
+
+[ widget-10 ]
+type = button
+name = InGameGearsControlsCancelButton
+text = Cancel
+tip = Forget changes and return to Transmission Controls menu.
+action = InGameTransmissionControls
+center = 0.6, 0.68
+color = 0.8, 0.0, 0.0
+width = auto
+height = auto
+fontsize = 0.04
+enabled = 1
+selected = 0
+default = 0
+cancel = 1

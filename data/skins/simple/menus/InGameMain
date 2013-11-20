@@ -1,0 +1,183 @@
+name = InGameMenu
+oncancel = ReturnToGame
+
+
+[ bg-top ]
+image = white.png
+color = 0.172, 0.161, 0.169
+alpha = 0.5
+left = 0
+right = 0
+top = 0
+height = 0.14
+layer = -1
+
+
+[ bg-bottom ]
+image = white.png
+color = 0.172, 0.161, 0.169
+alpha = 0.5
+left = 0
+right = 0
+bottom = 0
+height = 0.08
+layer = -1
+
+
+[ tooltip ]
+text = gui.tooltip
+fontsize = 0.03
+left = 0
+right = 0
+bottom = 0.04
+height = 0.04
+
+
+[ widget-00 ]
+text = Pause Menu
+fontsize = 0.06
+align = left
+left = 0.25
+width = 0.20
+top = 0.07
+height = 0.06
+
+
+[ widget-01 ]
+text = Return to Game
+fontsize = 0.035
+align = left
+tip = Leave the menu and unpause the game.
+onselect = ReturnToGame
+onmoveup = widget-05
+onmovedown = widget-02
+onfocus = widget-01.sat:0.56
+onblur = widget-01.sat:0.0
+focus = true
+hue = 0.56
+left = 0.27
+width = 0.20
+top = 0.175
+height = 0.05
+
+[ widget-01e ]
+image = white.png
+color = 0.172, 0.161, 0.169
+alpha = 0.5
+left = 0.26
+width = 0.22
+top = 0.175
+height = 0.048
+layer = -1
+
+
+[ widget-02 ]
+text = Restart Game
+fontsize = 0.035
+align = left
+tip = Restart this game using the same car and track settings.
+onselect = RestartGameConfirm
+onmoveup = widget-01
+onmovedown = widget-03
+onfocus = widget-02.sat:0.56
+onblur = widget-02.sat:0.0
+focus = false
+hue = 0.56
+left = 0.27
+width = 0.20
+top = 0.225
+height = 0.05
+
+[ widget-02e ]
+image = white.png
+color = 0.172, 0.161, 0.169
+alpha = 0.5
+left = 0.26
+width = 0.22
+top = 0.225
+height = 0.048
+layer = -1
+
+
+[ widget-03 ]
+text = Leave Game
+fontsize = 0.035
+align = left
+tip = Leave game and return to the Main menu.
+onselect = GameLeaveConfirm
+onmoveup = widget-02
+onmovedown = widget-04
+onfocus = widget-03.sat:0.56
+onblur = widget-03.sat:0.0
+focus = false
+hue = 0.56
+left = 0.27
+width = 0.20
+top = 0.275
+height = 0.05
+
+[ widget-03e ]
+image = white.png
+color = 0.172, 0.161, 0.169
+alpha = 0.5
+left = 0.26
+width = 0.22
+top = 0.275
+height = 0.048
+layer = -1
+
+
+[ widget-04 ]
+text = Options
+fontsize = 0.035
+align = left
+tip = Change some of the options while the game is running.
+onselect = Options
+onmoveup = widget-03
+onmovedown = widget-05
+onfocus = widget-04.sat:0.56
+onblur = widget-04.sat:0.0
+focus = false
+hue = 0.56
+left = 0.27
+width = 0.20
+top = 0.325
+height = 0.05
+
+[ widget-04e ]
+image = white.png
+color = 0.172, 0.161, 0.169
+alpha = 0.5
+left = 0.26
+width = 0.22
+top = 0.325
+height = 0.048
+layer = -1
+
+
+[ widget-05 ]
+text = Quit
+fontsize = 0.035
+align = left
+tip = Quit VDrift
+onselect = QuitConfirm
+onmoveup = widget-04
+onmovedown = widget-01
+onfocus = widget-05.sat:0.56
+onblur = widget-05.sat:0.0
+focus = false
+hue = 0.56
+left = 0.27
+width = 0.20
+top = 0.375
+height = 0.05
+
+[ widget-05e ]
+image = white.png
+color = 0.172, 0.161, 0.169
+alpha = 0.5
+left = 0.26
+width = 0.22
+top = 0.375
+height = 0.048
+layer = -1

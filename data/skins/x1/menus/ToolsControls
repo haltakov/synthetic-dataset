@@ -1,0 +1,81 @@
+name = ToolsControls
+widgets = 5
+background = box.png
+dialog = false
+
+[ widget-00 ]
+type = label
+name = ToolsControls
+text = Assign Tool Controls
+center = 0.5, 0.1
+width = auto
+height = auto
+fontsize = 0.06
+enabled = 0
+selected = 0
+default = 0
+cancel = 0
+
+[ widget-01 ]
+type = controlgrab
+name = ScreenShotControl
+text = Screen Shot
+tip = The screen shot control saves a snapshot of the game while playing.
+setting = screen_shot
+center = 0.5, 0.30
+spacing = 0.2
+width = auto
+height = auto
+fontsize = 0.03
+enabled = 1
+selected = 1
+default = 0
+cancel = 0
+
+[ widget-02 ]
+type = controlgrab
+name = ReloadShadersControl
+text = Reload Shaders
+tip = Reload the vertex and fragment shader source files.
+setting = reload_shaders
+center = 0.5, 0.34
+spacing = 0.2
+width = auto
+height = auto
+fontsize = 0.03
+enabled = 1
+selected = 0
+default = 0
+cancel = 0
+
+[ widget-03 ]
+type = button
+name = ToolsControlsOKButton
+text = OK
+tip = Save changes and return to Game Controls menu.
+action = GameControls
+center = 0.4, 0.6
+color = 0.0, 0.8, 0.0
+width = auto
+height = auto
+fontsize = 0.04
+enabled = 1
+selected = 0
+default = 1
+cancel = 0
+
+[ widget-04 ]
+type = button
+name = ToolsControlsCancelButton
+text = Cancel
+tip = Forget changes and return to Game Controls menu.
+action = GameControls
+center = 0.6, 0.6
+color = 0.8, 0.0, 0.0
+width = auto
+height = auto
+fontsize = 0.04
+enabled = 1
+selected = 0
+default = 0
+cancel = 1

@@ -1,0 +1,30 @@
+name = AssignControl
+widgets = 2
+background = box.png
+dialog = false
+
+[ widget-00 ]
+type = label
+name = InfoLabel
+text = Press a key, press a joystick button, move a joystick axis, move the mouse, or click a mouse button.
+center = 0.5, 0.5
+width = auto
+height = auto
+fontsize = 0.03
+enabled = 0
+selected = 0
+default = 0
+cancel = 0
+
+[ widget-01 ]
+type = label
+name = InfoLabel
+text = Press the ESCAPE key to abort.
+center = 0.5, 0.6
+width = auto
+height = auto
+fontsize = 0.03
+enabled = 0
+selected = 0
+default = 0
+cancel = 0

@@ -1,0 +1,178 @@
+name = InGameDisplayOptions
+widgets = 12
+background = box.png
+dialog = false
+
+[ widget-00 ]
+type = label
+name = InGameDisplayOptionsLabel
+text = Display Options
+center = 0.5, 0.1
+width = auto
+height = auto
+fontsize = 0.06
+enabled = 0
+selected = 0
+default = 0
+cancel = 0
+
+[ widget-01 ]
+type = intintwheel
+name = InGameResolutionWheel
+setting1 = display.width
+setting2 = display.height
+values = options
+center = 0.5, 0.25
+width = auto
+height = auto
+fontsize = 0.03
+enabled = 1
+selected = 1
+default = 0
+cancel = 0
+
+[ widget-02 ]
+type = toggle
+name = InGameFullscreenToggle
+setting = display.fullscreen
+values = options
+center = 0.5, 0.29
+width = auto
+height = auto
+fontsize = 0.03
+enabled = 1
+selected = 0
+default = 0
+cancel = 0
+
+[ widget-03 ]
+type = toggle
+name = InGameSpeedUnitsToggle
+setting = display.mph
+values = options
+center = 0.5, 0.33
+width = auto
+height = auto
+fontsize = 0.03
+enabled = 1
+selected = 0
+default = 0
+cancel = 0
+
+[ widget-04 ]
+type = toggle
+name = InGameFPSToggle
+setting = display.show_fps
+values = options
+center = 0.5, 0.37
+width = auto
+height = auto
+fontsize = 0.03
+enabled = 1
+selected = 0
+default = 0
+cancel = 0
+
+[ widget-05 ]
+type = toggle
+name = InGameHUDToggle
+setting = display.show_hud
+values = options
+center = 0.5, 0.41
+width = auto
+height = auto
+fontsize = 0.03
+enabled = 1
+selected = 0
+default = 0
+cancel = 0
+
+[ widget-06 ]
+type = stringwheel
+name = InGameMenuSkinWheel
+setting = display.skin
+values = options
+center = 0.5, 0.45
+width = auto
+height = auto
+fontsize = 0.03
+enabled = 1
+selected = 0
+default = 0
+cancel = 0
+
+[ widget-07 ]
+type = toggle
+name = InGameInputGraphToggle
+setting = display.input_graph
+values = options
+center = 0.5, 0.49
+width = auto
+height = auto
+fontsize = 0.03
+enabled = 1
+selected = 0
+default = 0
+cancel = 0
+
+[ widget-08 ]
+type = toggle
+name = InGameTrackMapToggle
+setting = display.trackmap
+values = options
+center = 0.5, 0.53
+width = auto
+height = auto
+fontsize = 0.03
+enabled = 1
+selected = 0
+default = 0
+cancel = 0
+
+[ widget-09 ]
+type = button
+name = InGameDisplayOptionsAdvancedButton
+text = Advanced
+tip = Change detail levels and other advanced display options.
+action = InGameDisplayOptionsAdvanced
+center = 0.5, 0.65
+color = 0.0, 0.8, 0.0
+width = auto
+height = auto
+fontsize = 0.04
+enabled = 1
+selected = 0
+default = 0
+cancel = 0
+
+[ widget-10 ]
+type = button
+name = InGameDisplayOptionsOKButton
+text = OK
+tip = Save changes and return to Options menu.
+action = InGameOptions
+center = 0.4, 0.85
+color = 0.0, 0.8, 0.0
+width = auto
+height = auto
+fontsize = 0.04
+enabled = 1
+selected = 0
+default = 1
+cancel = 0
+
+[ widget-11 ]
+type = button
+name = InGameDisplayOptionsCancelButton
+text = Cancel
+tip = Forget changes and return to Options menu.
+action = InGameOptions
+center = 0.6, 0.85
+color = 0.8, 0.0, 0.0
+width = auto
+height = auto
+fontsize = 0.04
+enabled = 1
+selected = 0
+default = 0
+cancel = 1

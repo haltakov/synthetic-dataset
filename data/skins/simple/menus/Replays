@@ -1,0 +1,180 @@
+name = Replays
+oncancel = gui.options.save Main
+
+
+[ bg-top ]
+image = white.png
+color = 0.172, 0.161, 0.169
+alpha = 0.5
+left = 0
+right = 0
+top = 0
+height = 0.14
+layer = -1
+
+
+[ bg-bottom ]
+image = white.png
+color = 0.172, 0.161, 0.169
+alpha = 0.5
+left = 0
+right = 0
+bottom = 0
+height = 0.08
+layer = -1
+
+
+[ tooltip ]
+text = gui.tooltip
+fontsize = 0.03
+left = 0
+right = 0
+bottom = 0.04
+height = 0.04
+
+
+[ bg-labels ]
+image = white.png
+color = 0.172, 0.161, 0.169
+alpha = 0.5
+left = 0.008
+width = 0.25
+top = 0.181
+height = 0.038
+layer = -1
+
+
+[ bg-options ]
+image = white.png
+color = 0.172, 0.161, 0.169
+alpha = 0.5
+left = 0.26
+width = 0.38
+top = 0.181
+height = 0.038
+layer = -1
+
+
+[ widget-00 ]
+text = Replays
+fontsize = 0.06
+align = left
+left = 0.25
+width = 0.20
+top = 0.07
+height = 0.06
+
+
+[ widget-01a ]
+text = Select Replay
+fontsize = 0.03
+align = right
+left = 0.01
+width = 0.24
+top = 0.18
+height = 0.04
+
+[ widget-01b ]
+text = <
+fontsize = 0.03
+align = left
+tip = Select the replay to watch.
+onselect = game.selected_replay.prev
+onmoveleft = game.selected_replay.prev
+onmoveright = game.selected_replay.next
+onmoveup = widget-03
+onmovedown = widget-02
+onfocus = widget-01b.alpha:1 widget-01c.alpha:1 widget-01d.sat:0.56
+onblur = widget-01b.alpha:0 widget-01c.alpha:0 widget-01d.sat:0.0
+focus = true
+color = 0.439, 0.796, 1.00
+alpha = 0
+left = 0.27
+width = 0.18
+top = 0.18
+height = 0.04
+
+[ widget-01c ]
+text = >
+fontsize = 0.03
+align = right
+tip = Select the replay to watch.
+onselect = game.selected_replay.next
+onmoveleft = game.selected_replay.prev
+onmoveright = game.selected_replay.next
+onmoveup = widget-03
+onmovedown = widget-02
+onfocus = widget-01b.alpha:1 widget-01c.alpha:1 widget-01d.sat:0.56
+onblur = widget-01b.alpha:0 widget-01c.alpha:0 widget-01d.sat:0.0
+focus = false
+color = 0.439, 0.796, 1.00
+alpha = 0
+left = 0.45
+width = 0.18
+top = 0.18
+height = 0.04
+
+[ widget-01d ]
+text = game.selected_replay.str
+fontsize = 0.03
+hue = 0.56
+left = 0.27
+width = 0.36
+top = 0.18
+height = 0.04
+
+
+[ widget-02 ]
+text = Start Replay
+fontsize = 0.03
+#align = left
+tip = Begin playing the last recorded replay.
+onselect = gui.options.save StartReplay
+onmoveup = widget-01b
+onmovedown = widget-03
+onfocus = widget-02.sat:0.56
+onblur = widget-02.sat:0.0
+focus = false
+hue = 0.56
+left = 0.27
+width = 0.36
+top = 0.22
+height = 0.04
+
+[ widget-02e ]
+image = white.png
+color = 0.172, 0.161, 0.169
+alpha = 0.5
+left = 0.26
+width = 0.38
+top = 0.221
+height = 0.038
+layer = -1
+
+
+[ widget-03 ]
+text = Back
+fontsize = 0.03
+#align = left
+tip = Return to the Main menu.
+onselect = Main
+onmoveup = widget-02
+onmovedown = widget-01b
+onfocus = widget-03.sat:0.56
+onblur = widget-03.sat:0.0
+focus = false
+hue = 0.56
+left = 0.27
+width = 0.36
+top = 0.26
+height = 0.04
+
+[ widget-03e ]
+image = white.png
+color = 0.172, 0.161, 0.169
+alpha = 0.5
+left = 0.26
+width = 0.38
+top = 0.261
+height = 0.038
+layer = -1

@@ -1,0 +1,52 @@
+Brake
+brake
+Handbrake
+handbrake
+Gas
+gas
+Steer Left
+steer_left
+Steer Right
+steer_right
+Shift Up
+disengage_shift_up
+Shift Down
+disengage_shift_down
+Engage Clutch
+engage
+Analog Clutch
+clutch
+Shift to Neutral
+neutral
+Reset Car
+reset
+Start Engine
+start_engine
+Pause
+pause
+Joystick Info Screen
+joystick_info
+View: Hood
+view_hood
+View: In Car
+view_incar
+View: Chase (rigid)
+view_chaserigid
+View: Chase
+view_chase
+View: Orbit
+view_orbit
+View: Free
+view_free
+View: External Fixed
+view_external
+View: External Follow
+view_extfollow
+Replay: Skip Ahead
+replay_ff
+Replay: Skid Back
+replay_rw
+Screen Shot
+screen_shot
+Write Track BMP
+track_shot

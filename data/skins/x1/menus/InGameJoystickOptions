@@ -1,0 +1,121 @@
+name = InGameJoystickOptions
+widgets = 8
+background = box.png
+dialog = false
+
+[ widget-00 ]
+type = label
+name = InGameJoystickOptionsLabel
+text = Joystick Options
+center = 0.5, 0.1
+width = auto
+height = auto
+fontsize = 0.06
+enabled = 0
+selected = 0
+default = 0
+cancel = 0
+
+[ widget-01 ]
+type = stringwheel
+name = InGameJoystickTypeWheel
+setting = joystick.type
+values = options
+center = 0.5, 0.25
+width = auto
+height = auto
+fontsize = 0.03
+enabled = 1
+selected = 1
+default = 0
+cancel = 0
+
+[ widget-02 ]
+type = toggle
+name = InGame200DegreeToggle
+setting = joystick.two_hundred
+values = options
+center = 0.5, 0.29
+width = auto
+height = auto
+fontsize = 0.03
+enabled = 1
+selected = 0
+default = 0
+cancel = 0
+
+[ widget-03 ]
+type = slider
+name = InGameFFGainSlider
+setting = joystick.ff_gain
+values = options
+center = 0.5, 0.34
+width = auto
+height = auto
+fontsize = 0.03
+enabled = 0
+selected = 0
+default = 0
+cancel = 0
+
+[ widget-04 ]
+type = toggle
+name = InGameFFInvertToggle
+setting = joystick.ff_invert
+values = options
+center = 0.5, 0.40
+width = auto
+height = auto
+fontsize = 0.03
+enabled = 0
+selected = 0
+default = 0
+cancel = 0
+
+[ widget-05 ]
+type = button
+name = InGameJoystickCalibrateButton
+text = Calibrate
+tip = Calibrate the joystick device.
+action = InGameJoystickCalibrate
+center = 0.5, 0.6
+color = 0.0, 0.0, 0.8
+width = auto
+height = auto
+fontsize = 0.04
+enabled = 1
+selected = 0
+default = 0
+cancel = 0
+
+[ widget-06 ]
+type = button
+name = InGameJoystickOptionsOKButton
+text = OK
+tip = Save changes and return to Controls Options menu.
+action = InGameControlsOptions
+center = 0.4, 0.8
+color = 0.0, 0.8, 0.0
+width = auto
+height = auto
+fontsize = 0.04
+enabled = 1
+selected = 0
+default = 1
+cancel = 0
+
+[ widget-07 ]
+type = button
+name = InGameJoystickOptionsCancelButton
+text = Cancel
+tip = Forget changes and return to Controls Options menu.
+action = InGameControlsOptions
+center = 0.6, 0.8
+color = 0.8, 0.0, 0.0
+width = auto
+height = auto
+fontsize = 0.04
+enabled = 1
+selected = 0
+default = 0
+cancel = 1

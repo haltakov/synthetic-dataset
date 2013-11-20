@@ -1,0 +1,364 @@
+INFO: Starting VDrift: development-full, Revision: latest, O/S: Windows
+INFO: Home directory: C:\Users\q281464
+INFO: Settings file: settings/VDrift.config.camera
+INFO: Data directory: data
+INFO: Temporary directory: settings/tmp
+INFO: Log file: settings/log.txt
+ERROR: Failed to load settings/VDrift.config.camera
+INFO: Enabling antialiasing: 2X
+INFO: Display change was successful: 640x480x32 24z fullscreen=0
+INFO: Video card information:
+      Vendor: ATI Technologies Inc.
+      Renderer: Radeon HD 6470M  
+      Version: 4.1.10531 Compatibility Profile Context
+      Maximum texture size: 16384
+      Maximum varying floats: 128
+      Using GLEW 1.7.0
+INFO: Maximum color attachments: 8
+INFO: Maximum draw buffers (1 required): 8
+INFO: Texture units: 8 full, 16 partial
+INFO: ----- Start Shader Compile Log for data/shaders/simple/vertex.glsl -----
+INFO: Vertex shader was successfully compiled to run on hardware.
+       
+INFO: ----- End Shader Compile Log -----
+INFO: ----- Start Shader Compile Log for data/shaders/simple/fragment.glsl -----
+INFO: Fragment shader was successfully compiled to run on hardware.
+       
+INFO: ----- End Shader Compile Log -----
+INFO: ----- Start Shader Link Log for data/shaders/simple/vertex.glsl and data/shaders/simple/fragment.glsl -----
+INFO: Vertex shader(s) linked, fragment shader(s) linked.
+      
+INFO: ----- End Shader Link Log -----
+INFO: Loaded shader package simple
+INFO: ----- Start Shader Compile Log for data/shaders/simple/vertex.glsl -----
+INFO: Vertex shader was successfully compiled to run on hardware.
+       
+INFO: ----- End Shader Compile Log -----
+INFO: ----- Start Shader Compile Log for data/shaders/simple/fragment.glsl -----
+INFO: Fragment shader was successfully compiled to run on hardware.
+       
+INFO: ----- End Shader Compile Log -----
+INFO: ----- Start Shader Link Log for data/shaders/simple/vertex.glsl and data/shaders/simple/fragment.glsl -----
+INFO: Vertex shader(s) linked, fragment shader(s) linked.
+      
+INFO: ----- End Shader Link Log -----
+INFO: Loaded shader package simple, variant simple_premult
+INFO: ----- Start Shader Compile Log for data/shaders/simple/vertex.glsl -----
+INFO: Vertex shader was successfully compiled to run on hardware.
+       
+INFO: ----- End Shader Compile Log -----
+INFO: ----- Start Shader Compile Log for data/shaders/simple/fragment.glsl -----
+INFO: Fragment shader was successfully compiled to run on hardware.
+       
+INFO: ----- End Shader Compile Log -----
+INFO: ----- Start Shader Link Log for data/shaders/simple/vertex.glsl and data/shaders/simple/fragment.glsl -----
+INFO: Vertex shader(s) linked, fragment shader(s) linked.
+      
+INFO: ----- End Shader Link Log -----
+INFO: Loaded shader package simple, variant simple_gamma_premult
+INFO: ----- Start Shader Compile Log for data/shaders/simple/vertex.glsl -----
+INFO: Vertex shader was successfully compiled to run on hardware.
+       
+INFO: ----- End Shader Compile Log -----
+INFO: ----- Start Shader Compile Log for data/shaders/simple/fragment.glsl -----
+INFO: Fragment shader was successfully compiled to run on hardware.
+       
+INFO: ----- End Shader Compile Log -----
+INFO: ----- Start Shader Link Log for data/shaders/simple/vertex.glsl and data/shaders/simple/fragment.glsl -----
+INFO: Vertex shader(s) linked, fragment shader(s) linked.
+      
+INFO: ----- End Shader Link Log -----
+INFO: Loaded shader package simple, variant simple_gamma
+INFO: ----- Start Shader Compile Log for data/shaders/simple/vertex.glsl -----
+INFO: Vertex shader was successfully compiled to run on hardware.
+       
+INFO: ----- End Shader Compile Log -----
+INFO: ----- Start Shader Compile Log for data/shaders/simple/fragment.glsl -----
+INFO: Fragment shader was successfully compiled to run on hardware.
+       
+INFO: ----- End Shader Compile Log -----
+INFO: ----- Start Shader Link Log for data/shaders/simple/vertex.glsl and data/shaders/simple/fragment.glsl -----
+INFO: Vertex shader(s) linked, fragment shader(s) linked.
+      
+INFO: ----- End Shader Link Log -----
+INFO: Loaded shader package simple, variant simplecar
+INFO: ----- Start Shader Compile Log for data/shaders/tonemap/vertex.glsl -----
+INFO: Vertex shader was successfully compiled to run on hardware.
+       
+INFO: ----- End Shader Compile Log -----
+INFO: ----- Start Shader Compile Log for data/shaders/tonemap/fragment.glsl -----
+INFO: Fragment shader was successfully compiled to run on hardware.
+       
+INFO: ----- End Shader Compile Log -----
+INFO: ----- Start Shader Link Log for data/shaders/tonemap/vertex.glsl and data/shaders/tonemap/fragment.glsl -----
+INFO: Vertex shader(s) linked, fragment shader(s) linked.
+      
+INFO: ----- End Shader Link Log -----
+INFO: Loaded shader package tonemap
+INFO: ----- Start Shader Compile Log for data/shaders/gbufferfill/vertex.glsl -----
+INFO: Vertex shader was successfully compiled to run on hardware.
+       
+INFO: ----- End Shader Compile Log -----
+INFO: ----- Start Shader Compile Log for data/shaders/gbufferfill/fragment.glsl -----
+INFO: Fragment shader was successfully compiled to run on hardware.
+       
+INFO: ----- End Shader Compile Log -----
+INFO: ----- Start Shader Link Log for data/shaders/gbufferfill/vertex.glsl and data/shaders/gbufferfill/fragment.glsl -----
+INFO: Vertex shader(s) linked, fragment shader(s) linked.
+      
+INFO: ----- End Shader Link Log -----
+INFO: Loaded shader package gbufferfill
+INFO: ----- Start Shader Compile Log for data/shaders/gbufferfill/vertex.glsl -----
+INFO: Vertex shader was successfully compiled to run on hardware.
+       
+INFO: ----- End Shader Compile Log -----
+INFO: ----- Start Shader Compile Log for data/shaders/gbufferfill/fragment.glsl -----
+INFO: Fragment shader was successfully compiled to run on hardware.
+       
+INFO: ----- End Shader Compile Log -----
+INFO: ----- Start Shader Link Log for data/shaders/gbufferfill/vertex.glsl and data/shaders/gbufferfill/fragment.glsl -----
+INFO: Vertex shader(s) linked, fragment shader(s) linked.
+      
+INFO: ----- End Shader Link Log -----
+INFO: Loaded shader package gbufferfill, variant gbufferfillcar
+INFO: ----- Start Shader Compile Log for data/shaders/lightaccumulate/vertex.glsl -----
+INFO: Vertex shader was successfully compiled to run on hardware.
+       
+INFO: ----- End Shader Compile Log -----
+INFO: ----- Start Shader Compile Log for data/shaders/lightaccumulate/fragment.glsl -----
+INFO: Fragment shader was successfully compiled to run on hardware.
+       
+INFO: ----- End Shader Compile Log -----
+INFO: ----- Start Shader Link Log for data/shaders/lightaccumulate/vertex.glsl and data/shaders/lightaccumulate/fragment.glsl -----
+INFO: Vertex shader(s) linked, fragment shader(s) linked.
+      
+INFO: ----- End Shader Link Log -----
+INFO: Loaded shader package lightaccumulate, variant lightaccumulate_initial
+INFO: ----- Start Shader Compile Log for data/shaders/lightaccumulate/vertex.glsl -----
+INFO: Vertex shader was successfully compiled to run on hardware.
+       
+INFO: ----- End Shader Compile Log -----
+INFO: ----- Start Shader Compile Log for data/shaders/lightaccumulate/fragment.glsl -----
+INFO: Fragment shader was successfully compiled to run on hardware.
+       
+INFO: ----- End Shader Compile Log -----
+INFO: ----- Start Shader Link Log for data/shaders/lightaccumulate/vertex.glsl and data/shaders/lightaccumulate/fragment.glsl -----
+INFO: Vertex shader(s) linked, fragment shader(s) linked.
+      
+INFO: ----- End Shader Link Log -----
+INFO: Loaded shader package lightaccumulate, variant lightaccumulate_omni
+INFO: ----- Start Shader Compile Log for data/shaders/depthgen/vertex.glsl -----
+INFO: Vertex shader was successfully compiled to run on hardware.
+       
+INFO: ----- End Shader Compile Log -----
+INFO: ----- Start Shader Compile Log for data/shaders/depthgen/fragment.glsl -----
+INFO: Fragment shader was successfully compiled to run on hardware.
+       
+INFO: ----- End Shader Compile Log -----
+INFO: ----- Start Shader Link Log for data/shaders/depthgen/vertex.glsl and data/shaders/depthgen/fragment.glsl -----
+INFO: Vertex shader(s) linked, fragment shader(s) linked.
+      
+INFO: ----- End Shader Link Log -----
+INFO: Loaded shader package depthgen
+INFO: ----- Start Shader Compile Log for data/shaders/depthgen/vertex.glsl -----
+INFO: Vertex shader was successfully compiled to run on hardware.
+       
+INFO: ----- End Shader Compile Log -----
+INFO: ----- Start Shader Compile Log for data/shaders/depthgen/fragment.glsl -----
+INFO: Fragment shader was successfully compiled to run on hardware.
+       
+INFO: ----- End Shader Compile Log -----
+INFO: ----- Start Shader Link Log for data/shaders/depthgen/vertex.glsl and data/shaders/depthgen/fragment.glsl -----
+INFO: Vertex shader(s) linked, fragment shader(s) linked.
+      
+INFO: ----- End Shader Link Log -----
+INFO: Loaded shader package depthgen, variant depthgennoalpha
+INFO: ----- Start Shader Compile Log for data/shaders/distancefield/vertex.glsl -----
+INFO: Vertex shader was successfully compiled to run on hardware.
+       
+INFO: ----- End Shader Compile Log -----
+INFO: ----- Start Shader Compile Log for data/shaders/distancefield/fragment.glsl -----
+INFO: Fragment shader was successfully compiled to run on hardware.
+       
+INFO: ----- End Shader Compile Log -----
+INFO: ----- Start Shader Link Log for data/shaders/distancefield/vertex.glsl and data/shaders/distancefield/fragment.glsl -----
+INFO: Vertex shader(s) linked, fragment shader(s) linked.
+      
+INFO: ----- End Shader Link Log -----
+INFO: Loaded shader package distancefield
+INFO: ----- Start Shader Compile Log for data/shaders/deferredskybox/vertex.glsl -----
+INFO: Vertex shader was successfully compiled to run on hardware.
+       
+INFO: ----- End Shader Compile Log -----
+INFO: ----- Start Shader Compile Log for data/shaders/deferredskybox/fragment.glsl -----
+INFO: Fragment shader was successfully compiled to run on hardware.
+       
+INFO: ----- End Shader Compile Log -----
+INFO: ----- Start Shader Link Log for data/shaders/deferredskybox/vertex.glsl and data/shaders/deferredskybox/fragment.glsl -----
+INFO: Vertex shader(s) linked, fragment shader(s) linked.
+      
+INFO: ----- End Shader Link Log -----
+INFO: Loaded shader package deferredskybox
+INFO: ----- Start Shader Compile Log for data/shaders/deferredskyboxblend/vertex.glsl -----
+INFO: Vertex shader was successfully compiled to run on hardware.
+       
+INFO: ----- End Shader Compile Log -----
+INFO: ----- Start Shader Compile Log for data/shaders/deferredskyboxblend/fragment.glsl -----
+INFO: Fragment shader was successfully compiled to run on hardware.
+       
+INFO: ----- End Shader Compile Log -----
+INFO: ----- Start Shader Link Log for data/shaders/deferredskyboxblend/vertex.glsl and data/shaders/deferredskyboxblend/fragment.glsl -----
+INFO: Vertex shader(s) linked, fragment shader(s) linked.
+      
+INFO: ----- End Shader Link Log -----
+INFO: Loaded shader package deferredskyboxblend
+INFO: ----- Start Shader Compile Log for data/shaders/softparticle/vertex.glsl -----
+INFO: Vertex shader was successfully compiled to run on hardware.
+       
+INFO: ----- End Shader Compile Log -----
+INFO: ----- Start Shader Compile Log for data/shaders/softparticle/fragment.glsl -----
+INFO: Fragment shader was successfully compiled to run on hardware.
+       
+INFO: ----- End Shader Compile Log -----
+INFO: ----- Start Shader Link Log for data/shaders/softparticle/vertex.glsl and data/shaders/softparticle/fragment.glsl -----
+INFO: Vertex shader(s) linked, fragment shader(s) linked.
+      
+INFO: ----- End Shader Link Log -----
+INFO: Loaded shader package softparticle
+INFO: ----- Start Shader Compile Log for data/shaders/ppdepthadjust/vertex.glsl -----
+INFO: Vertex shader was successfully compiled to run on hardware.
+       
+INFO: ----- End Shader Compile Log -----
+INFO: ----- Start Shader Compile Log for data/shaders/ppdepthadjust/fragment.glsl -----
+INFO: Fragment shader was successfully compiled to run on hardware.
+       
+INFO: ----- End Shader Compile Log -----
+INFO: ----- Start Shader Link Log for data/shaders/ppdepthadjust/vertex.glsl and data/shaders/ppdepthadjust/fragment.glsl -----
+INFO: Vertex shader(s) linked, fragment shader(s) linked.
+      
+INFO: ----- End Shader Link Log -----
+INFO: Loaded shader package ppdepthadjust
+INFO: ----- Start Shader Compile Log for data/shaders/ppdepthadjust/vertex.glsl -----
+INFO: Vertex shader was successfully compiled to run on hardware.
+       
+INFO: ----- End Shader Compile Log -----
+INFO: ----- Start Shader Compile Log for data/shaders/ppdepthadjust/fragment.glsl -----
+INFO: Fragment shader was successfully compiled to run on hardware.
+       
+INFO: ----- End Shader Compile Log -----
+INFO: ----- Start Shader Link Log for data/shaders/ppdepthadjust/vertex.glsl and data/shaders/ppdepthadjust/fragment.glsl -----
+INFO: Vertex shader(s) linked, fragment shader(s) linked.
+      
+INFO: ----- End Shader Link Log -----
+INFO: Loaded shader package ppdepthadjust, variant ppcopy
+INFO: ----- Start Shader Compile Log for data/shaders/ppdepthadjust/vertex.glsl -----
+INFO: Vertex shader was successfully compiled to run on hardware.
+       
+INFO: ----- End Shader Compile Log -----
+INFO: ----- Start Shader Compile Log for data/shaders/ppdepthadjust/fragment.glsl -----
+INFO: Fragment shader was successfully compiled to run on hardware.
+       
+INFO: ----- End Shader Compile Log -----
+INFO: ----- Start Shader Link Log for data/shaders/ppdepthadjust/vertex.glsl and data/shaders/ppdepthadjust/fragment.glsl -----
+INFO: Vertex shader(s) linked, fragment shader(s) linked.
+      
+INFO: ----- End Shader Link Log -----
+INFO: Loaded shader package ppdepthadjust, variant ppcopy_gamma
+INFO: ----- Start Shader Compile Log for data/shaders/deferredshadows/vertex.glsl -----
+INFO: Vertex shader was successfully compiled to run on hardware.
+       
+INFO: ----- End Shader Compile Log -----
+INFO: ----- Start Shader Compile Log for data/shaders/deferredshadows/fragment.glsl -----
+INFO: Fragment shader was successfully compiled to run on hardware.
+       
+INFO: ----- End Shader Compile Log -----
+INFO: ----- Start Shader Link Log for data/shaders/deferredshadows/vertex.glsl and data/shaders/deferredshadows/fragment.glsl -----
+INFO: Vertex shader(s) linked, fragment shader(s) linked.
+      
+INFO: ----- End Shader Link Log -----
+INFO: Loaded shader package deferredshadows
+INFO: ----- Start Shader Compile Log for data/shaders/ssao/vertex.glsl -----
+INFO: Vertex shader was successfully compiled to run on hardware.
+       
+INFO: ----- End Shader Compile Log -----
+INFO: ----- Start Shader Compile Log for data/shaders/ssao/fragment.glsl -----
+INFO: Fragment shader was successfully compiled to run on hardware.
+       
+INFO: ----- End Shader Compile Log -----
+INFO: ----- Start Shader Link Log for data/shaders/ssao/vertex.glsl and data/shaders/ssao/fragment.glsl -----
+INFO: Vertex shader(s) linked, fragment shader(s) linked.
+      
+INFO: ----- End Shader Link Log -----
+INFO: Loaded shader package ssao
+INFO: ----- Start Shader Compile Log for data/shaders/ssao_blur/vertex.glsl -----
+INFO: Vertex shader was successfully compiled to run on hardware.
+       
+INFO: ----- End Shader Compile Log -----
+INFO: ----- Start Shader Compile Log for data/shaders/ssao_blur/fragment.glsl -----
+INFO: Fragment shader was successfully compiled to run on hardware.
+       
+INFO: ----- End Shader Compile Log -----
+INFO: ----- Start Shader Link Log for data/shaders/ssao_blur/vertex.glsl and data/shaders/ssao_blur/fragment.glsl -----
+INFO: Vertex shader(s) linked, fragment shader(s) linked.
+      
+INFO: ----- End Shader Link Log -----
+INFO: Loaded shader package ssao_blur
+INFO: ----- Start Shader Compile Log for data/shaders/deferredaa/vertex.glsl -----
+INFO: Vertex shader was successfully compiled to run on hardware.
+       
+INFO: ----- End Shader Compile Log -----
+INFO: ----- Start Shader Compile Log for data/shaders/deferredaa/fragment.glsl -----
+INFO: Fragment shader was successfully compiled to run on hardware.
+       
+INFO: ----- End Shader Compile Log -----
+INFO: ----- Start Shader Link Log for data/shaders/deferredaa/vertex.glsl and data/shaders/deferredaa/fragment.glsl -----
+INFO: Vertex shader(s) linked, fragment shader(s) linked.
+      
+INFO: ----- End Shader Link Log -----
+INFO: Loaded shader package deferredaa
+INFO: Successfully enabled shaders
+INFO: Initialized render output: full_scene_depth (FBO)
+INFO: Initialized render output: full_scene_color (FBO)
+INFO: Initialized render output: full_scene_tonemapped (FBO)
+INFO: Initialized render output: normal_xy (FBO)
+INFO: Initialized render output: material_properties (FBO)
+INFO: Initialized render output: diffuse_albedo (FBO)
+INFO: Initialized render output: log_luminance (FBO)
+INFO: Initialized render output: log_luminance_tiny (FBO)
+INFO: Initialized render output: ssao1 (FBO)
+INFO: Initialized render output: ssao2 (FBO)
+INFO: Initialized render output: shadow_depths_near (FBO)
+INFO: Initialized render output: shadow_depths_medium (FBO)
+INFO: Initialized render output: shadow_depths_far (FBO)
+INFO: Maximum anisotropy: 16
+INFO: 0 joysticks found.
+INFO: Loading car controls from: settings/controls.config.camera
+INFO: Update status file settings/updates.config.camera will be created
+INFO: Update status file settings/updates.config.camera will be created
+INFO: Sound initialization information:
+INFO: Obtained audio device:
+      Frequency: 44100
+      Format: 32784
+      Bits per sample: 16
+      Channels: 2
+      Silence: 0
+      Samples: 2048
+      Size: 8192
+      Sound initialization successful
+INFO: Loaded fonts successfully
+INFO: Loaded GUI successfully
+INFO: Loading track from path: data/tracks/garage
+INFO: Loaded surfaces file, 7 surfaces.
+INFO: Track timing sectors: 2
+INFO: Car loading was successful: MCS
+INFO: Loading track from path: data/tracks/pau
+INFO: Loaded surfaces file, 3 surfaces.
+INFO: Track timing sectors: 2
+INFO: Car loading was successful: MCS
+INFO: Textures: 269
+      Models: 1666
+      Sounds: 11
+INFO: Got quit message from GUI. Shutting down...
+INFO: Shutting down...
+ERROR: Failed to load settings/VDrift.config.camera
+INFO: Exiting

@@ -1,0 +1,112 @@
+name = UpdatesFound
+oncancel = Updates
+
+
+[ bg-top ]
+image = white.png
+color = 0.172, 0.161, 0.169
+alpha = 0.5
+left = 0
+right = 0
+top = 0
+height = 0.16
+layer = -1
+
+
+[ bg-bottom ]
+image = white.png
+color = 0.172, 0.161, 0.169
+alpha = 0.5
+left = 0
+right = 0
+bottom = 0
+height = 0.08
+layer = -1
+
+
+[ tooltip ]
+text = gui.tooltip
+fontsize = 0.03
+left = 0
+right = 0
+bottom = 0.04
+height = 0.04
+
+
+[ bg-options ]
+image = white.png
+color = 0.172, 0.161, 0.169
+alpha = 0.5
+left = 0.26
+width = 0.48
+top = 0.175
+height = 0.098
+layer = -1
+
+
+[ title ]
+text = Updates / Update
+fontsize = 0.06
+align = left
+left = 0.25
+width = 0.20
+top = 0.07
+height = 0.06
+
+
+[ widget-01 ]
+text = You can apply updates on the car or track management screen
+fontsize = 0.03
+align = left
+left = 0.25
+width = 0.20
+top = 0.12
+height = 0.04
+
+
+[ widget-02 ]
+name = cars
+text = No car updates found.
+fontsize = 0.035
+align = left
+left = 0.27
+width = 0.20
+top = 0.175
+height = 0.05
+
+
+[ widget-03 ]
+name = tracks
+text = No track updates found.
+fontsize = 0.035
+align = left
+left = 0.27
+width = 0.20
+top = 0.225
+height = 0.05
+
+
+[ widget-04b ]
+text = Back
+fontsize = 0.035
+align = left
+tip = Return to the Updates menu.
+onselect = Updates
+onfocus = widget-04b.sat:0.56
+onblur = widget-04b.sat:0.0
+focus = true
+hue = 0.56
+left = 0.27
+width = 0.20
+top = 0.275
+height = 0.05
+
+[ widget-04e ]
+image = white.png
+color = 0.172, 0.161, 0.169
+alpha = 0.5
+left = 0.26
+width = 0.22
+top = 0.275
+height = 0.048
+layer = -1

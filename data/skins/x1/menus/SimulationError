@@ -1,0 +1,48 @@
+name = SimulationError
+widgets = 3
+background = box.png
+dialog = true
+
+[ widget-00 ]
+type = label
+name = SimulationErrorMessage
+text = Simulation Engine Error
+color = 0.8, 0.3, 0.3
+center = 0.5, 0.45
+width = auto
+height = auto
+fontsize = 0.04
+enabled = 0
+selected = 0
+default = 0
+cancel = 0
+
+[ widget-01 ]
+type = label
+name = SimulationErrorMessage
+text = Usually this is caused by a bug in the game. Please report this on http://vdrift.net/. Thanks!
+color = 0.8, 0.3, 0.3
+center = 0.5, 0.55
+width = auto
+height = auto
+fontsize = 5
+enabled = 0
+selected = 0
+default = 0
+cancel = 0
+
+[ widget-02 ]
+type = button
+name = SimulationErrorMainButton
+text = Main Menu
+tip = Go back to the Network Game menu.
+action = Main
+center = 0.5, 0.65
+color = 0.8, 0.0, 0.0
+width = auto
+height = auto
+fontsize = 0.04
+enabled = 1
+selected = 1
+default = 1
+cancel = 1

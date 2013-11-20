@@ -1,0 +1,81 @@
+name = InGameOptions
+widgets = 5
+background = box.png
+dialog = false
+
+[ widget-00 ]
+type = label
+name = InGameOptionsLabel
+text = Options
+center = 0.5, 0.1
+width = auto
+height = auto
+fontsize = 0.06
+enabled = 0
+selected = 0
+default = 0
+cancel = 0
+
+[ widget-01 ]
+type = button
+name = InGameDisplayButton
+text = Display
+tip = Change video, display and detail settings.
+action = InGameDisplayOptions
+center = 0.5, 0.3
+color = 0.0, 0.0, 0.8
+width = auto
+height = auto
+fontsize = 0.04
+enabled = 1
+selected = 1
+default = 0
+cancel = 0
+
+[ widget-02 ]
+type = button
+name = InGameSoundButton
+text = Sound
+tip = Change sound settings.
+action = InGameSoundOptions
+center = 0.5, 0.4
+color = 0.0, 0.0, 0.8
+width = auto
+height = auto
+fontsize = 0.04
+enabled = 1
+selected = 0
+default = 0
+cancel = 0
+
+[ widget-03 ]
+type = button
+name = InGameControlsButton
+text = Controls
+tip = Change input and control settings.
+action = InGameControlsOptions
+center = 0.5, 0.5
+color = 0.0, 0.0, 0.8
+width = auto
+height = auto
+fontsize = 0.04
+enabled = 1
+selected = 0
+default = 0
+cancel = 0
+
+[ widget-04 ]
+type = button
+name = InGameOptionsBackButton
+text = Back to Pause Menu
+tip = Return to the Pause menu.
+action = InGameMenu
+center = 0.5, 0.6
+color = 0.8, 0.0, 0.0
+width = auto
+height = auto
+fontsize = 0.04
+enabled = 1
+selected = 0
+default = 0
+cancel = 1

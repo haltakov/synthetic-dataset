@@ -1,0 +1,125 @@
+name = TransmissionControls
+widgets = 8
+background = box.png
+dialog = false
+
+[ widget-00 ]
+type = label
+name = TransmissionControls
+text = Assign Transmission Controls
+center = 0.5, 0.1
+width = auto
+height = auto
+fontsize = 0.06
+enabled = 0
+selected = 0
+default = 0
+cancel = 0
+
+[ widget-01 ]
+type = controlgrab
+name = ShiftUpControl
+text = Shift Up
+tip = The shift up control changes the car's gear to the next one.
+setting = disengage_shift_up
+center = 0.5, 0.30
+width = auto
+height = auto
+fontsize = 0.03
+enabled = 1
+selected = 1
+default = 0
+cancel = 0
+
+[ widget-02 ]
+type = controlgrab
+name = ShiftDownControl
+text = Shift Down
+tip = The shift down control changes the car's gear to the previous one.
+setting = disengage_shift_down
+center = 0.5, 0.34
+width = auto
+height = auto
+fontsize = 0.03
+enabled = 1
+selected = 0
+default = 0
+cancel = 0
+
+#[ widget-03 ]
+#type = controlgrab
+#name = EngageClutchControl
+#text = Engage Clutch
+#tip = The engage clutch control lets out the clutch. This must be done after every shift.
+#setting = engage
+#center = 0.5, 0.38
+#width = auto
+#height = auto
+#fontsize = 0.03
+#enabled = 1
+#selected = 0
+#default = 0
+#cancel = 0
+
+[ widget-04 ]
+type = controlgrab
+name = AnalogClutchControl
+text = Analog Clutch
+tip = The analog clutch control can allow you to use an external clutch pedal.
+setting = clutch
+center = 0.5, 0.38
+width = auto
+height = auto
+fontsize = 0.03
+enabled = 1
+selected = 0
+default = 0
+cancel = 0
+
+[ widget-05 ]
+type = button
+name = GearsButton
+text = Gears
+tip = Assign inputs to each of the gear actions.
+action = GearsControls
+center = 0.5, 0.52
+color = 0.0, 0.0, 0.8
+width = auto
+height = auto
+fontsize = 0.04
+enabled = 1
+selected = 0
+default = 0
+cancel = 0
+
+[ widget-06 ]
+type = button
+name = TransmissionControlsOKButton
+text = OK
+tip = Save changes and return to Car Controls menu.
+action = CarControls
+center = 0.4, 0.64
+color = 0.0, 0.8, 0.0
+width = auto
+height = auto
+fontsize = 0.04
+enabled = 1
+selected = 0
+default = 1
+cancel = 0
+
+[ widget-07 ]
+type = button
+name = TransmissionControlsCancelButton
+text = Cancel
+tip = Forget changes and return to Car Controls menu.
+action = CarControls
+center = 0.6, 0.64
+color = 0.8, 0.0, 0.0
+width = auto
+height = auto
+fontsize = 0.04
+enabled = 1
+selected = 0
+default = 0
+cancel = 1

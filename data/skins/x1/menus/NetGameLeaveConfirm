@@ -1,0 +1,48 @@
+name = NetGameLeaveConfirm
+widgets = 3
+background = box.png
+dialog = true
+
+[ widget-00 ]
+type = label
+name = NetGameLeaveMessage
+text = Are you sure you want to end this network game?
+color = 0.8, 0.3, 0.3
+center = 0.5, 0.45
+width = auto
+height = auto
+fontsize = 0.04
+enabled = 0
+selected = 0
+default = 0
+cancel = 0
+
+[ widget-01 ]
+type = button
+name = NetGameLeaveYes
+text = Yes
+action = LeaveGame
+center = 0.4, 0.55
+color = 0.0, 0.8, 0.0
+width = auto
+height = auto
+fontsize = 0.04
+enabled = 1
+selected = 0
+default = 1
+cancel = 0
+
+[ widget-02 ]
+type = button
+name = NetGameLeaveNo
+text = No
+action = ReturnToGame
+center = 0.6, 0.55
+color = 0.8, 0.0, 0.0
+width = auto
+height = auto
+fontsize = 0.04
+enabled = 1
+selected = 1
+default = 0
+cancel = 1

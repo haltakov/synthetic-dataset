@@ -1,0 +1,81 @@
+name = Options
+widgets = 5
+background = box.png
+dialog = false
+
+[ widget-00 ]
+type = label
+name = OptionsLabel
+text = Options
+center = 0.5, 0.1
+width = auto
+height = auto
+fontsize = 0.06
+enabled = 0
+selected = 0
+default = 0
+cancel = 0
+
+[ widget-01 ]
+type = button
+name = DisplayButton
+text = Display
+tip = Change video, display and detail settings.
+action = DisplayOptions
+center = 0.5, 0.3
+color = 0.0, 0.0, 0.8
+width = auto
+height = auto
+fontsize = 0.04
+enabled = 1
+selected = 1
+default = 0
+cancel = 0
+
+[ widget-02 ]
+type = button
+name = SoundButton
+text = Sound
+tip = Change sound settings.
+action = SoundOptions
+center = 0.5, 0.4
+color = 0.0, 0.0, 0.8
+width = auto
+height = auto
+fontsize = 0.04
+enabled = 1
+selected = 0
+default = 0
+cancel = 0
+
+[ widget-03 ]
+type = button
+name = ControlsButton
+text = Controls
+tip = Change input and control settings.
+action = ControlsOptions
+center = 0.5, 0.5
+color = 0.0, 0.0, 0.8
+width = auto
+height = auto
+fontsize = 0.04
+enabled = 1
+selected = 0
+default = 0
+cancel = 0
+
+[ widget-04 ]
+type = button
+name = MainBackButton
+text = Back to Main
+tip = Return to the Main menu.
+action = Main
+center = 0.5, 0.6
+color = 0.8, 0.0, 0.0
+width = auto
+height = auto
+fontsize = 0.04
+enabled = 1
+selected = 0
+default = 0
+cancel = 1

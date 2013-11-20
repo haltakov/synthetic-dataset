@@ -1,0 +1,70 @@
+name = DataConnectionError
+oncancel = Main
+
+
+[ bg-top ]
+image = white.png
+color = 0.172, 0.161, 0.169
+alpha = 0.5
+left = 0
+right = 0
+top = 0
+height = 0.14
+layer = -1
+
+
+[ bg-bottom ]
+image = white.png
+color = 0.172, 0.161, 0.169
+alpha = 0.5
+left = 0
+right = 0
+bottom = 0
+height = 0.08
+layer = -1
+
+
+[ tooltip ]
+text = gui.tooltip
+fontsize = 0.03
+left = 0
+right = 0
+bottom = 0.04
+height = 0.04
+
+
+[ widget-00 ]
+text = There was an error connecting to the VDrift data server.
+fontsize = 0.04
+align = left
+left = 0.25
+width = 0.20
+top = 0.07
+height = 0.06
+
+
+[ widget-02b ]
+text = Back
+fontsize = 0.035
+align = left
+tip = Go back to the main menu.
+onselect = Main
+onfocus = widget-02b.sat:0.56
+onblur = widget-02b.sat:0.0
+focus = true
+hue = 0.56
+left = 0.27
+width = 0.20
+top = 0.175
+height = 0.05
+selected = 1
+
+[ widget-02e ]
+image = white.png
+color = 0.172, 0.161, 0.169
+alpha = 0.5
+left = 0.26
+width = 0.22
+top = 0.175
+height = 0.048
+layer = -1

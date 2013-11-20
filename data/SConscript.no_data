@@ -1,0 +1,10 @@
+12345678901234567890123456789012345678901234567890123456789012345678901234567890
+print """* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+*                             W A R N I N G ! ! !                             *
+* You do not have any data. VDrift will not run properly without its data.    *
+* Please visit <http://sourceforge.net/projects/vdrift> and download the      *
+* appropriate data for your version of VDrift. You have the option between a  *
+* minimal set of game data and the full set, which is much larger.            *
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *"""
+
+print 'Your version of VDrift is: ', env['version']

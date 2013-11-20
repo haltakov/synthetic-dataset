@@ -1,0 +1,77 @@
+name = SoundOptions
+widgets = 5
+background = box.png
+dialog = false
+
+[ widget-00 ]
+type = label
+name = SoundOptionsLabel
+text = Sound Options
+center = 0.5, 0.1
+width = auto
+height = auto
+fontsize = 0.06
+enabled = 0
+selected = 0
+default = 0
+cancel = 0
+
+[ widget-01 ]
+type = slider
+name = FXVolumeSlider
+setting = sound.volume
+values = options
+center = 0.5, 0.25
+width = auto
+height = auto
+fontsize = 0.03
+enabled = 1
+selected = 1
+default = 0
+cancel = 0
+
+[ widget-02 ]
+type = slider
+name = MusicVolumeSlider
+setting = sound.music_volume
+values = options
+center = 0.5, 0.32
+width = auto
+height = auto
+fontsize = 0.03
+enabled = 0
+selected = 0
+default = 0
+cancel = 0
+
+[ widget-03 ]
+type = button
+name = SoundOptionsOKButton
+text = OK
+tip = Save changes and return to Options menu.
+action = Options
+center = 0.4, 0.42
+color = 0.0, 0.8, 0.0
+width = auto
+height = auto
+fontsize = 0.04
+enabled = 1
+selected = 0
+default = 1
+cancel = 0
+
+[ widget-04 ]
+type = button
+name = SoundOptionsCancelButton
+text = Cancel
+tip = Forget changes and return to Options menu.
+action = Options
+center = 0.6, 0.42
+color = 0.8, 0.0, 0.0
+width = auto
+height = auto
+fontsize = 0.04
+enabled = 1
+selected = 0
+default = 0
+cancel = 1

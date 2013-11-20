@@ -1,0 +1,137 @@
+name = ControlsOptions
+widgets = 9
+background = box.png
+dialog = false
+
+[ widget-00 ]
+type = label
+name = ControlsOptionsLabel
+text = Controls Options
+center = 0.5, 0.1
+width = auto
+height = auto
+fontsize = 0.06
+enabled = 0
+selected = 0
+default = 0
+cancel = 0
+
+[ widget-01 ]
+type = slider
+name = SpeedSensSteeringSlider
+setting = control.speed_sens_steering
+values = options
+center = 0.5, 0.23
+width = auto
+height = auto
+fontsize = 0.03
+enabled = 1
+selected = 1
+default = 0
+cancel = 0
+
+[ widget-02 ]
+type = toggle
+name = AutoTransToggle 
+setting = control.autotrans 
+values = options 
+center = 0.5, 0.29 
+width = auto 
+height = auto 
+fontsize = 0.03 
+enabled = 1 
+selected = 0 
+default = 0 
+cancel = 0 
+ 
+[ widget-03 ] 
+type = toggle 
+name = AutoClutchToggle
+setting = control.autoclutch
+values = options
+center = 0.5, 0.33
+width = auto
+height = auto
+fontsize = 0.03
+enabled = 1
+selected = 0
+default = 0
+cancel = 0
+
+[ widget-04 ]
+type = floatwheel
+name = ButtonRampWheel
+setting = control.button_ramp
+values = options
+center = 0.5, 0.37
+width = auto
+height = auto
+fontsize = 0.03
+enabled = 1
+selected = 0
+default = 0
+cancel = 0
+
+[ widget-05 ]
+type = button
+name = ActionControlMapButton
+text = Assign Controls
+tip = Map keys, buttons and axes to actions in the game.
+action = AssignControls
+center = 0.5, 0.55
+color = 0.0, 0.0, 0.8
+width = auto
+height = auto
+fontsize = 0.04
+enabled = 1
+selected = 0
+default = 0
+cancel = 0
+
+[ widget-06 ]
+type = button
+name = JoystickOptionsButton
+text = Joystick Options
+tip = Extra options for gamepad, joystick and steering wheel controls.
+action = JoystickOptions
+center = 0.5, 0.65
+color = 0.0, 0.0, 0.8
+width = auto
+height = auto
+fontsize = 0.04
+enabled = 1
+selected = 0
+default = 0
+cancel = 0
+
+[ widget-07 ]
+type = button
+name = ControlsOptionsOKButton
+text = OK
+tip = Save changes and return to Options menu.
+action = Options
+center = 0.4, 0.85
+color = 0.0, 0.8, 0.0
+width = auto
+height = auto
+fontsize = 0.04
+enabled = 1
+selected = 0
+default = 1
+cancel = 0
+
+[ widget-08 ]
+type = button
+name = ControlsOptionsCancelButton
+text = Cancel
+tip = Forget changes and return to Options menu.
+action = Options
+center = 0.6, 0.85
+color = 0.8, 0.0, 0.0
+width = auto
+height = auto
+fontsize = 0.04
+enabled = 1
+selected = 0
+default = 0
+cancel = 1

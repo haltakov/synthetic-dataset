@@ -1,0 +1,237 @@
+name = CarControls
+widgets = 12
+background = box.png
+dialog = false
+
+[ widget-00 ]
+type = label
+name = CarControls
+text = Assign Car Controls
+center = 0.5, 0.1
+width = auto
+height = auto
+fontsize = 0.06
+enabled = 0
+selected = 0
+default = 0
+cancel = 0
+
+[ widget-01 ]
+type = controlgrab
+name = GasControl
+text = Gas
+tip = The gas control causes the car to speed up.
+setting = gas
+analog = 1
+only_one = 1
+center = 0.5, 0.25
+spacing = 0.2
+width = auto
+height = auto
+fontsize = 0.03
+enabled = 1
+selected = 1
+default = 0
+cancel = 0
+
+[ widget-02 ]
+type = controlgrab
+name = BrakeControl
+text = Brake
+tip = The brake control causes the car to slow down.
+setting = brake
+analog = 1
+only_one = 1
+spacing = 0.2
+center = 0.5, 0.29
+width = auto
+height = auto
+fontsize = 0.03
+enabled = 1
+selected = 0
+default = 0
+cancel = 0
+
+[ widget-03 ]
+type = controlgrab
+name = SteerLeftControl
+text = Steer Left
+tip = The steer left control causes the car to turn left.
+setting = steer_left
+analog = 1
+only_one = 1
+center = 0.5, 0.33
+spacing = 0.2
+width = auto
+height = auto
+fontsize = 0.03
+enabled = 1
+selected = 0
+default = 0
+cancel = 0
+
+[ widget-04 ]
+type = controlgrab
+name = SteerRightControl
+text = Steer Right
+only_one = 1
+tip = The steer right control causes the car to turn right.
+setting = steer_right
+analog = 1
+center = 0.5, 0.37
+spacing = 0.2
+width = auto
+height = auto
+fontsize = 0.03
+enabled = 1
+selected = 0
+default = 0
+cancel = 0
+
+[ widget-05 ]
+type = controlgrab
+name = StartEngineControl
+text = Start Engine
+tip = The start engine control will restart the engine if it stalls.
+setting = start_engine
+analog = 0
+center = 0.5, 0.41
+spacing = 0.2
+width = auto
+height = auto
+fontsize = 0.03
+enabled = 1
+selected = 0
+default = 0
+cancel = 0
+
+[ widget-06 ]
+type = controlgrab
+name = HandbrakeControl
+text = Handbrake
+tip = The handbrake brakes only on the back wheels.
+setting = handbrake
+analog = 1
+center = 0.5, 0.45
+spacing = 0.2
+width = auto
+height = auto
+fontsize = 0.03
+enabled = 1
+selected = 0
+default = 0
+cancel = 0
+
+[ widget-07 ]
+type = controlgrab
+name = ABSToggleControl
+text = ABS Toggle
+tip = The ABS Toggle turns anti-lock braking on or off while playing.
+setting = abs_toggle
+center = 0.5, 0.49
+spacing = 0.2
+width = auto
+height = auto
+fontsize = 0.03
+enabled = 1
+selected = 0
+default = 0
+cancel = 0
+
+[ widget-08 ]
+type = controlgrab
+name = TCSToggleControl
+text = TCS Toggle
+tip = The TCS Toggle turns traction control on or off while playing.
+setting = tcs_toggle
+center = 0.5, 0.53
+spacing = 0.2
+width = auto
+height = auto
+fontsize = 0.03
+enabled = 1
+selected = 0
+default = 0
+cancel = 0
+
+[ widget-09 ]
+type = controlgrab
+name = RearViewControl
+text = Rear View
+tip = Looks behind you during driving.
+setting = rear_view
+center = 0.5, 0.57
+spacing = 0.2
+width = auto
+height = auto
+fontsize = 0.03
+analog = 1
+enabled = 1
+selected = 0
+default = 0
+cancel = 0
+
+[ widget-10 ]
+type = controlgrab
+name = RolloverControl
+text = Rollover Recover
+tip = Rotate car back onto it's wheels after rollover.
+setting = rollover_recover
+center = 0.5, 0.61
+spacing = 0.2
+width = auto
+height = auto
+fontsize = 0.03
+analog = 1
+enabled = 1
+selected = 0
+default = 0
+cancel = 0
+
+[ widget-11 ]
+type = button
+name = TransmissionButton
+text = Transmission
+tip = Assign inputs to actions related to the transmission.
+action = TransmissionControls
+center = 0.5, 0.7
+color = 0.0, 0.0, 0.8
+width = auto
+height = auto
+fontsize = 0.04
+enabled = 1
+selected = 0
+default = 0
+cancel = 0
+
+[ widget-12 ]
+type = button
+name = CarControlsOKButton
+text = OK
+tip = Save changes and return to Assign Controls menu.
+action = AssignControls
+center = 0.4, 0.85
+color = 0.0, 0.8, 0.0
+width = auto
+height = auto
+fontsize = 0.04
+enabled = 1
+selected = 0
+default = 1
+cancel = 0
+
+[ widget-13 ]
+type = button
+name = CarControlsCancelButton
+text = Cancel
+tip = Forget changes and return to Assign Controls menu.
+action = AssignControls
+center = 0.6, 0.85
+color = 0.8, 0.0, 0.0
+width = auto
+height = auto
+fontsize = 0.04
+enabled = 1
+selected = 0
+default = 0
+cancel = 1

@@ -1,0 +1,112 @@
+name = Main
+widgets = 7
+background = box.png
+dialog = false
+
+[ widget-00 ]
+type = image
+name = LogoImage
+filename = logo.png
+center = 0.5, 0.15
+width = 0.5
+height = 0.667
+enabled = 0
+selected = 0
+default = 0
+cancel = 0
+
+[ widget-01 ]
+type = button
+name = PracticeGameButton
+text = Practice Game
+tip = Start a practice game.
+action = PracticeGame
+center = 0.5, 0.3
+color = 0.0, 0.0, 0.8
+width = auto
+height = auto
+fontsize = 0.04
+enabled = 1
+selected = 1
+default = 0
+cancel = 0
+
+[ widget-02 ]
+type = button
+name = SingleRaceButton
+text = Single Race
+tip = Start a race.
+action = SingleRace
+center = 0.5, 0.39
+color = 0.0, 0.0, 0.8
+width = auto
+height = auto
+fontsize = 0.04
+enabled = 1
+selected = 0
+default = 0
+cancel = 0
+
+#[ widget-03 ]
+#type = button
+#name = AutoXButton
+#text = Auto-X
+#tip = Play Auto-X.
+#action = AutoX
+#center = 0.5, 0.48
+#color = 0.0, 0.0, 0.8
+#width = auto
+#height = auto
+#fontsize = 0.04
+#enabled = 1
+#selected = 0
+#default = 0
+#cancel = 0
+
+[ widget-04 ]
+type = button
+name = ReplaysButton
+text = Replays
+tip = Play back recorded games.
+action = Replays
+center = 0.5, 0.48
+color = 0.0, 0.0, 0.8
+width = auto
+height = auto
+fontsize = 0.04
+enabled = 1
+selected = 0
+default = 0
+cancel = 0
+
+[ widget-05 ]
+type = button
+name = OptionsButton
+text = Options
+tip = Configure your display, sound and controls.
+action = Options
+center = 0.5, 0.57
+color = 0.0, 0.0, 0.8
+width = auto
+height = auto
+fontsize = 0.04
+enabled = 1
+selected = 0
+default = 0
+cancel = 0
+
+[ widget-06 ]
+type = button
+name = QuitButton
+text = Quit
+tip = Quit VDrift.
+action = QuitConfirm
+center = 0.5, 0.84
+color = 0.8, 0.0, 0.0
+width = auto
+height = auto
+fontsize = 0.04
+enabled = 1
+selected = 0
+default = 0
+cancel = 1

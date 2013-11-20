@@ -1,0 +1,229 @@
+name = CarManager
+oncancel = Updates
+
+
+[ bg-top ]
+image = white.png
+color = 0.172, 0.161, 0.169
+alpha = 0.5
+left = 0
+right = 0
+top = 0
+height = 0.14
+layer = -1
+
+
+[ bg-bottom ]
+image = white.png
+color = 0.172, 0.161, 0.169
+alpha = 0.5
+left = 0
+right = 0
+bottom = 0
+height = 0.08
+layer = -1
+
+
+[ tooltip ]
+text = gui.tooltip
+fontsize = 0.03
+left = 0
+right = 0
+bottom = 0.04
+height = 0.04
+
+
+[ bg-labels ]
+image = white.png
+color = 0.172, 0.161, 0.169
+alpha = 0.5
+left = 0.008
+width = 0.25
+top = 0.181
+height = 0.158
+layer = -1
+
+
+[ bg-options ]
+image = white.png
+color = 0.172, 0.161, 0.169
+alpha = 0.5
+left = 0.26
+width = 0.26
+top = 0.181
+height = 0.158
+layer = -1
+
+
+[ title ]
+text = Updates / Cars
+fontsize = 0.06
+align = left
+left = 0.25
+width = 0.20
+top = 0.07
+height = 0.06
+
+
+[ widget-02a ]
+text = Car
+fontsize = 0.03
+align = right
+left = 0.01
+width = 0.24
+top = 0.18
+height = 0.04
+
+[ widget-02b ]
+text = <
+fontsize = 0.03
+align = left
+tip = Go back to the last car.
+onselect = CarManagerPrev
+onmoveleft = CarManagerPrev
+onmoveright = CarManagerNext
+onmoveup = widget-17b
+onmovedown = widget-03b
+onfocus = widget-02b.alpha:1 widget-02c.alpha:1 widget-02d.sat:0.56
+onblur = widget-02b.alpha:0 widget-02c.alpha:0 widget-02d.sat:0.0
+focus = true
+color = 0.439, 0.796, 1.00
+alpha = 0
+left = 0.27
+width = 0.12
+top = 0.18
+height = 0.04
+
+[ widget-02c ]
+text = >
+fontsize = 0.03
+align = right
+tip = Advance to the next car.
+onselect = CarManagerNext
+onmoveleft = CarManagerPrev
+onmoveright = CarManagerNext
+onmoveup = widget-17b
+onmovedown = widget-03b
+onfocus = widget-02b.alpha:1 widget-02c.alpha:1 widget-02d.sat:0.56
+onblur = widget-02b.alpha:0 widget-02c.alpha:0 widget-02d.sat:0.0
+focus = false
+color = 0.439, 0.796, 1.00
+alpha = 0
+left = 0.39
+width = 0.12
+top = 0.18
+height = 0.04
+
+[ widget-02d ]
+name = name
+text = Car Name
+fontsize = 0.03
+hue = 0.56
+left = 0.27
+width = 0.24
+top = 0.18
+height = 0.04
+
+
+[ versionl-str ]
+text = Local
+fontsize = 0.03
+align = right
+left = 0.01
+width = 0.24
+top = 0.22
+height = 0.04
+
+[ versionl-val ]
+name = version_local
+text = none
+fontsize = 0.03
+left = 0.27
+width = 0.24
+top = 0.22
+height = 0.04
+
+
+[ versionr-str ]
+text = Remote
+fontsize = 0.03
+align = right
+left = 0.01
+width = 0.24
+top = 0.26
+height = 0.04
+
+[ versionr-val ]
+name = version_remote
+text = none
+fontsize = 0.03
+left = 0.27
+width = 0.24
+top = 0.26
+height = 0.04
+
+
+[ update-nfo ]
+name = update_info
+text = none
+fontsize = 0.03
+left = 0.27
+width = 0.24
+top = 0.30
+height = 0.04
+
+
+[ widget-03b ]
+text = Download
+fontsize = 0.03
+#align = left
+tip = Update this track to the latest version.
+onselect = ApplyCarUpdate
+onmoveup = widget-02b
+onmovedown = widget-04b
+onfocus = widget-03b.sat:0.56
+onblur = widget-03b.sat:0.0
+focus = false
+hue = 0.56
+left = 0.27
+width = 0.24
+top = 0.34
+height = 0.04
+
+[ widget-03e ]
+image = white.png
+color = 0.172, 0.161, 0.169
+alpha = 0.5
+left = 0.26
+width = 0.26
+top = 0.341
+height = 0.038
+layer = -1
+
+
+[ widget-04b ]
+text = Back
+fontsize = 0.03
+#align = left
+tip = Return to the Updates page.
+onselect = Updates
+onmoveup = widget-03b
+onmovedown = widget-01b
+onfocus = widget-04b.sat:0.56
+onblur = widget-04b.sat:0.0
+focus = false
+hue = 0.56
+left = 0.27
+width = 0.24
+top = 0.38
+height = 0.04
+
+[ widget-04e ]
+image = white.png
+color = 0.172, 0.161, 0.169
+alpha = 0.5
+left = 0.26
+width = 0.26
+top = 0.381
+height = 0.038
+layer = -1

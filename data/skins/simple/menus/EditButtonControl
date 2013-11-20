@@ -1,0 +1,267 @@
+name = EditButtonControl
+oncancel = CancelControl
+
+
+[ bg-top ]
+image = white.png
+color = 0.172, 0.161, 0.169
+alpha = 0.5
+left = 0
+right = 0
+top = 0
+height = 0.14
+layer = -1
+
+
+[ bg-bottom ]
+image = white.png
+color = 0.172, 0.161, 0.169
+alpha = 0.5
+left = 0
+right = 0
+bottom = 0
+height = 0.08
+layer = -1
+
+
+[ tooltip ]
+text = gui.tooltip
+fontsize = 0.03
+left = 0
+right = 0
+bottom = 0.04
+height = 0.04
+
+
+[ bg-labels ]
+image = white.png
+color = 0.172, 0.161, 0.169
+alpha = 0.5
+left = 0.008
+width = 0.25
+top = 0.181
+height = 0.078
+layer = -1
+
+
+[ bg-options ]
+image = white.png
+color = 0.172, 0.161, 0.169
+alpha = 0.5
+left = 0.26
+width = 0.26
+top = 0.181
+height = 0.078
+layer = -1
+
+
+[ title ]
+text = Options / Controls / Button / Edit
+fontsize = 0.06
+align = left
+left = 0.25
+width = 0.20
+top = 0.07
+height = 0.06
+
+
+[ widget-01a ]
+text = Input event type
+fontsize = 0.03
+align = right
+left = 0.01
+width = 0.24
+top = 0.18
+height = 0.04
+
+[ widget-01b ]
+text = <
+fontsize = 0.03
+align = left
+tip = Will this input be activated once per press, or whenever it's held down?
+onselect = controledit.held_once.prev
+onmoveleft = controledit.held_once.prev
+onmoveright = controledit.held_once.next
+onmoveup = widget-05b
+onmovedown = widget-02b
+onfocus = widget-01b.alpha:1 widget-01c.alpha:1 widget-01d.sat:0.56
+onblur = widget-01b.alpha:0 widget-01c.alpha:0 widget-01d.sat:0.0
+focus = true
+color = 0.439, 0.796, 1.00
+alpha = 0
+left = 0.27
+width = 0.12
+top = 0.18
+height = 0.04
+
+[ widget-01c ]
+text = >
+fontsize = 0.03
+align = right
+tip = Will this input be activated once per press, or whenever it's held down?
+onselect = controledit.held_once.next
+onmoveleft = controledit.held_once.prev
+onmoveright = controledit.held_once.next
+onmoveup = widget-05b
+onmovedown = widget-02b
+onfocus = widget-01b.alpha:1 widget-01c.alpha:1 widget-01d.sat:0.56
+onblur = widget-01b.alpha:0 widget-01c.alpha:0 widget-01d.sat:0.0
+focus = false
+color = 0.439, 0.796, 1.00
+alpha = 0
+left = 0.39
+width = 0.12
+top = 0.18
+height = 0.04
+
+[ widget-01d ]
+text = controledit.held_once.str
+fontsize = 0.03
+hue = 0.56
+left = 0.27
+width = 0.24
+top = 0.18
+height = 0.04
+
+
+[ widget-02a ]
+text = Input event trigger
+fontsize = 0.03
+align = right
+left = 0.01
+width = 0.24
+top = 0.22
+height = 0.04
+
+[ widget-02b ]
+text = <
+fontsize = 0.03
+align = left
+tip = Trigger the control when the key is pressed down or released?
+onselect = controledit.up_down.prev
+onmoveleft = controledit.up_down.prev
+onmoveright = controledit.up_down.next
+onmoveup = widget-01b
+onmovedown = widget-03b
+onfocus = widget-02b.alpha:1 widget-02c.alpha:1 widget-02d.sat:0.56
+onblur = widget-02b.alpha:0 widget-02c.alpha:0 widget-02d.sat:0.0
+focus = false
+color = 0.439, 0.796, 1.00
+alpha = 0
+left = 0.27
+width = 0.12
+top = 0.22
+height = 0.04
+
+[ widget-02c]
+text = >
+fontsize = 0.03
+align = right
+tip = Trigger the control when the key is pressed down or released?
+onselect = controledit.up_down.next
+onmoveleft = controledit.up_down.prev
+onmoveright = controledit.up_down.next
+onmoveup = widget-01b
+onmovedown = widget-03b
+onfocus = widget-02b.alpha:1 widget-02c.alpha:1 widget-02d.sat:0.56
+onblur = widget-02b.alpha:0 widget-02c.alpha:0 widget-02d.sat:0.0
+focus = false
+color = 0.439, 0.796, 1.00
+alpha = 0
+left = 0.39
+width = 0.12
+top = 0.22
+height = 0.04
+
+[ widget-02d ]
+text = controledit.up_down.str
+fontsize = 0.03
+hue = 0.56
+left = 0.27
+width = 0.24
+top = 0.22
+height = 0.04
+
+
+[ widget-03b ]
+text = Delete
+fontsize = 0.03
+#align = left
+tip = Delete this control and return to the previous menu.
+onselect = DeleteControl
+onmoveup = widget-02b
+onmovedown = widget-04b
+onfocus = widget-03b.sat:0.56
+onblur = widget-03b.sat:0.0
+focus = false
+hue = 0.56
+left = 0.27
+width = 0.24
+top = 0.26
+height = 0.04
+
+[ widget-03e ]
+image = white.png
+color = 0.172, 0.161, 0.169
+alpha = 0.5
+left = 0.26
+width = 0.26
+top = 0.261
+height = 0.038
+layer = -1
+
+
+[ widget-04b ]
+text = Cancel
+fontsize = 0.03
+#align = left
+tip = Forget changes and return to the previous menu.
+onselect = CancelControl
+onmoveup = widget-03b
+onmovedown = widget-05b
+onfocus = widget-04b.sat:0.56
+onblur = widget-04b.sat:0.0
+focus = false
+hue = 0.56
+left = 0.27
+width = 0.24
+top = 0.30
+height = 0.04
+
+[ widget-04e ]
+image = white.png
+color = 0.172, 0.161, 0.169
+alpha = 0.5
+left = 0.26
+width = 0.26
+top = 0.301
+height = 0.038
+layer = -1
+
+
+[ widget-05b ]
+text = OK
+fontsize = 0.03
+#align = left
+tip = Save changes and return to the previous menu.
+onselect = SetButtonControl
+onmoveup = widget-04b
+onmovedown = widget-01b
+onfocus = widget-05b.sat:0.56
+onblur = widget-05b.sat:0.0
+focus = false
+hue = 0.56
+left = 0.27
+width = 0.24
+top = 0.34
+height = 0.04
+
+[ widget-05e ]
+image = white.png
+color = 0.172, 0.161, 0.169
+alpha = 0.5
+left = 0.26
+width = 0.26
+top = 0.341
+height = 0.038
+layer = -1

@@ -1,0 +1,128 @@
+name = GameControls
+widgets = 8
+background = box.png
+dialog = false
+
+[ widget-00 ]
+type = label
+name = GameControls
+text = Assign Game Controls
+center = 0.5, 0.1
+width = auto
+height = auto
+fontsize = 0.06
+enabled = 0
+selected = 0
+default = 0
+cancel = 0
+
+[ widget-01 ]
+type = controlgrab
+name = PauseControl
+text = Pause
+tip = The pause control freezes the game (except in multiplayer).
+setting = pause
+center = 0.5, 0.30
+width = auto
+height = auto
+fontsize = 0.03
+enabled = 1
+selected = 1
+default = 0
+cancel = 0
+
+[ widget-02 ]
+type = button
+name = CameraViewControlsButton
+text = Camera Views
+tip = Assign inputs to camera view selection controls.
+action = CameraViewControls
+center = 0.5, 0.4
+color = 0.0, 0.0, 0.8
+width = auto
+height = auto
+fontsize = 0.04
+enabled = 1
+selected = 0
+default = 0
+cancel = 0
+
+[ widget-03 ]
+type = button
+name = CameraMovementControlsButton
+text = Camera Movement
+tip = Assign inputs to camera movement controls.
+action = CameraMovementControls
+center = 0.5, 0.5
+color = 0.0, 0.0, 0.8
+width = auto
+height = auto
+fontsize = 0.04
+enabled = 1
+selected = 0
+default = 0
+cancel = 0
+
+[ widget-04 ]
+type = button
+name = ReplaysControlsButton
+text = Replays
+tip = Assign inputs to actions related to replays.
+action = ReplaysControls
+center = 0.5, 0.6
+color = 0.0, 0.0, 0.8
+width = auto
+height = auto
+fontsize = 0.04
+enabled = 1
+selected = 0
+default = 0
+cancel = 0
+
+[ widget-05 ]
+type = button
+name = ToolsControlsButton
+text = Tools
+tip = Assign inputs to miscellaneous helpful actions.
+action = ToolsControls
+center = 0.5, 0.7
+color = 0.0, 0.0, 0.8
+width = auto
+height = auto
+fontsize = 0.04
+enabled = 1
+selected = 0
+default = 0
+cancel = 0
+
+[ widget-06 ]
+type = button
+name = GameControlsOKButton
+text = OK
+tip = Save changes and return to Assign Controls menu.
+action = AssignControls
+center = 0.4, 0.85
+color = 0.0, 0.8, 0.0
+width = auto
+height = auto
+fontsize = 0.04
+enabled = 1
+selected = 0
+default = 1
+cancel = 0
+
+[ widget-07 ]
+type = button
+name = GameControlsCancelButton
+text = Cancel
+tip = Forget changes and return to Assign Controls menu.
+action = AssignControls
+center = 0.6, 0.85
+color = 0.8, 0.0, 0.0
+width = auto
+height = auto
+fontsize = 0.04
+enabled = 1
+selected = 0
+default = 0
+cancel = 1

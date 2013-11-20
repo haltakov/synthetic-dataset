@@ -1,0 +1,128 @@
+name = InGameGameControls
+widgets = 8
+background = box.png
+dialog = false
+
+[ widget-00 ]
+type = label
+name = InGameGameControls
+text = Assign Game Controls
+center = 0.5, 0.1
+width = auto
+height = auto
+fontsize = 0.06
+enabled = 0
+selected = 0
+default = 0
+cancel = 0
+
+[ widget-01 ]
+type = controlgrab
+name = InGamePauseControl
+text = Pause
+tip = The pause control freezes the game (except in multiplayer).
+setting = pause
+center = 0.5, 0.30
+width = auto
+height = auto
+fontsize = 0.03
+enabled = 1
+selected = 1
+default = 0
+cancel = 0
+
+[ widget-02 ]
+type = button
+name = InGameCameraViewControlsButton
+text = Camera Views
+tip = Assign inputs to camera view selection controls.
+action = InGameCameraViewControls
+center = 0.5, 0.4
+color = 0.0, 0.0, 0.8
+width = auto
+height = auto
+fontsize = 0.04
+enabled = 1
+selected = 0
+default = 0
+cancel = 0
+
+[ widget-03 ]
+type = button
+name = InGameCameraMovementControlsButton
+text = Camera Movement
+tip = Assign inputs to camera movement controls.
+action = InGameCameraMovementControls
+center = 0.5, 0.5
+color = 0.0, 0.0, 0.8
+width = auto
+height = auto
+fontsize = 0.04
+enabled = 1
+selected = 0
+default = 0
+cancel = 0
+
+[ widget-04 ]
+type = button
+name = InGameReplaysControlsButton
+text = Replays
+tip = Assign inputs to actions related to replays.
+action = InGameReplaysControls
+center = 0.5, 0.6
+color = 0.0, 0.0, 0.8
+width = auto
+height = auto
+fontsize = 0.04
+enabled = 1
+selected = 0
+default = 0
+cancel = 0
+
+[ widget-05 ]
+type = button
+name = InGameToolsControlsButton
+text = Tools
+tip = Assign inputs to miscellaneous helpful actions.
+action = InGameToolsControls
+center = 0.5, 0.7
+color = 0.0, 0.0, 0.8
+width = auto
+height = auto
+fontsize = 0.04
+enabled = 1
+selected = 0
+default = 0
+cancel = 0
+
+[ widget-06 ]
+type = button
+name = InGameGameControlsOKButton
+text = OK
+tip = Save changes and return to in-game Assign Controls menu.
+action = InGameAssignControls
+center = 0.4, 0.85
+color = 0.0, 0.8, 0.0
+width = auto
+height = auto
+fontsize = 0.04
+enabled = 1
+selected = 0
+default = 1
+cancel = 0
+
+[ widget-07 ]
+type = button
+name = InGameGameControlsCancelButton
+text = Cancel
+tip = Forget changes and return to in-game Assign Controls menu.
+action = InGameAssignControls
+center = 0.6, 0.85
+color = 0.8, 0.0, 0.0
+width = auto
+height = auto
+fontsize = 0.04
+enabled = 1
+selected = 0
+default = 0
+cancel = 1

@@ -1,0 +1,241 @@
+name = InGameCameraViewControls
+widgets = 15
+background = box.png
+dialog = false
+
+[ widget-00 ]
+type = label
+name = InGameCameraControls
+text = Assign Camera View Controls
+center = 0.5, 0.1
+width = auto
+height = auto
+fontsize = 0.06
+enabled = 0
+selected = 0
+default = 0
+cancel = 0
+
+[ widget-01 ]
+type = controlgrab
+name = InGamePrevCameraControl
+text = Previous Camera
+tip = This moves to the previous camera in the set (hood, in-car, chase rigid, chase loose).
+setting = view_prev_camera
+center = 0.5, 0.25
+spacing = 0.2
+width = auto
+height = auto
+fontsize = 0.03
+enabled = 1
+selected = 1
+default = 0
+cancel = 0
+
+[ widget-02 ]
+type = controlgrab
+name = InGameNextCameraControl
+text = Next Camera
+tip = This moves to the next camera in the set (hood, in-car, chase rigid, chase loose).
+setting = view_next_camera
+center = 0.5, 0.29
+spacing = 0.2
+width = auto
+height = auto
+fontsize = 0.03
+enabled = 1
+selected = 0
+default = 0
+cancel = 0
+
+[ widget-03 ]
+type = controlgrab
+name = InGameHoodControl
+text = Hood
+tip = The hood camera control moves the camera to the car's hood.
+setting = view_hood
+center = 0.5, 0.33
+spacing = 0.2
+width = auto
+height = auto
+fontsize = 0.03
+enabled = 1
+selected = 0
+default = 0
+cancel = 0
+
+[ widget-04 ]
+type = controlgrab
+name = InGameInCarControl
+text = In-Car
+tip = The in-car camera control moves the camera to driver's view.
+setting = view_incar
+center = 0.5, 0.37
+spacing = 0.2
+width = auto
+height = auto
+fontsize = 0.03
+enabled = 1
+selected = 0
+default = 0
+cancel = 0
+
+[ widget-05 ]
+type = controlgrab
+name = InGameChaseRigidControl
+text = Chase (Rigid)
+tip = The rigid chase camera control moves the camera to a fixed distance behind the car.
+setting = view_chaserigid
+center = 0.5, 0.41
+spacing = 0.2
+width = auto
+height = auto
+fontsize = 0.03
+enabled = 1
+selected = 0
+default = 0
+cancel = 0
+
+[ widget-06 ]
+type = controlgrab
+name = InGameChaseControl
+text = Chase (Loose)
+tip = The loose chase camera control moves the camera to follow the car like a helicopter.
+setting = view_chase
+center = 0.5, 0.45
+spacing = 0.2
+width = auto
+height = auto
+fontsize = 0.03
+enabled = 1
+selected = 0
+default = 0
+cancel = 0
+
+[ widget-07 ]
+type = controlgrab
+name = InGameOrbitControl
+text = Orbit
+tip = The orbit camera control swings around the car as the mouse moves.
+setting = view_orbit
+center = 0.5, 0.49
+spacing = 0.2
+width = auto
+height = auto
+fontsize = 0.03
+enabled = 1
+selected = 0
+default = 0
+cancel = 0
+
+[ widget-08 ]
+type = controlgrab
+name = InGameFreeControl
+text = Free
+tip = The free camera control can be moved anywhere using the arrow keys.
+setting = view_free
+center = 0.5, 0.53
+spacing = 0.2
+width = auto
+height = auto
+fontsize = 0.03
+enabled = 1
+selected = 0
+default = 0
+cancel = 0
+
+[ widget-09 ]
+type = controlgrab
+name = InGameExternalFixedControl
+text = External Fixed
+tip = The fixed external camera follows the car from a set of fixed locations.
+setting = view_external
+center = 0.5, 0.57
+spacing = 0.2
+width = auto
+height = auto
+fontsize = 0.03
+enabled = 0
+selected = 0
+default = 0
+cancel = 0
+
+[ widget-10 ]
+type = controlgrab
+name = InGameExternalFollowControl
+text = External Follow
+tip = The external follow camera flies between each of the external cameras.
+setting = view_extfollow
+center = 0.5, 0.61
+spacing = 0.2
+width = auto
+height = auto
+fontsize = 0.03
+enabled = 0
+selected = 0
+default = 0
+cancel = 0
+
+[ widget-11 ]
+type = controlgrab
+name = InGameFocusNextCarControl
+text = Focus Next
+tip = Focus the camera on next car.
+setting = focus_next_car
+center = 0.5, 0.65
+spacing = 0.2
+width = auto
+height = auto
+fontsize = 0.03
+enabled = 1
+selected = 0
+default = 0
+cancel = 0
+
+[ widget-12 ]
+type = controlgrab
+name = InGameFocusPrevCarControl
+text = Focus Previous
+tip = Focus the camera on previous car.
+setting = focus_prev_car
+center = 0.5, 0.69
+spacing = 0.2
+width = auto
+height = auto
+fontsize = 0.03
+enabled = 1
+selected = 0
+default = 0
+cancel = 0
+
+[ widget-13 ]
+type = button
+name = InGameCameraControlsOKButton
+text = OK
+tip = Save changes and return to in-game Game Controls menu.
+action = InGameGameControls
+center = 0.4, 0.85
+color = 0.0, 0.8, 0.0
+width = auto
+height = auto
+fontsize = 0.04
+enabled = 1
+selected = 0
+default = 1
+cancel = 0
+
+[ widget-14 ]
+type = button
+name = InGameCameraControlsCancelButton
+text = Cancel
+tip = Forget changes and return to in-game Game Controls menu.
+action = InGameGameControls
+center = 0.6, 0.85
+color = 0.8, 0.0, 0.0
+width = auto
+height = auto
+fontsize = 0.04
+enabled = 1
+selected = 0
+default = 0
+cancel = 1

@@ -1,0 +1,146 @@
+name = EditJoyButtonControl
+widgets = 9
+background = box.png
+dialog = true
+
+[ widget-00 ]
+type = label
+name = EditJoyButtonControlLabel1
+text = Edit Joystick Button Control
+center = 0.5, 0.1
+width = auto
+height = auto
+fontsize = 0.06
+enabled = 0
+selected = 0
+default = 0
+cancel = 0
+
+[ widget-01 ]
+type = label
+name = EditJoyButtonControlLabel2
+text = Control
+center = 0.4, 0.2
+width = auto
+height = auto
+fontsize = 0.03
+enabled = 0
+selected = 0
+default = 0
+cancel = 0
+
+[ widget-02 ]
+type = label
+name = EditJoyButtonControlLabel3
+text = ->
+center = 0.5, 0.2
+width = auto
+height = auto
+fontsize = 0.03
+enabled = 0
+selected = 0
+default = 0
+cancel = 0
+
+[ widget-03 ]
+type = label
+name = EditJoyButtonControlLabel4
+text = Joy Btn
+center = 0.6, 0.2
+width = auto
+height = auto
+fontsize = 0.03
+enabled = 0
+selected = 0
+default = 0
+cancel = 0
+
+[ widget-04 ]
+type = toggle
+name = HeldOnceToggle
+text = Held/Once
+tip = Will this button be held (analog controls) or pressed once?
+setting = controledit.jbtn.held_once
+values = manual
+toggleval = true
+true = Once
+false = Held
+center = 0.5, 0.25
+width = auto
+height = auto
+fontsize = 0.03
+enabled = 1
+selected = 1
+default = 0
+cancel = 0
+
+[ widget-05 ]
+type = toggle
+name = UpDownToggle
+text = Up/Down
+tip = Trigger the control when the button is pressed down or let up?
+setting = controledit.jbtn.up_down
+values = manual
+toggleval = false
+true = Down
+false = Up
+center = 0.5, 0.29
+width = auto
+height = auto
+fontsize = 0.03
+enabled = 1
+selected = 0
+default = 0
+cancel = 0
+
+[ widget-06 ]
+type = button
+name = JoyButtonControlDeleteButton
+text = Delete
+tip = Delete this control.
+action = JoyButtonControlDelete
+center = 0.5, 0.7
+color = 1.0, 0.8, 0.0
+width = auto
+height = auto
+fontsize = 0.04
+enabled = 1
+selected = 0
+default = 0
+cancel = 0
+
+[ widget-07 ]
+type = button
+name = EditJoyButtonControlOKButton
+text = OK
+tip = Save changes and return to Options menu.
+action = JoyButtonControlOK
+center = 0.4, 0.8
+color = 0.0, 0.8, 0.0
+width = auto
+height = auto
+fontsize = 0.04
+enabled = 1
+selected = 0
+default = 1
+cancel = 0
+
+[ widget-08 ]
+type = button
+name = EditJoyButtonControlCancelButton
+text = Cancel
+tip = Forget changes and return to Options menu.
+action = JoyButtonControlCancel
+center = 0.6, 0.8
+color = 0.8, 0.0, 0.0
+width = auto
+height = auto
+fontsize = 0.04
+enabled = 1
+selected = 0
+default = 0
+cancel = 1
+
+
+
+

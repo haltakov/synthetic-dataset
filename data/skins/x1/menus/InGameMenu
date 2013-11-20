@@ -1,0 +1,97 @@
+name = InGameMenu
+widgets = 6
+background = box.png
+dialog = false
+
+[ widget-00 ]
+type = label
+name = PauseLabel
+text = Pause Menu
+center = 0.5, 0.1
+width = auto
+height = auto
+fontsize = 0.06
+enabled = 0
+selected = 0
+default = 0
+cancel = 0
+
+[ widget-01 ]
+type = button
+name = ReturnToGameButton
+text = Return to Game
+tip = Leave the menu and unpause the game.
+action = ReturnToGame
+center = 0.5, 0.3
+color = 0.0, 0.8, 0.0
+width = auto
+height = auto
+fontsize = 0.04
+enabled = 1
+selected = 1
+default = 0
+cancel = 1
+
+[ widget-02 ]
+type = button
+name = RestartGameConfirmButton
+text = Restart Game
+tip = Restart this game using the same car and track settings.
+action = RestartGameConfirm
+center = 0.5, 0.4
+color = 0.0, 0.0, 0.8
+width = auto
+height = auto
+fontsize = 0.04
+enabled = 1
+selected = 0
+default = 0
+cancel = 0
+
+[ widget-03 ]
+type = button
+name = InGameOptionsButton
+text = Options
+tip = Change some of the options while the game is running.
+action = Options
+center = 0.5, 0.5
+color = 0.0, 0.0, 0.8
+width = auto
+height = auto
+fontsize = 0.04
+enabled = 1
+selected = 0
+default = 0
+cancel = 0
+
+[ widget-04 ]
+type = button
+name = InGameBackButton
+text = Leave Game
+tip = Leave game and return to the Main menu.
+action = InGameLeaveConfirm
+center = 0.5, 0.6
+color = 0.8, 0.0, 0.0
+width = auto
+height = auto
+fontsize = 0.04
+enabled = 1
+selected = 0
+default = 0
+cancel = 0
+
+[ widget-05 ]
+type = button
+name = InGameQuitButton
+text = Quit
+tip = Quit VDrift.
+action = InGameQuitConfirm
+center = 0.5, 0.7
+color = 0.8, 0.0, 0.0
+width = auto
+height = auto
+fontsize = 0.04
+enabled = 1
+selected = 0
+default = 0
+cancel = 0

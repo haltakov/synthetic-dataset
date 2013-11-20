@@ -1,0 +1,34 @@
+name = ReplayStartError
+widgets = 2
+background = box.png
+dialog = true
+
+[ widget-00 ]
+type = label
+name = ReplayStartErrorMessage
+text = There was an error when trying to play this replay.
+color = 0.8, 0.3, 0.3
+center = 0.5, 0.45
+width = auto
+height = auto
+fontsize = 0.04
+enabled = 0
+selected = 0
+default = 0
+cancel = 0
+
+[ widget-01 ]
+type = button
+name = ReplayStartErrorBackButton
+text = Back
+tip = Go back to the Replays menu.
+action = Replays
+center = 0.5, 0.55
+color = 0.8, 0.0, 0.0
+width = auto
+height = auto
+fontsize = 0.04
+enabled = 1
+selected = 1
+default = 1
+cancel = 1

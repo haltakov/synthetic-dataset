@@ -1,0 +1,146 @@
+name = EditKeyboardControl
+widgets = 9
+background = box.png
+dialog = true
+
+[ widget-00 ]
+type = label
+name = EditKeyboardControlLabel1
+text = Edit Keyboard Control
+center = 0.5, 0.1
+width = auto
+height = auto
+fontsize = 0.06
+enabled = 0
+selected = 0
+default = 0
+cancel = 0
+
+[ widget-01 ]
+type = label
+name = EditKeyboardControlLabel2
+text = Control
+center = 0.4, 0.2
+width = auto
+height = auto
+fontsize = 0.03
+enabled = 0
+selected = 0
+default = 0
+cancel = 0
+
+[ widget-02 ]
+type = label
+name = EditKeyboardControlLabel3
+text = ->
+center = 0.5, 0.2
+width = auto
+height = auto
+fontsize = 0.03
+enabled = 0
+selected = 0
+default = 0
+cancel = 0
+
+[ widget-03 ]
+type = label
+name = EditKeyboardControlLabel4
+text = Key
+center = 0.6, 0.2
+width = auto
+height = auto
+fontsize = 0.03
+enabled = 0
+selected = 0
+default = 0
+cancel = 0
+
+[ widget-04 ]
+type = toggle
+name = HeldOnceToggle
+text = Held/Once
+tip = Will this key be held (analog controls) or pressed once?
+setting = controledit.key.held_once
+values = manual
+toggleval = true
+true = Once
+false = Held
+center = 0.5, 0.25
+width = auto
+height = auto
+fontsize = 0.03
+enabled = 1
+selected = 1
+default = 0
+cancel = 0
+
+[ widget-05 ]
+type = toggle
+name = UpDownToggle
+text = Up/Down
+tip = Trigger the control when the key is pressed down or let up?
+setting = controledit.key.up_down
+values = manual
+toggleval = false
+true = Down
+false = Up
+center = 0.5, 0.29
+width = auto
+height = auto
+fontsize = 0.03
+enabled = 1
+selected = 0
+default = 0
+cancel = 0
+
+[ widget-06 ]
+type = button
+name = KeyboardControlDeleteButton
+text = Delete
+tip = Delete this control.
+action = KeyboardControlDelete
+center = 0.5, 0.7
+color = 1.0, 0.8, 0.0
+width = auto
+height = auto
+fontsize = 0.04
+enabled = 1
+selected = 0
+default = 0
+cancel = 0
+
+[ widget-07 ]
+type = button
+name = EditKeyboardControlOKButton
+text = OK
+tip = Save changes and return to Options menu.
+action = KeyboardControlOK
+center = 0.4, 0.8
+color = 0.0, 0.8, 0.0
+width = auto
+height = auto
+fontsize = 0.04
+enabled = 1
+selected = 0
+default = 1
+cancel = 0
+
+[ widget-08 ]
+type = button
+name = EditKeyboardControlCancelButton
+text = Cancel
+tip = Forget changes and return to Options menu.
+action = KeyboardControlCancel
+center = 0.6, 0.8
+color = 0.8, 0.0, 0.0
+width = auto
+height = auto
+fontsize = 0.04
+enabled = 1
+selected = 0
+default = 0
+cancel = 1
+
+
+
+

@@ -1,0 +1,625 @@
+name = InputDevice
+oncancel = gui.options.load ControlsOptions
+
+
+[ bg-top ]
+image = white.png
+color = 0.172, 0.161, 0.169
+alpha = 0.5
+left = 0
+right = 0
+top = 0
+height = 0.14
+layer = -1
+
+
+[ bg-bottom ]
+image = white.png
+color = 0.172, 0.161, 0.169
+alpha = 0.5
+left = 0
+right = 0
+bottom = 0
+height = 0.08
+layer = -1
+
+
+[ tooltip ]
+text = gui.tooltip
+fontsize = 0.03
+left = 0
+right = 0
+bottom = 0.04
+height = 0.04
+
+
+[ bg-labels ]
+image = white.png
+color = 0.172, 0.161, 0.169
+alpha = 0.5
+left = 0.008
+width = 0.25
+top = 0.181
+height = 0.358
+layer = -1
+
+
+[ bg-options ]
+image = white.png
+color = 0.172, 0.161, 0.169
+alpha = 0.5
+left = 0.26
+width = 0.26
+top = 0.181
+height = 0.358
+layer = -1
+
+
+[ title ]
+text = Options / Controls / Input Device
+fontsize = 0.06
+align = left
+left = 0.25
+width = 0.20
+top = 0.07
+height = 0.06
+
+
+[ widget-01a ]
+text = Type
+fontsize = 0.03
+align = right
+left = 0.01
+width = 0.24
+top = 0.18
+height = 0.04
+
+[ widget-01b ]
+text = <
+fontsize = 0.03
+align = left
+tip = Change the type of joystick device.
+onselect = joystick.type.prev
+onmoveleft = joystick.type.prev
+onmoveright = joystick.type.next
+onmoveup = widget-13b
+onmovedown = widget-02b
+onfocus = widget-01b.alpha:1 widget-01c.alpha:1 widget-01d.sat:0.56
+onblur = widget-01b.alpha:0 widget-01c.alpha:0 widget-01d.sat:0.0
+focus = true
+color = 0.439, 0.796, 1.00
+alpha = 0
+left = 0.27
+width = 0.12
+top = 0.18
+height = 0.04
+
+[ widget-01c ]
+text = >
+fontsize = 0.03
+align = right
+tip = Change the type of joystick device.
+onselect = joystick.type.next
+onmoveleft = joystick.type.prev
+onmoveright = joystick.type.next
+onmoveup = widget-13b
+onmovedown = widget-02b
+onfocus = widget-01b.alpha:1 widget-01c.alpha:1 widget-01d.sat:0.56
+onblur = widget-01b.alpha:0 widget-01c.alpha:0 widget-01d.sat:0.0
+focus = false
+color = 0.439, 0.796, 1.00
+alpha = 0
+left = 0.39
+width = 0.12
+top = 0.18
+height = 0.04
+
+[ widget-01d ]
+text = joystick.type.str
+fontsize = 0.03
+hue = 0.56
+left = 0.27
+width = 0.24
+top = 0.18
+height = 0.04
+
+
+[ widget-02a ]
+text = 200 Degree Wheel
+fontsize = 0.03
+align = right
+left = 0.01
+width = 0.24
+top = 0.22
+height = 0.04
+
+[ widget-02b ]
+text = <
+fontsize = 0.03
+align = left
+onselect = joystick.two_hundred.prev
+onmoveleft = joystick.two_hundred.prev
+onmoveright = joystick.two_hundred.next
+onmoveup = widget-01b
+onmovedown = widget-03b
+onfocus = widget-02b.alpha:1 widget-02c.alpha:1 widget-02d.sat:0.56
+onblur = widget-02b.alpha:0 widget-02c.alpha:0 widget-02d.sat:0.0
+focus = false
+color = 0.439, 0.796, 1.00
+alpha = 0
+left = 0.27
+width = 0.12
+top = 0.22
+height = 0.04
+
+[ widget-02c ]
+text = >
+fontsize = 0.03
+align = right
+onselect = joystick.two_hundred.next
+onmoveleft = joystick.two_hundred.prev
+onmoveright = joystick.two_hundred.next
+onmoveup = widget-01b
+onmovedown = widget-03b
+onfocus = widget-02b.alpha:1 widget-02c.alpha:1 widget-02d.sat:0.56
+onblur = widget-02b.alpha:0 widget-02c.alpha:0 widget-02d.sat:0.0
+focus = false
+color = 0.439, 0.796, 1.00
+alpha = 0
+left = 0.39
+width = 0.12
+top = 0.22
+height = 0.04
+
+[ widget-02d ]
+text = joystick.two_hundred.str
+fontsize = 0.03
+hue = 0.56
+left = 0.27
+width = 0.24
+top = 0.22
+height = 0.04
+
+
+[ widget-03a ]
+text = Force Feedback Invert 
+fontsize = 0.03
+align = right
+left = 0.01
+width = 0.24
+top = 0.26
+height = 0.04
+
+[ widget-03b ]
+text = <
+fontsize = 0.03
+align = left
+tip = Reverse the force feedback, if necessary for your wheel.
+onselect = joystick.ff_invert.prev
+onmoveleft = joystick.ff_invert.prev
+onmoveright = joystick.ff_invert.next
+onmoveup = widget-02b
+onmovedown = widget-04b
+onfocus = widget-03b.alpha:1 widget-03c.alpha:1 widget-03d.sat:0.56
+onblur = widget-03b.alpha:0 widget-03c.alpha:0 widget-03d.sat:0.0
+focus = false
+color = 0.439, 0.796, 1.00
+alpha = 0
+left = 0.27
+width = 0.12
+top = 0.26
+height = 0.04
+
+[ widget-03c ]
+text = >
+fontsize = 0.03
+align = right
+tip = Reverse the force feedback, if necessary for your wheel.
+onselect = joystick.ff_invert.next
+onmoveleft = joystick.ff_invert.prev
+onmoveright = joystick.ff_invert.next
+onmoveup = widget-02b
+onmovedown = widget-04b
+onfocus = widget-03b.alpha:1 widget-03c.alpha:1 widget-03d.sat:0.56
+onblur = widget-03b.alpha:0 widget-03c.alpha:0 widget-03d.sat:0.0
+focus = false
+color = 0.439, 0.796, 1.00
+alpha = 0
+left = 0.39
+width = 0.12
+top = 0.26
+height = 0.04
+
+[ widget-03d ]
+text = joystick.ff_invert.str
+fontsize = 0.03
+hue = 0.56
+left = 0.27
+width = 0.24
+top = 0.26
+height = 0.04
+
+
+[ widget-04a ]
+text = Force Feedback Gain
+fontsize = 0.03
+align = right
+left = 0.01
+width = 0.24
+top = 0.30
+height = 0.04
+
+[ widget-04b ]
+text = joystick.ff_gain.str
+fontsize = 0.03
+tip = Multiplier to adjust strength of force feedback.
+onselectx = joystick.ff_gain.norm
+onmoveleft = joystick.ff_gain.prev
+onmoveright = joystick.ff_gain.next
+onmoveup = widget-03b
+onmovedown = widget-05b
+onfocus = widget-04c.alpha:1 widget-04d.alpha:1 widget-04b.sat:0.56
+onblur = widget-04c.alpha:0 widget-04d.alpha:0 widget-04b.sat:0.0
+focus = false
+hue = 0.56
+left = 0.27
+width = 0.24
+top = 0.30
+height = 0.04
+
+[ widget-04c ]
+slider = joystick.ff_gain.norm
+fill = true
+alpha = 0
+left = 0.27
+width = 0.24
+top = 0.306
+height = 0.028
+layer = 1
+
+[ widget-04d ]
+image = white.png
+color = 0.3, 0.3, 0.3
+alpha = 0
+left = 0.27
+width = 0.24
+top = 0.306
+height = 0.028
+
+
+[ widget-05a ]
+text = Steering Speed Effect
+fontsize = 0.03
+align = right
+left = 0.01
+width = 0.24
+top = 0.34
+height = 0.04
+
+[ widget-05b ]
+text = control.speed_sens_steering.str
+fontsize = 0.03
+tip = The higher the value on this setting, the more steering is limited as car speed increases.
+onselectx = control.speed_sens_steering.norm
+onmoveleft = control.speed_sens_steering.prev
+onmoveright = control.speed_sens_steering.next
+onmoveup = widget-04b
+onmovedown = widget-06b
+onfocus = widget-05c.alpha:1 widget-05d.alpha:1 widget-05b.sat:0.56
+onblur = widget-05c.alpha:0 widget-05d.alpha:0 widget-05b.sat:0.0
+focus = false
+hue = 0.56
+left = 0.27
+width = 0.24
+top = 0.34
+height = 0.04
+
+[ widget-05c ]
+slider = control.speed_sens_steering.norm
+fill = true
+alpha = 0
+left = 0.27
+width = 0.24
+top = 0.346
+height = 0.028
+layer = 1
+
+[ widget-05d ]
+image = white.png
+color = 0.3, 0.3, 0.3
+alpha = 0
+left = 0.27
+width = 0.24
+top = 0.346
+height = 0.028
+
+
+[ widget-06a ]
+text = Button Control Delay
+fontsize = 0.03
+align = right
+left = 0.01
+width = 0.24
+top = 0.38
+height = 0.04
+
+[ widget-06b ]
+text = <
+fontsize = 0.03
+align = left
+tip = Slow down the application of button inputs on analogue controls.
+onselect = control.button_ramp.prev
+onmoveleft = control.button_ramp.prev
+onmoveright = control.button_ramp.next
+onmoveup = widget-05b
+onmovedown = widget-07b
+onfocus = widget-06b.alpha:1 widget-06c.alpha:1 widget-06d.sat:0.56
+onblur = widget-06b.alpha:0 widget-06c.alpha:0 widget-06d.sat:0.0
+focus = false
+color = 0.439, 0.796, 1.00
+alpha = 0
+left = 0.27
+width = 0.12
+top = 0.38
+height = 0.04
+
+[ widget-06c ]
+text = >
+fontsize = 0.03
+align = right
+tip = Slow down the application of button inputs on analogue controls.
+onselect = control.button_ramp.next
+onmoveleft = control.button_ramp.prev
+onmoveright = control.button_ramp.next
+onmoveup = widget-05b
+onmovedown = widget-07b
+onfocus = widget-06b.alpha:1 widget-06c.alpha:1 widget-06d.sat:0.56
+onblur = widget-06b.alpha:0 widget-06c.alpha:0 widget-06d.sat:0.0
+focus = false
+color = 0.439, 0.796, 1.00
+alpha = 0
+left = 0.39
+width = 0.12
+top = 0.38
+height = 0.04
+
+[ widget-06d ]
+text = control.button_ramp.str
+fontsize = 0.03
+hue = 0.56
+left = 0.27
+width = 0.24
+top = 0.38
+height = 0.04
+
+
+[ widget-07a ]
+text = Automatic Shift
+fontsize = 0.03
+align = right
+left = 0.01
+width = 0.24
+top = 0.42
+height = 0.04
+
+[ widget-07b ]
+text = <
+fontsize = 0.03
+align = left
+tip = Enable/disable automatic transmission shifting.
+onselect = control.autotrans.prev
+onmoveleft = control.autotrans.prev
+onmoveright = control.autotrans.next
+onmoveup = widget-06b
+onmovedown = widget-08b
+onfocus = widget-07b.alpha:1 widget-07c.alpha:1 widget-07d.sat:0.56
+onblur = widget-07b.alpha:0 widget-07c.alpha:0 widget-07d.sat:0.0
+focus = false
+color = 0.439, 0.796, 1.00
+alpha = 0
+left = 0.27
+width = 0.12
+top = 0.42
+height = 0.04
+
+[ widget-07c ]
+text = >
+fontsize = 0.03
+align = right
+tip = Enable/disable automatic transmission shifting.
+onselect = control.autotrans.next
+onmoveleft = control.autotrans.prev
+onmoveright = control.autotrans.next
+onmoveup = widget-06b
+onmovedown = widget-08b
+onfocus = widget-07b.alpha:1 widget-07c.alpha:1 widget-07d.sat:0.56
+onblur = widget-07b.alpha:0 widget-07c.alpha:0 widget-07d.sat:0.0
+focus = false
+color = 0.439, 0.796, 1.00
+alpha = 0
+left = 0.39
+width = 0.12
+top = 0.42
+height = 0.04
+
+[ widget-07d ]
+text = control.autotrans.str
+fontsize = 0.03
+hue = 0.56
+left = 0.27
+width = 0.24
+top = 0.42
+height = 0.04
+
+
+[ widget-08a ]
+text = Automatic Clutch
+fontsize = 0.03
+align = right
+left = 0.01
+width = 0.24
+top = 0.46
+height = 0.04
+
+[ widget-08b ]
+text = <
+fontsize = 0.03
+align = left
+tip = Enable/disable automatic clutching (prevents car from stalling).
+onselect = control.autoclutch.prev
+onmoveleft = control.autoclutch.prev
+onmoveright = control.autoclutch.next
+onmoveup = widget-07b
+onmovedown = widget-09b
+onfocus = widget-08b.alpha:1 widget-08c.alpha:1 widget-08d.sat:0.56
+onblur = widget-08b.alpha:0 widget-08c.alpha:0 widget-08d.sat:0.0
+focus = false
+color = 0.439, 0.796, 1.00
+alpha = 0
+left = 0.27
+width = 0.12
+top = 0.46
+height = 0.04
+
+[ widget-08c ]
+text = >
+fontsize = 0.03
+align = right
+onselect = control.autoclutch.next
+onmoveleft = control.autoclutch.prev
+onmoveright = control.autoclutch.next
+onmoveup = widget-07b
+onmovedown = widget-09b
+onfocus = widget-08b.alpha:1 widget-08c.alpha:1 widget-08d.sat:0.56
+onblur = widget-08b.alpha:0 widget-08c.alpha:0 widget-08d.sat:0.0
+focus = false
+color = 0.439, 0.796, 1.00
+alpha = 0
+left = 0.39
+width = 0.12
+top = 0.46
+height = 0.04
+
+[ widget-08d ]
+text = control.autoclutch.str
+fontsize = 0.03
+hue = 0.56
+left = 0.27
+width = 0.24
+top = 0.46
+height = 0.04
+
+
+[ widget-09a ]
+text = H-Gate Shifter
+fontsize = 0.03
+align = right
+left = 0.01
+width = 0.24
+top = 0.50
+height = 0.04
+
+[ widget-09b ]
+text = <
+fontsize = 0.03
+align = left
+tip = Automatically shift to neutral when no gear button is active, as with "H gate" shifters.
+onselect = joystick.hgateshifter.prev
+onmoveleft = joystick.hgateshifter.prev
+onmoveright = joystick.hgateshifter.next
+onmoveup = widget-08b
+onmovedown = widget-10b
+onfocus = widget-09b.alpha:1 widget-09c.alpha:1 widget-09d.sat:0.56
+onblur = widget-09b.alpha:0 widget-09c.alpha:0 widget-09d.sat:0.0
+focus = false
+color = 0.439, 0.796, 1.00
+alpha = 0
+left = 0.27
+width = 0.12
+top = 0.50
+height = 0.04
+
+[ widget-09c ]
+text = >
+fontsize = 0.03
+align = right
+tip = Automatically shift to neutral when no gear button is active, as with "H gate" shifters.
+onselect = joystick.hgateshifter.next
+onmoveleft = joystick.hgateshifter.prev
+onmoveright = joystick.hgateshifter.next
+onmoveup = widget-08b
+onmovedown = widget-10b
+onfocus = widget-09b.alpha:1 widget-09c.alpha:1 widget-09d.sat:0.56
+onblur = widget-09b.alpha:0 widget-09c.alpha:0 widget-09d.sat:0.0
+focus = false
+color = 0.439, 0.796, 1.00
+alpha = 0
+left = 0.39
+width = 0.12
+top = 0.50
+height = 0.04
+
+[ widget-09d ]
+text = joystick.hgateshifter.str
+fontsize = 0.03
+hue = 0.56
+left = 0.27
+width = 0.24
+top = 0.50
+height = 0.04
+
+
+[ widget-10b ]
+text = Cancel
+fontsize = 0.03
+#align = left
+tip = Forget changes and return to Controls menu.
+onselect = gui.options.load ControlsOptions
+onmoveup = widget-09b
+onmovedown = widget-11b
+onfocus = widget-10b.sat:0.56
+onblur = widget-10b.sat:0.0
+focus = false
+hue = 0.56
+left = 0.27
+width = 0.25
+top = 0.54
+height = 0.04
+
+[ widget-10e ]
+image = white.png
+color = 0.172, 0.161, 0.169
+alpha = 0.5
+left = 0.26
+width = 0.26
+top = 0.541
+height = 0.038
+layer = -1
+
+
+[ widget-11b ]
+text = OK
+fontsize = 0.03
+#align = left
+tip = Save changes and return to Controls menu.
+onselect = gui.options.save ControlsOptions
+onmoveup = widget-10b
+onmovedown = widget-01b
+onfocus = widget-11b.sat:0.56
+onblur = widget-11b.sat:0.0
+focus = false
+hue = 0.56
+left = 0.27
+width = 0.25
+top = 0.58
+height = 0.04
+
+[ widget-11e ]
+image = white.png
+color = 0.172, 0.161, 0.169
+alpha = 0.5
+left = 0.26
+width = 0.26
+top = 0.581
+height = 0.038
+layer = -1
