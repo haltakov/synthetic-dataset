@@ -326,6 +326,7 @@ private:
 
 	std::string				replay_file;
 	bool					quit_after_replay;
+	bool					show_position;
 
 #ifdef ENABLE_FORCE_FEEDBACK
 	std::auto_ptr <FORCEFEEDBACK> forcefeedback;

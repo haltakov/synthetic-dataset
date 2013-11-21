@@ -136,7 +136,8 @@ GAME::GAME(std::ostream & info_out, std::ostream & error_out) :
 	frames_to_record(1),
 	replay_file(""),
 	quit_after_replay(false),
-	dataset_folder("dataset")
+	dataset_folder("dataset"),
+	show_position(false)
 {
 	carcontrols_local.first = 0;
 	dynamics.setContactAddedCallback(&CARDYNAMICS::WheelContactCallback);
@@ -764,8 +765,8 @@ bool GAME::ParseArguments(std::list <std::string> & args)
 		should_record = true;
 	}
 
-	if (argmap.find("-record") != argmap.end()) {
-		should_record = true;
+	if (argmap.find("-show_position") != argmap.end()) {
+		show_position = true;
 	}
 
 	if (argmap.find("-dataset_mode") != argmap.end()) {
@@ -798,16 +799,16 @@ bool GAME::ParseArguments(std::list <std::string> & args)
 					 break;
 		}
 
-		if (argmap.find("-replay") != argmap.end()) {
-			replay_file = argmap["-replay"];
-			quit_after_replay = true;
-		}
-
-		if (argmap.find("-dataset_folder") != argmap.end()) {
-			dataset_folder = argmap["-dataset_folder"];
-		}
-
 		track.SetDatasetRenderMode(dataset_render_mode);
+	}
+
+	if (argmap.find("-replay") != argmap.end()) {
+		replay_file = argmap["-replay"];
+		quit_after_replay = true;
+	}
+
+	if (argmap.find("-dataset_folder") != argmap.end()) {
+		dataset_folder = argmap["-dataset_folder"];
 	}
 
 	if (argmap.find("-frames_to_record") != argmap.end()) {
@@ -920,11 +921,11 @@ void GAME::MainLoop()
 
 		gui.Update(eventsystem.Get_dt());
 
-		//if (cars.size() > 0 && frame_id % 30 == 0) {
-		//	MATHVECTOR<float, 3> position = active_camera->GetPosition();
-		//	QUATERNION<float> orientation = active_camera->GetOrientation();
-		//	printf("%f %f %f %f %f %f %f\n", position[0], position[1], position[2], orientation.x(), orientation.y(), orientation.z(), orientation.w());
-		//}
+		if (show_position && cars.size() > 0 && frame_id % 30 == 0) {
+			MATHVECTOR<float, 3> position = active_camera->GetPosition();
+			QUATERNION<float> orientation = active_camera->GetOrientation();
+			printf("%f %f %f %f %f %f %f\n", position[0], position[1], position[2], orientation.x(), orientation.y(), orientation.z(), orientation.w());
+		}
 
 		if (should_record && replay.GetPlaying() && !gui.Active() && track.Loaded() && cars.size() > 0 && frame_id % frames_to_record == 0 && frame_id >= 10) {
 			if (dataset_render_mode == RENDER_MODE_POSE) {
